@@ -31,7 +31,7 @@ async def register(user_data: UserRegisterRequest) -> TokenResponse:
     
     - **email**: User email address (must be unique)
     - **password**: User password (minimum 8 characters)
-    - **full_name**: User full name
+    - **name**: User full name
     
     Returns JWT access token and user information.
     """
