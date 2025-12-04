@@ -1,5 +1,6 @@
 import time
 import json
+import re
 from datetime import datetime
 from urllib.parse import quote_plus
 from random import uniform
@@ -11,7 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 # =========================
-#  UTILITAIRES
+#  UTILITAIRES GÉNÉRAUX
 # =========================
 
 def human_sleep(min_s: float = 2.0, max_s: float = 5.0):
@@ -19,15 +20,143 @@ def human_sleep(min_s: float = 2.0, max_s: float = 5.0):
     time.sleep(uniform(min_s, max_s))
 
 
-def build_search_url(keyword: str, location: str, start: int = 0) -> str:
+def build_search_url(keyword: str, location: str) -> str:
     """
-    Construit l'URL de recherche Indeed avec pagination.
-    'start' est le décalage (0 pour page 1, 10 pour page 2, etc.)
+    Construit l'URL de recherche Indeed pour la page 1.
+    La pagination se fera ensuite en cliquant sur les boutons de pages.
     """
     base_url = "https://ma.indeed.com/jobs"
     q = quote_plus(keyword)
     loc = quote_plus(location)
-    return f"{base_url}?q={q}&l={loc}&start={start}"
+    return f"{base_url}?q={q}&l={loc}"
+
+
+def parse_job_count(driver, wait) -> int | None:
+    """Récupère le nombre total d'offres affiché par Indeed (si dispo)."""
+    try:
+        count_el = wait.until(
+            EC.presence_of_element_located(
+                (By.CSS_SELECTOR, "div.jobsearch-JobCountAndSortPane-jobCount")
+            )
+        )
+        text = count_el.text  # ex : "17 emplois", "201 jobs"
+        m = re.search(r"(\d[\d\s]*)", text)
+        if not m:
+            return None
+        num_str = m.group(1).replace(" ", "")
+        return int(num_str)
+    except Exception:
+        return None
+
+
+# =========================
+#  COLLECTE DES URLS PAR PAGE
+# =========================
+
+def collect_job_urls_on_page(driver, wait, ul_selector: str, li_selector: str) -> list[str]:
+    """
+    Sur la page courante :
+    - scrolle plusieurs fois jusqu'en bas pour charger toutes les offres,
+    - récupère toutes les <li> qui contiennent un <a>,
+    - renvoie la liste des href (job_url).
+    """
+
+    # Scroll progressif pour charger toutes les offres (lazy loading)
+    last_height = 0
+    for _ in range(6):  # ~ 5–6 scrolls suffisent en général
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        human_sleep(1.5, 3.0)
+        new_height = driver.execute_script("return document.body.scrollHeight;")
+        if new_height == last_height:
+            break
+        last_height = new_height
+
+    # Récupérer le <ul> principal des offres
+    try:
+        ul_element = wait.until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, ul_selector))
+        )
+    except Exception:
+        print("[WARN] Impossible de trouver le conteneur <ul> des offres sur cette page.")
+        return []
+
+    all_li = ul_element.find_elements(By.CSS_SELECTOR, li_selector)
+
+    job_urls = []
+    for li in all_li:
+        try:
+            a_el = li.find_element(By.CSS_SELECTOR, "a")
+            href = a_el.get_attribute("href")
+            if href:
+                job_urls.append(href)
+        except Exception:
+            # li sans lien (placeholder, tracking, etc.) → on ignore
+            continue
+
+    # Optionnel : dédupli dans la page (au cas où la même URL se répète)
+    unique_urls = list(dict.fromkeys(job_urls))
+
+    print(f"[INFO] URLs d'offres collectées sur cette page : {len(unique_urls)}")
+    return unique_urls
+
+
+# =========================
+#  PAGINATION : CLIC SUR LES PAGES
+# =========================
+
+def click_next_page(driver, wait, current_page: int) -> bool:
+    """
+    Trouve et clique sur le <li> correspondant à la page suivante (current_page + 1)
+    dans la pagination Indeed.
+    Retourne True si le clic a été effectué, False sinon (pas de page suivante).
+    """
+    try:
+        # descendre jusqu'à la pagination
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        human_sleep(1.5, 2.5)
+
+        # Certaines versions utilisent 'serp-page-z64vyd', d'autres 'page-z64vyd'
+        pagination_ul = None
+        for css in [
+            "ul.serp-page-z64vyd.eu4oa1w0",
+            "ul.page-z64vyd.eu4oa1w0",
+        ]:
+            try:
+                pagination_ul = driver.find_element(By.CSS_SELECTOR, css)
+                break
+            except Exception:
+                continue
+
+        if pagination_ul is None:
+            print("[INFO] Pagination non trouvée (ul), fin de pagination.")
+            return False
+
+        li_pages = pagination_ul.find_elements(By.CSS_SELECTOR, "li.serp-page-8umzvb.eu4oa1w0")
+
+        # filtrer les numéros uniquement (ignorer « Suivant », « Précédent », etc.)
+        numeric_buttons = [li for li in li_pages if li.text.strip().isdigit()]
+
+        next_page_text = str(current_page + 1)
+        next_button = None
+        for li in numeric_buttons:
+            if li.text.strip() == next_page_text:
+                next_button = li
+                break
+
+        if not next_button:
+            print(f"[INFO] Aucun bouton pour la page {next_page_text} (fin de pagination).")
+            return False
+
+        driver.execute_script("arguments[0].scrollIntoView({block:'center'});", next_button)
+        human_sleep(0.8, 1.5)
+        driver.execute_script("arguments[0].click();", next_button)
+        human_sleep(3.0, 4.5)
+        print(f"[INFO] Passage à la page {next_page_text}")
+        return True
+
+    except Exception:
+        print("[INFO] Pagination non trouvée ou clic impossible (fin de pagination).")
+        return False
 
 
 # =========================
@@ -39,14 +168,14 @@ def scrape_indeed_offers(
     location: str,
     output_json: str,
     max_offers_per_kw: int | None = None,
-    max_pages_per_kw: int | None = 5,
+    max_pages_per_kw: int | None = None,
 ):
     """
-    Scrape les offres Indeed pour plusieurs mots-clés liés aux stages et à la Data/IA.
+    Scrape les offres Indeed pour plusieurs mots-clés (stages + jobs IT).
 
-    - keywords : liste de requêtes (ex: ["stage data", "data scientist", ...])
+    - keywords : liste de requêtes (ex: ["stage data science", "AI engineer", ...])
     - location : ex. "Maroc"
-    - max_offers_per_kw : nombre max d'offres à collecter par mot-clé (sur toutes les pages)
+    - max_offers_per_kw : nombre max d'offres à collecter par mot-clé
     - max_pages_per_kw : nombre max de pages à visiter par mot-clé
     """
 
@@ -61,169 +190,116 @@ def scrape_indeed_offers(
     all_offers = []
 
     try:
-        driver = uc.Chrome(options=options)
+        # ⚠ Si besoin : uc.Chrome(options=options, version_main=142)
+        driver = uc.Chrome(options=options, version_main=142)
         wait = WebDriverWait(driver, 15)
 
         ul_selector = "ul.css-pygyny.eu4oa1w0"
         li_selector = "li.css-1ac2h1w.eu4oa1w0"
 
-        # =========================
-        #  OPTION A : LOGIN MANUEL
-        # =========================
-        # On ouvre une première page, tu te connectes à Indeed à la main,
-        # puis tu appuies sur Entrée dans le terminal.
+        # ---------- Login manuel ----------
         print("[INFO] Ouverture initiale pour connexion manuelle à Indeed...")
         driver.get("https://ma.indeed.com/")
         human_sleep(5, 8)
-        input("[ACTION] Connecte-toi à Indeed dans la fenêtre, puis appuie sur Entrée ici pour commencer le scraping...")
+        input("[ACTION] Connecte-toi à Indeed dans la fenêtre, puis appuie sur Entrée ici pour commencer le scraping... ")
 
+        # ---------- Boucle sur les mots-clés ----------
         for kw in keywords:
             print("\n" + "=" * 60)
             print(f"[INFO] Mot-clé de recherche : {kw}")
 
-            offers_for_kw = 0  # compteur d'offres collectées pour ce mot-clé
-            page = 0
+            offers_for_kw = 0
 
+            # Charger la page 1
+            search_url = build_search_url(kw, location)
+            print(f"[INFO] Page 1 URL : {search_url}")
+            driver.get(search_url)
+            human_sleep(4, 7)
+
+            # Nombre d'offres (info)
+            job_count = parse_job_count(driver, wait)
+            if job_count is not None:
+                print(f"[INFO] Nombre total d'offres annoncé pour '{kw}' : {job_count}")
+            else:
+                print(f"[INFO] Impossible de déterminer le nombre total d'offres pour '{kw}'")
+
+            current_page = 1
+
+            # Boucle pagination via clics
             while True:
-                if max_pages_per_kw is not None and page >= max_pages_per_kw:
-                    print(f"[INFO] max_pages_per_kw={max_pages_per_kw} atteint pour '{kw}'.")
+                print(f"\n[INFO] Scraping page {current_page} pour '{kw}'")
+
+                # 1) Récupérer toutes les URLs d'offres sur cette page
+                page_job_urls = collect_job_urls_on_page(
+                    driver, wait, ul_selector, li_selector
+                )
+
+                if not page_job_urls:
+                    print("[INFO] Aucune offre cliquable sur cette page, on arrête pour ce mot-clé.")
                     break
 
-                # Si limite d'offres atteinte pour ce mot-clé, on arrête
-                if max_offers_per_kw is not None and offers_for_kw >= max_offers_per_kw:
-                    print(f"[INFO] max_offers_per_kw={max_offers_per_kw} atteint pour '{kw}'.")
-                    break
+                new_offers_in_page = 0
 
-                start_param = page * 10  # Indeed liste 10 offres par page en général
-                url = build_search_url(kw, location, start=start_param)
-                print(f"[INFO] Ouverture de la page {page+1} pour '{kw}' : {url}")
-                driver.get(url)
-                human_sleep(4, 7)
-
-                # Scroll léger pour simuler un utilisateur
-                driver.execute_script("window.scrollTo(0, document.body.scrollHeight * 0.3);")
-                human_sleep(1, 2)
-
-                # Récupérer le <ul> principal
-                try:
-                    ul_element = wait.until(
-                        EC.presence_of_element_located((By.CSS_SELECTOR, ul_selector))
-                    )
-                except Exception:
-                    print("[WARN] Impossible de trouver le conteneur <ul> des offres sur cette page.")
-                    break
-
-                offer_elements = ul_element.find_elements(By.CSS_SELECTOR, li_selector)
-                print(f"[INFO] Nombre d'offres trouvées sur la page {page+1} pour '{kw}' : {len(offer_elements)}")
-
-                if not offer_elements:
-                    print("[INFO] Aucune offre sur cette page, on arrête pour ce mot-clé.")
-                    break
-
-                # Boucle sur les offres de cette page
-                for i in range(len(offer_elements)):
-                    # Vérifier la limite d'offres
+                # 2) Boucle sur les URLs d'offres (on NE déduplique PAS entre mots-clés)
+                for idx, job_url in enumerate(page_job_urls, start=1):
                     if max_offers_per_kw is not None and offers_for_kw >= max_offers_per_kw:
                         print(f"[INFO] Limite d'offres atteinte pour '{kw}'.")
                         break
 
-                    print(f"\n[INFO] Traitement offre {i+1}/{len(offer_elements)} sur la page {page+1} pour '{kw}'")
+                    print(f"[INFO] ({idx}/{len(page_job_urls)}) Scraping offre : {job_url}")
+                    driver.get(job_url)
+                    human_sleep(2, 4)
 
-                    # Re-sélectionner les éléments pour éviter stale elements
-                    try:
-                        ul_element = wait.until(
-                            EC.presence_of_element_located((By.CSS_SELECTOR, ul_selector))
-                        )
-                        offer_elements = ul_element.find_elements(By.CSS_SELECTOR, li_selector)
-                    except Exception:
-                        print("[WARN] Impossible de recharger la liste des offres.")
-                        break
-
-                    if i >= len(offer_elements):
-                        print("[WARN] Moins d'offres que prévu, on arrête cette page.")
-                        break
-
-                    offer_li = offer_elements[i]
-
-                    # Récupérer l'URL de l'offre (job_url) depuis le <a> interne
-                    job_url = ""
-                    try:
-                        link_el_for_url = offer_li.find_element(By.CSS_SELECTOR, "a")
-                        job_url = link_el_for_url.get_attribute("href") or ""
-                    except Exception:
-                        pass
-
-                    # Scroll sur l'offre
-                    driver.execute_script(
-                        "arguments[0].scrollIntoView({block: 'center'});", offer_li
-                    )
-                    human_sleep(0.8, 1.5)
-
-                    # Clic sur le <a> interne plutôt que sur <li> pour éviter element not interactable
-                    try:
-                        link_el = offer_li.find_element(By.CSS_SELECTOR, "a")
-                        driver.execute_script("arguments[0].click();", link_el)
-                    except Exception as e:
-                        print(f"[WARN] Impossible de cliquer sur l'offre {i+1} : {e}")
-                        continue
-
-                    # Attendre la right pane
-                    try:
-                        wait.until(
-                            EC.presence_of_element_located(
-                                (
-                                    By.CSS_SELECTOR,
-                                    "div.jobsearch-RightPane.css-6iabie.eu4oa1w0",
-                                )
-                            )
-                        )
-                    except Exception:
-                        print("[WARN] Right pane non trouvée, on passe à l'offre suivante.")
-                        continue
-
-                    human_sleep(1.5, 3.0)
-
-                    # ==============================
-                    #   Extraction des informations
-                    # ==============================
+                    # ----- Extraction des informations -----
 
                     # Title
-                    try:
-                        title = driver.find_element(
-                            By.CSS_SELECTOR,
-                            "div.jobsearch-JobInfoHeader-title-container",
-                        ).text
-                    except Exception:
-                        title = ""
+                    title = ""
+                    for css in [
+                        "h1.jobsearch-JobInfoHeader-title",
+                        "div.jobsearch-JobInfoHeader-title-container",
+                    ]:
+                        try:
+                            title = driver.find_element(By.CSS_SELECTOR, css).text
+                            if title:
+                                break
+                        except Exception:
+                            continue
 
                     # Company
-                    try:
-                        company = driver.find_element(
-                            By.CSS_SELECTOR,
-                            "span.css-qcqa6h.e1wnkr790",
-                        ).text
-                    except Exception:
-                        company = ""
+                    company = ""
+                    for css in [
+                        "span.css-qcqa6h.e1wnkr790",
+                        "div.jobsearch-CompanyInfoWithoutHeaderImage div",
+                    ]:
+                        try:
+                            company = driver.find_element(By.CSS_SELECTOR, css).text
+                            if company:
+                                break
+                        except Exception:
+                            continue
 
                     # Location
-                    try:
-                        location_text = driver.find_element(
-                            By.CSS_SELECTOR,
-                            "div#jobLocationText",
-                        ).text
-                    except Exception:
-                        location_text = ""
+                    location_text = ""
+                    for css in [
+                        "div#jobLocationText",
+                        "div.jobsearch-CompanyInfoWithoutHeaderImage + div",
+                    ]:
+                        try:
+                            location_text = driver.find_element(By.CSS_SELECTOR, css).text
+                            if location_text:
+                                break
+                        except Exception:
+                            continue
 
                     # Description
                     try:
                         description = driver.find_element(
-                            By.CSS_SELECTOR,
-                            "div#jobDescriptionText",
+                            By.CSS_SELECTOR, "div#jobDescriptionText"
                         ).text
                     except Exception:
                         description = ""
 
-                    # Lien de postulation (apply_url) - best effort
+                    # Lien de postulation
                     apply_url = ""
                     for css in [
                         "button[aria-label*='Continuer pour postuler']",
@@ -246,26 +322,36 @@ def scrape_indeed_offers(
                         "location": location_text,
                         "description": description,
                         "job_url": job_url,
-                        "apply_url": apply_url,  # parfois vide si login / flux interne
+                        "apply_url": apply_url,
                         "extract_date": datetime.now().strftime("%Y-%m-%d"),
                     }
 
                     all_offers.append(offer_data)
                     offers_for_kw += 1
+                    new_offers_in_page += 1
+
                     print(f"[INFO] Offre extraite pour '{kw}'. Total pour ce mot-clé : {offers_for_kw}")
-                    human_sleep(1.0, 2.0)
 
-                # fin boucle offres page
-
-                # Si limite d'offres atteinte, on sort du while
+                # Fin boucle offres de la page
                 if max_offers_per_kw is not None and offers_for_kw >= max_offers_per_kw:
+                    print(f"[INFO] Limite d'offres atteinte pour '{kw}', on n'avance plus dans les pages.")
                     break
 
-                page += 1  # page suivante
+                if max_pages_per_kw is not None and current_page >= max_pages_per_kw:
+                    print(f"[INFO] max_pages_per_kw={max_pages_per_kw} atteint pour '{kw}'.")
+                    break
 
-        # =========================
-        #  SAUVEGARDE JSON
-        # =========================
+                if new_offers_in_page == 0:
+                    print("[INFO] Aucune nouvelle offre sur cette page, arrêt de la pagination pour ce mot-clé.")
+                    break
+
+                # 3) Cliquer sur la page suivante
+                has_next = click_next_page(driver, wait, current_page)
+                if not has_next:
+                    break
+                current_page += 1
+
+        # ---------- Sauvegarde JSON ----------
         with open(output_json, "w", encoding="utf-8") as f:
             json.dump(all_offers, f, ensure_ascii=False, indent=2)
 
@@ -286,12 +372,8 @@ def scrape_indeed_offers(
 
 if __name__ == "__main__":
     keywords = [
-        "stage data",
         "stage data science",
-        "stage intelligence artificielle",
-        "data scientist",
-        "data analyst",
-        "machine learning engineer",
+        "stage machine learning",
         "AI engineer",
     ]
 
@@ -299,6 +381,6 @@ if __name__ == "__main__":
         keywords=keywords,
         location="Maroc",
         output_json="indeed_stages_data_ia.json",
-        max_offers_per_kw=None,   # ou par ex. 50 pour limiter par mot-clé
-        max_pages_per_kw=5,       # nombre max de pages par mot-clé
+        max_offers_per_kw=None,   # ex: 50 si tu veux limiter par mot-clé
+        max_pages_per_kw=None,    # ex: 3 pour ne pas dépasser 3 pages par mot-clé
     )
