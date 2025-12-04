@@ -32,7 +32,7 @@ Authorization: Bearer <jwt_token>
 {
   "email": "user@example.com",
   "password": "SecurePassword123",
-  "full_name": "John Doe"
+  "name": "John Doe"
 }
 ```
 
@@ -44,7 +44,7 @@ Authorization: Bearer <jwt_token>
   "user": {
     "id": "123e4567-e89b-12d3-a456-426614174000",
     "email": "user@example.com",
-    "full_name": "John Doe",
+    "name": "John Doe",
     "phone": null,
     "location": null,
     "bio": null,
@@ -82,7 +82,7 @@ Authorization: Bearer <jwt_token>
   "user": {
     "id": "123e4567-e89b-12d3-a456-426614174000",
     "email": "user@example.com",
-    "full_name": "John Doe",
+    "name": "John Doe",
     "phone": "+1234567890",
     "location": "San Francisco, CA",
     "bio": "Software engineer",
@@ -137,7 +137,7 @@ Authorization: Bearer <jwt_token>
 {
   "id": "123e4567-e89b-12d3-a456-426614174000",
   "email": "user@example.com",
-  "full_name": "John Doe",
+  "name": "John Doe",
   "phone": "+1234567890",
   "location": "San Francisco, CA",
   "bio": "Software engineer with 5 years experience",
@@ -167,7 +167,7 @@ Authorization: Bearer <jwt_token>
 {
   "id": "123e4567-e89b-12d3-a456-426614174000",
   "email": "user@example.com",
-  "full_name": "John Doe",
+  "name": "John Doe",
   "phone": "+1234567890",
   "location": "San Francisco, CA",
   "bio": "Software engineer with 5 years experience",
@@ -198,7 +198,7 @@ Authorization: Bearer <jwt_token>
 **Request Body:**
 ```json
 {
-  "full_name": "John Doe",
+  "name": "John Doe",
   "phone": "+1234567890",
   "location": "San Francisco, CA",
   "bio": "Senior software engineer with 5 years experience"
@@ -210,7 +210,7 @@ Authorization: Bearer <jwt_token>
 {
   "id": "123e4567-e89b-12d3-a456-426614174000",
   "email": "user@example.com",
-  "full_name": "John Doe",
+  "name": "John Doe",
   "phone": "+1234567890",
   "location": "San Francisco, CA",
   "bio": "Senior software engineer with 5 years experience",
@@ -565,7 +565,7 @@ curl -X POST http://localhost:8000/auth/register \
   -d '{
     "email": "user@example.com",
     "password": "SecurePassword123",
-    "full_name": "John Doe"
+    "name": "John Doe"
   }'
 ```
 

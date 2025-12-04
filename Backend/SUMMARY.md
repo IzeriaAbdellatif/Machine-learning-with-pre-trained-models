@@ -185,7 +185,7 @@ curl -X POST http://localhost:8000/auth/register \
   -d '{
     "email": "user@example.com",
     "password": "SecurePass123",
-    "full_name": "John Doe"
+    "name": "John Doe"
   }'
 # Returns: {"access_token": "...", "token_type": "bearer", "user": {...}}
 

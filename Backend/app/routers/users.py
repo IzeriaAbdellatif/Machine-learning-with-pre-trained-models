@@ -54,7 +54,7 @@ async def update_user(
     Only the authenticated user can update their own profile.
     
     - **user_id**: The unique identifier of the user
-    - **full_name**: Updated full name (optional)
+    - **name**: Updated full name (optional)
     - **phone**: Updated phone number (optional)
     - **location**: Updated location (optional)
     - **bio**: Updated bio/summary (optional)
