@@ -1,0 +1,3248 @@
+[
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=402984caab7a2b99&bb=-DYsGAxr8G7XZUs76IB1d7ot3GTbb7JiyX8GHY7FUlDyE3gFWMzSgNP9drZgNmj5K5z1N46CiVi3XYtAxlObwoVtTgWmJz_VQu95MfzZ4TZJYZoRoSFzfzLzuuk1GB_bo5ZLOqyThk-Miv0B56YR_A%3D%3D&xkcb=SoDq67M3qmR1rST4kZ0LbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Stage PFE : IA / NLP — Fine-Tuning à partir de PDFs",
+    "company": "Koding Schools",
+    "location": "Remote",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=20cdaba4e8848cbe&bb=-DYsGAxr8G7XZUs76IB1d7ot3GTbb7JiaTpZ6SzJy68cdIsYMvuoB7OvzUlwpViojVN7P_vmgZbBU1lp_uAUnME0c7VjrDb_3aT93qNvurJUkAHymQ3ARhy4LNhmUCb_KAkMCaN-Mm7IAFb75mwL871RFTTInER_&xkcb=SoBe67M3qmR1rST4kZ0KbzkdCdPP&fccid=39d680ec11bc46bf&cmp=Koding-Schools&ti=Stage+Pfe+%3A+Ia+%2F+Nlp+%E2%80%94+Fine-tuning+%C3%80+Partir+De+Pdfs&vjs=3",
+    "job_category": "Data Science / Intelligence Artificielle",
+    "seniority": "Stage",
+    "required_skills": [
+      "Python",
+      "Traitement du langage naturel (NLP)",
+      "Extraction de données",
+      "Fine-tuning de modèles LLM",
+      "API REST",
+      "WordPress",
+      "Git / GitHub"
+    ],
+    "nice_to_have_skills": [
+      "Connaissance des workflows NLP",
+      "Notions de sécurité & optimisation",
+      "Utilisation de plateformes d'entraînement (Colab, AWS, HF Spaces)",
+      "Intégration web (Elementor, LearnDash)"
+    ],
+    "remote_type": "Remote",
+    "contract_type": "Stage — 3 à 6 mois"
+  },
+  {
+    "title": "Offres de Stages PFE 2025",
+    "company": "Société Centrale de Réassurance",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=843ecb495d6c416a&bb=-DYsGAxr8G7XZUs76IB1d7ot3GTbb7Jie7AIo6NwCE-l4hse8QdqI1nw1ShNfarVl7nYC4tGQAok_7Tm_jJAAUyzjRtAMgKzfSF9MkgWAjtNHM7qkZp7R_fQfQivOyZRGUPGlBwmWMAXiRRWCmr_7gmNHaFblOS&xkcb=SoDD67M3qmR1rST4kZ0JbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3",
+    "job_category": "Stage",
+    "seniority": "Etudiant en fin de cycle",
+    "required_skills": [
+      "Esprit créatif",
+      "Réactivité",
+      "Organisation",
+      "Aptitudes analytiques",
+      "Excellentes compétences en communication"
+    ],
+    "nice_to_have_skills": [
+      "Innovation",
+      "Autonomie"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data Scientist / Ingénieur IA Confirmé (3 à 6 ans d’expérience)",
+    "company": "AdmitEase",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8f7e8b618ce2f864&bb=-DYsGAxr8G7XZUs76IB1d9Jdt-GJicUDwMuh8TZQuy2Q0YVKmQK50LVKsPwAg5E8w9ec8t7iAzoI-Es_FLlD4ninc04OjqlN7NlC64yUSO0enkcT7IoiiZ-PJkLvyxPbmjGJOfAFU_xN6YfiEHLIH-19K8MRAdHl&xkcb=SoB367M3qmR1rST4kZ0IbzkdCdPP&fccid=85205e3b730b299a&cmp=AdmitEase&ti=Data+Scientist&vjs=3",
+    "job_category": "Data Science, Intelligence Artificielle",
+    "seniority": "Confirmé (3 à 6 ans d’expérience)",
+    "required_skills": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "TensorFlow",
+      "PyTorch",
+      "bases de données (SQL / NoSQL)",
+      "déploiement de modèles (API, Docker, cloud)"
+    ],
+    "nice_to_have_skills": [
+      "Machine Learning",
+      "Deep Learning",
+      "NLP",
+      "Computer Vision"
+    ],
+    "remote_type": "remote",
+    "contract_type": "CDI, CDD ou mission freelance"
+  },
+  {
+    "title": "Offre de Stage – Développeur en Intelligence Artificielle (IA)",
+    "company": "AI HUB",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=9ee11eddef435923&bb=-DYsGAxr8G7XZUs76IB1d12qh8q1nGt7rWSG6qqYFE-KgDTZRUqpWxp2Y_IOKPATBMkHQQMQTXy_W2LgbLIVdqlKzys0edpl0wIeXKEb6ky83c-L6x6kpHTxIHAZBMrn_laFAYPEWEQD4g92sbmlrEVgVMH9034_&xkcb=SoD567M3qmR1rST4kZ0PbzkdCdPP&fccid=e29cad4ea4d93ed1&cmp=AI-Hub&ti=Stage+D%C3%A9veloppeur&vjs=3",
+    "job_category": "Développement",
+    "seniority": "Junior",
+    "required_skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Machine Learning",
+      "Data Science"
+    ],
+    "nice_to_have_skills": [
+      "Esprit analytique",
+      "Rigoureux",
+      "Curieux"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Opportunité de Stage – Développeur Full Stack & IA – Rémunéré",
+    "company": "Smilycall",
+    "location": "Marrakech",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=70e4b9d83132dada&bb=-DYsGAxr8G7XZUs76IB1dzR2AVwLZthnttMh7UnlABaZt32Hg7FfXu3kjIipkOHt7hgDJ65HKBTzEWKFRTYu9S8eNcoiH2SCORYQ0GajqENrL3ROftWXbhHed7bm3YDose8waLv0Au6znF98lGZDBQLOxIfv5f7_&xkcb=SoBN67M3qmR1rST4kZ0ObzkdCdPP&fccid=e7fba0f396b07df8&cmp=Smilycall&ti=D%C3%A9veloppeur+Full+Stack&vjs=3",
+    "job_category": "Développeur Full Stack & IA",
+    "seniority": "Stage",
+    "required_skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Svelte",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Node.js",
+      "Python",
+      "APIs REST",
+      "Bases de données (MySQL, PostgreSQL, MongoDB)",
+      "Python (TensorFlow, PyTorch, scikit-learn)",
+      "APIs IA (OpenAI, Google Cloud AI)",
+      "Automatisation (n8n)",
+      "NLP (Natural Language Processing)"
+    ],
+    "nice_to_have_skills": [
+      "Ingénieur ou Master en Informatique / Génie Logiciel / Data Science (Bac+5)",
+      "Maîtrise du développement Full Stack (Front-end + Back-end)",
+      "Notions solides en Intelligence Artificielle et Machine Learning",
+      "Passionné(e) par l'automatisation, les API et l'innovation technologique",
+      "Capable de transformer un besoin métier en solution technique élégante",
+      "Esprit analytique, créatif et orienté résolution de problèmes",
+      "Autonome, rigoureux(se) et avide d'apprendre"
+    ],
+    "remote_type": "hybrid",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Stage pré-embauche Data Engineer (GCP & Terraform) – 3 mois",
+    "company": "Metaverse",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=5eae3dc9219a7a1b&bb=-DYsGAxr8G7XZUs76IB1d1sc3MvG83AQiWRSPZO1L8-p_nVg-C9avu_PAgd7_vPaZ4iNe8bqYNGewuIqjXc3ZT7msXkfTurn2GgMgG59VdLGQ7kHMi_tWjzS-Rrfp38dsuskWn4k6Lxa8vjie4jpWkZTyszED-Qm&xkcb=SoDQ67M3qmR1rST4kZ0NbzkdCdPP&fccid=941c1eb24f109b88&cmp=Metaverse&ti=Data+Scientist&vjs=3",
+    "job_category": "Data",
+    "seniority": "Junior",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Google Cloud Platform (GCP)",
+      "AWS",
+      "Apache Spark",
+      "Terraform"
+    ],
+    "nice_to_have_skills": [
+      "Science des données",
+      "Processus ETL",
+      "NLP",
+      "Machine Learning"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Stage PFE – Développeur IA (Web & Mobile)",
+    "company": "MAJJANE AGENCY",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=fa473351d6af93eb&bb=-DYsGAxr8G7XZUs76IB1dzt8qN46omjxPoFVbgXLwiYAaWtGATL00RS10qPCMRvmhqK02wIyOvdQ8som4ze7SINlBhzNJRlvl9l0s5cSXZPSdgDD5zB0Cyd2YjQSc8wss3brRCIHgnFj0iPctXJF8nv947I7gzWH&xkcb=SoBk67M3qmR1rST4kZ0MbzkdCdPP&fccid=d7fe37abf462aefd&cmp=MAJJANE-AGENCY&ti=Stagiaire+D%C3%A9veloppeur+Web&vjs=3",
+    "job_category": "Développement Web & Mobile",
+    "seniority": "Stage (Bac+5)",
+    "required_skills": [
+      "Développement web (PHP / Laravel, JavaScript, React, Node.js)",
+      "Développement mobile (Flutter, Kotlin, Swift)",
+      "Intelligence Artificielle (IA)",
+      "Automatisation",
+      "Python",
+      "Machine Learning",
+      "Intégration d'API IA",
+      "API REST",
+      "Architectures front/back",
+      "Flux CI/CD"
+    ],
+    "nice_to_have_skills": [
+      "Connaissances des API d'intelligence artificielle (OpenAI, Google Cloud AI, Hugging Face, etc.)"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Stage ingénieur",
+    "company": "Acti-Sens",
+    "location": "Kénitra",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=7e5a35f5fddaf957&bb=-DYsGAxr8G7XZUs76IB1d7ykLkNlM0yWrkH-RM6JfzRTmE9qsjM5cM6M_2EXlniRT9mDQngl20EMfF_OUjcKrE4s_lHEvJ3eSes23hHCkrZ3IRTQDDS_EOoAQnQJN7x_HAY_uELTi9s8K3-WXmU99J6vtr3IW0wh&xkcb=SoCN67M3qmR1rST4kZ0DbzkdCdPP&fccid=2cc2f834b0d5fed9&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Stage",
+    "required_skills": [
+      "Python",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "pytorch",
+      "tensorflow",
+      "traitement de signaux EEG/NIRS",
+      "capteurs physiologiques",
+      "outils collaboratifs",
+      "GitHub",
+      "ClickUp",
+      "Notion"
+    ],
+    "nice_to_have_skills": [
+      "EEG/NIRS",
+      "capteurs physiologiques",
+      "interfaces cerveau-ordinateur",
+      "approches explicables en IA"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Stage/PFE Ingénieur IA & Automatisation – NLP & optimisation pour un SaaS",
+    "company": "PIONOVAAI",
+    "location": "Maroc",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=4cffc02e663f7c43&bb=-DYsGAxr8G7XZUs76IB1d2js4ju5gAOsefiH9WAVwvi_AJR1--MyUtWmY8gek79fef_a8io0LQ4ZsTcwKb1BUEh1mdZsEq8_TpdiUOO5oqdGzh4wqA3Ga31Cd_otdRS00OMVZRMsDqP5mVGZEVcXER4C9B8GW858&xkcb=SoA567M3qmR1rST4kZ0CbzkdCdPP&fccid=ebb2b7acb20f2f19&vjs=3",
+    "job_category": "Ingénieur IA & Automatisation",
+    "seniority": "Stage",
+    "required_skills": [
+      "Python",
+      "NLP",
+      "ML"
+    ],
+    "nice_to_have_skills": [
+      "projets personnels en IA ou optimisation"
+    ],
+    "remote_type": "remote",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Stagiaire Datalab",
+    "company": "COFACE",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=93d147db4744809a&bb=-DYsGAxr8G7XZUs76IB1dwJ2yP-9FJtBwOu7nx9oJb6DIUMd5TIq139oEYS65Wg169dXLIJnroHJ5Jh1pRzdV22suznHKiGJVmeCnAT6W6yxiBDZc8vG1wICBBHtfRC1ApCDfPtYtl_k_YB4DqTD3pOFtjOqe6V9&xkcb=SoCk67M3qmR1rST4kZ0BbzkdCdPP&fccid=75f93e975afa917b&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Stagiaire",
+    "required_skills": [
+      "Python",
+      "Machine Learning",
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Linux",
+      "Git",
+      "SQL",
+      "Bases NoSQL"
+    ],
+    "nice_to_have_skills": [
+      "Utilisation de Docker/Kubernetes",
+      "Déploiement dans le cloud",
+      "Chaîne CI/CD"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=402984caab7a2b99&bb=UQbhunISL5YKJKXT36tvgGkY6o7McK__qYFIqEJb5zmQzIeuZdMJSKPAZBQe4yrJgUe0k6pU-41_D08VcsoGGvbXsLLJchUerJZpom9tmLDWfwiZ7KBX2Lqp7iE92tFRj2U2kaI-O6jBoHHlzV2nLA%3D%3D&xkcb=SoCS67M3qmSIxETCyh0KbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Stage PFE : IA / NLP — Fine-Tuning à partir de PDFs",
+    "company": "Koding Schools",
+    "location": "Remote",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=20cdaba4e8848cbe&bb=UQbhunISL5YKJKXT36tvgGkY6o7McK__MAex0OPsa5HbalSGeFTA71uB7-neeOHKuTuvyS52PN1uS6tVd4jG1thlFJatvn-syH6DuOZvlGSR3kw47y8te4YtG5sCJK5y0baN3h6OnOV0Vznn6NuWBTUu7-R9nGFO&xkcb=SoAP67M3qmSIxETCyh0JbzkdCdPP&fccid=39d680ec11bc46bf&cmp=Koding-Schools&ti=Stage+Pfe+%3A+Ia+%2F+Nlp+%E2%80%94+Fine-tuning+%C3%80+Partir+De+Pdfs&vjs=3",
+    "job_category": "Stage",
+    "seniority": "Junior",
+    "required_skills": [
+      "Python",
+      "NLP",
+      "Transformers",
+      "HuggingFace",
+      "WordPress",
+      "PHP",
+      "JSON",
+      "GitHub",
+      "LearnDash",
+      "WPML"
+    ],
+    "nice_to_have_skills": [
+      "API REST",
+      "Git",
+      "Colab",
+      "AWS",
+      "HF Spaces"
+    ],
+    "remote_type": "remote",
+    "contract_type": "Stage — 3 à 6 mois"
+  },
+  {
+    "title": "Data Scientist / Ingénieur IA Confirmé (3 à 6 ans d’expérience)",
+    "company": "AdmitEase",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8f7e8b618ce2f864&bb=UQbhunISL5YKJKXT36tvgDc175lcIupiP0bEKA8MP2HlTeRHcizYrvelamlwpLEh61BLd1JnhzMhXKbnw7PNE90EhVxxbADwk-8Qnvcaxf3gEWmnl65upy-w34M96AXaS1WyChzLj2_jWu7iRA-AoOqvGRcshOHX&xkcb=SoC767M3qmSIxETCyh0IbzkdCdPP&fccid=85205e3b730b299a&cmp=AdmitEase&ti=Data+Scientist&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Confirmé (3 à 6 ans d’expérience)",
+    "required_skills": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "TensorFlow",
+      "PyTorch",
+      "SQL",
+      "NoSQL",
+      "API",
+      "Docker",
+      "Cloud"
+    ],
+    "nice_to_have_skills": [
+      "Bases de données",
+      "Déploiement de modèles",
+      "Vulgarisation des résultats",
+      "Autonomie",
+      "Esprit analytique",
+      "Rigueur",
+      "Travail collaboratif à distance"
+    ],
+    "remote_type": "remote",
+    "contract_type": "CDI, CDD ou mission freelance"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=402984caab7a2b99&bb=Mzlnlq9DvUBEyp-89wdRq5jQLQ6zmPF-GaVUQtUM8hPfleAcIl3nRA9zCaaHu9brjlC49TkKKK46JnQSsicKFYQmE4VKygsvGlbVQET1q2jh3dpPjtAO7UtbFqRXnS7D8H6cWXdvsEDO8uBBWCJk-A%3D%3D&xkcb=SoCr67M3qmSBV6TDd50LbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Gestion de projets data"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Stage PFE : IA / NLP — Fine-Tuning à partir de PDFs",
+    "company": "Koding Schools",
+    "location": "Remote",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=20cdaba4e8848cbe&bb=Mzlnlq9DvUBEyp-89wdRq5jQLQ6zmPF-3kC0pCor8e0VRLsiCsX14606KYayWLbT2YmsBR3Muet2hNJS1i0kyZG0vBwQ-dvL0anmGwzOxhhEI_vVvgjo2QqhU31KJ5eAosCBCdZmSnjCzL4KIB6ly0Ajz2PtMkpM&xkcb=SoAf67M3qmSBV6TDd50KbzkdCdPP&fccid=39d680ec11bc46bf&cmp=Koding-Schools&ti=Stage+Pfe+%3A+Ia+%2F+Nlp+%E2%80%94+Fine-tuning+%C3%80+Partir+De+Pdfs&vjs=3",
+    "job_category": "Stage",
+    "seniority": "Junior",
+    "required_skills": [
+      "Python",
+      "NLP",
+      "Transformers",
+      "HuggingFace",
+      "WordPress",
+      "PHP",
+      "API REST",
+      "Git",
+      "GitHub",
+      "LearnDash",
+      "WPML"
+    ],
+    "nice_to_have_skills": [
+      "PyMuPDF",
+      "pdfplumber",
+      "PDFMiner",
+      "Deepseek",
+      "Mistral",
+      "Phi",
+      "Falcon",
+      "Elementor"
+    ],
+    "remote_type": "remote",
+    "contract_type": "Stage — 3 à 6 mois"
+  },
+  {
+    "title": "Data Scientist / Ingénieur IA Confirmé (3 à 6 ans d’expérience) – 100 % Remote",
+    "company": "AdmitEase",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8f7e8b618ce2f864&bb=Mzlnlq9DvUBEyp-89wdRqz6BRXj-OXm1dP3WuvNqLoObb9jnloATKqTuLDteOcmuwxdyLUnW5zfZXW2W-5ogFQVjI0E9jKeV2TGbzB_oTKLCgPZZEo7zS_UnYvpy9JITg7pFnOw1ZCg8fQgM-IGns8JCIsR-g9Q0&xkcb=SoCC67M3qmSBV6TDd50JbzkdCdPP&fccid=85205e3b730b299a&cmp=AdmitEase&ti=Data+Scientist&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Confirmé (3 à 6 ans d’expérience)",
+    "required_skills": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "TensorFlow",
+      "PyTorch",
+      "bases de données (SQL / NoSQL)",
+      "déploiement de modèles (API, Docker, cloud, etc.)"
+    ],
+    "nice_to_have_skills": [
+      "Machine Learning",
+      "Intelligence Artificielle",
+      "Automatisation",
+      "NLP",
+      "Computer Vision"
+    ],
+    "remote_type": "remote",
+    "contract_type": "CDI, CDD ou mission freelance"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=402984caab7a2b99&bb=tQd8K45hEtJl-mjE2gdumqVGCUW2pdiURY1wW6m7IsR0TcgC8DEbFlK4eGc18Bel-CxdHxshlnm6P6fSafSg24vYHfkYjFyl6OSJaflRAmZceu0nADMi6yNM9bDIMFutKUAUsVpaiG-o-v2tPuDfXg%3D%3D&xkcb=SoD167M3qmSaY_zCzZ0LbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Gestion de projets data"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=20cdaba4e8848cbe&bb=tQd8K45hEtJl-mjE2gdumqVGCUW2pdiUSuJwUC-v7NuHwv93r7hrBqDeEGQ1A823oQshXMcBfNltzhtUjATnayDZ5lGpodrBd-FSpgvZI-2z8LR3BAB0NPQgttaXMoVMVQDbolBoOjto15wTj4HfoHzMfJaAciD3&xkcb=SoBB67M3qmSaY_zCzZ0KbzkdCdPP&fccid=39d680ec11bc46bf&cmp=Koding-Schools&ti=Stage+Pfe+%3A+Ia+%2F+Nlp+%E2%80%94+Fine-tuning+%C3%80+Partir+De+Pdfs&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Développement de solutions AI",
+      "Gestion de la data BOM"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8f7e8b618ce2f864&bb=tQd8K45hEtJl-mjE2gdums1m_taYWKdY-q-25NY2U1DqTm3p94swWWcuGuZC1B4hd0jOJK_u33GjYgF2MWCEHdjDNSq1r77ty-i6t2LPwHtk1nP0PSTMSib5KQ9q9-EFOFBdcotEJPNxyIvH05yuJ9Olkh5TSmRp&xkcb=SoDc67M3qmSaY_zCzZ0JbzkdCdPP&fccid=85205e3b730b299a&cmp=AdmitEase&ti=Data+Scientist&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Maintenance et performance"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/viewjob?jk=0f1e2d3c4b5a6978",
+    "job_category": "Data Science",
+    "seniority": "Stage",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Gestion de projet"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=843ecb495d6c416a&bb=tQd8K45hEtJl-mjE2gdumqVGCUW2pdiUCgA6Hon8GEyoIH_PPU9VY8YVfTLHpcZK1ocCRSsT4qv55GwKMIXhhcbV0x4ixqgpS76ysgKLFQuJZyv-8ZG90LykC-mLe5l363_PeYQLs5o_QorakLYYDqaO6QbMq5eE&xkcb=SoBo67M3qmSaY_zCzZ0IbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=9ee11eddef435923&bb=tQd8K45hEtJl-mjE2gdumuFNxJi6WLETTMT7mUX9W7LZmY1BURcIAcrnESCA2Z49JUMG6C3aC7Ss0HlOD6J3QN7BW7Tz3MzWg0loSWUfiTvCbMBow01MH-x-ygoSJv3uD0mfz8VaoI2437kUc5sOAFUHQLO7W1dR&xkcb=SoDm67M3qmSaY_zCzZ0PbzkdCdPP&fccid=e29cad4ea4d93ed1&cmp=AI-Hub&ti=Stage+D%C3%A9veloppeur&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=70e4b9d83132dada&bb=tQd8K45hEtJl-mjE2gdumh2SOLFaiywQuJ9BW6ohwvkpDuTXSz7e-7ibqFYq8D4l3ho6E0fnnt_YPV4YLeyePM-7MSZ4do1Y6is1XifNAsqTOMP6ZRdZVk1casqAI3SnYw09Q_yXXKHFJFnoJLao1M9gAgpjSpQE&xkcb=SoBS67M3qmSaY_zCzZ0ObzkdCdPP&fccid=e7fba0f396b07df8&cmp=Smilycall&ti=D%C3%A9veloppeur+Full+Stack&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Data science",
+      "Ingénierie mécanique",
+      "Systèmes embarqués",
+      "Technologies des véhicules",
+      "Intelligence artificielle",
+      "Analyse de données"
+    ],
+    "nice_to_have_skills": [
+      "Communication écrite et orale",
+      "Autonomie",
+      "Rigueur",
+      "Sens de l'organisation"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=5eae3dc9219a7a1b&bb=tQd8K45hEtJl-mjE2gdumpRIzjwrJXEfE_2L_0Zj7G-C5TtRLyaQ9x4hkGL8VnHJ_SrmxXrtiBqOT7wqv1BjJnAM6JnBAzdV--rn_pGFY_4THsNrM-HJ9q0UZmAg-989VVbTtPWrOdunPPsy8M0OgTFdwBfglzK4&xkcb=SoDP67M3qmSaY_zCzZ0NbzkdCdPP&fccid=941c1eb24f109b88&cmp=Metaverse&ti=Data+Scientist&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Maintenance et performance"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=fa473351d6af93eb&bb=tQd8K45hEtJl-mjE2gdumtQdt9h45D0cr7lo4homRhmHi8A04qRKB4Rp8MMhBYY6RkS4-bnz0oVR3JL6IUoyNDWffuZm_G3QFSfhsOJeM0WBMdkD7CuPZTSS0xggC_rvm-5k4WhZjPNIM8LnB1L73GWCJv_tLsDy&xkcb=SoB767M3qmSaY_zCzZ0MbzkdCdPP&fccid=d7fe37abf462aefd&cmp=MAJJANE-AGENCY&ti=Stagiaire+D%C3%A9veloppeur+Web&vjs=3",
+    "job_category": "Data Science & Intelligence Artificielle",
+    "seniority": "Stagiaire",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Gestion de projet"
+    ],
+    "nice_to_have_skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Langages de programmation"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=7e5a35f5fddaf957&bb=tQd8K45hEtJl-mjE2gdummNU-PzE_P_UfLUs6M_Pq1VrgiK93lZYnBnOomngvVlxw8fms10r1nHbiXWBygtu5g0SvozOmZpj3vlVedn2de04OYXigmZYjUm2NA8ksD9f5lSv-Wm4iz_oSv3IZCpDsCoB92fmh1EX&xkcb=SoCS67M3qmSaY_zCzZ0DbzkdCdPP&fccid=2cc2f834b0d5fed9&vjs=3",
+    "job_category": "Data Science, Intelligence Artificielle",
+    "seniority": "Stagiaire",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=4cffc02e663f7c43&bb=tQd8K45hEtJl-mjE2gdumgA5zQ27BKGz1iZvJX_B5hyQzS02xHcS9nsrGQ4qCTizD2JTzW3yQE3xV6x-WxUleMu5v8SkDbVZcAMs40l6K8ByxSoxbzgVY8oArmf_Wvx1PdZuVZXyrZTm7tfukdF_q41_3X-CiTnE&xkcb=SoAm67M3qmSaY_zCzZ0CbzkdCdPP&fccid=ebb2b7acb20f2f19&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=93d147db4744809a&bb=tQd8K45hEtJl-mjE2gdumoNnXDxSSYJ5eLKfW7EixHYpqEsFJfYtuRh22QNaec5dLwiSf9bwaV2FwXMKBA7yOEIX9kdtrRgimh743524PLD25_K9hvAf9jpvCeI1rXZJzqZD_gZYJ_dzHgL2NP452KetG8c3aHO1&xkcb=SoC767M3qmSaY_zCzZ0BbzkdCdPP&fccid=75f93e975afa917b&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=22c74ee34feb5d65&bb=tQd8K45hEtJl-mjE2gdumuhNrFCS2JVnlUKygkZReYiHSdLCG6DwZ060rPCmuHcG4C50i7aDkEjeWNGdPne5AWyBYMNeYONNFR0HZpVXHlxe7cmU7TWV-2j6X0FsOJkhROJ2W1vkFnbGEnz3cdQWzMRJNBv4OA7H&xkcb=SoAP67M3qmSaY_zCzZ0AbzkdCdPP&fccid=8f5cb52d4dd4f2ad&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=abafc0ec741d2ab0&bb=tQd8K45hEtJl-mjE2gdumshwfwGVb0Uv_nJTiKZoSqPLYj4d8Ha_LknXP57mb7GwhO6x2zkiRjRftDZMYO11LmSDv1pFAF7I-kjkkID3YneBfhIUA3DUniKHNeVEMSJEZ4vtg67yi1IKXJ8bLIy0eBRPFOhZDm5M&xkcb=SoCB67M3qmSaY_zCzZ0HbzkdCdPP&fccid=d87a03e3623e180d&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=4f36dd228eae80af&bb=tQd8K45hEtJl-mjE2gdumo9slcd88-jlIhVhKQnJs-Ulhld7ROFiYPPaJzRLGcOScv6T112x48wrkn5iQOePuWvr_oUymv9wrnlmmcXETbsIL-R6oww-blIjOZeL-adpY9N-_-ryUJ3YsirwigoJU1AXBsFIosSA&xkcb=SoA167M3qmSaY_zCzZ0GbzkdCdPP&fccid=c1f750eaef1d79c4&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Gestion de projet"
+    ],
+    "nice_to_have_skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Langages de programmation"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=050a0f284c1b4a5e&bb=tQd8K45hEtJl-mjE2gdumhREcfskrIv8_Ta5ypSOv5LbFuAnw4THtDJlFMB2PhsvwHlL0HI-t4i4Nd74rqQhYsm5-AYuzTrbB8Jbb5tjmOiTwhWnjBF06QNaGF7n1AamLJ3l72jO_vCXQhMJhGhtGOX6G3cLclRL&xkcb=SoCo67M3qmSaY_zCzZ0FbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Développement de solutions AI",
+      "Gestion de la data BOM"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=402984caab7a2b99&bb=cWY54n2hRH0w2o4KKTT-5HtDjsfePAvRjHkxkFStIpFmwd3JVuwLeXIUwwTFkt3qpU0-9-eXfrQoqgqbQ8dgdCPUS8xNkpk87iSXDJnFbW2PiOuEfeWbqVP3KFT3ZVEbuHFu1N-PbCJzBLR3-bmgbQ%3D%3D&xkcb=SoD067M3qmSuPDTCGp0LbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Gestion de projet"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=20cdaba4e8848cbe&bb=cWY54n2hRH0w2o4KKTT-5HtDjsfePAvR1_6AEnoweaSs_d4MdqgNADZQVTaT7wDvl2UboBhStSkseCYM_SEVWG6Zyz3V5OPtZYRG5GqHWKg7sLZsVkrmUxy1zOR8eZtpzWkp9_fOz1mQxQPTjCzZkVPaiSpYWXN9&xkcb=SoBA67M3qmSuPDTCGp0KbzkdCdPP&fccid=39d680ec11bc46bf&cmp=Koding-Schools&ti=Stage+Pfe+%3A+Ia+%2F+Nlp+%E2%80%94+Fine-tuning+%C3%80+Partir+De+Pdfs&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Maintenance et performance"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8f7e8b618ce2f864&bb=cWY54n2hRH0w2o4KKTT-5LSocDPR-Xq-d0lVw2PDgNlV_sS8OliHTgqvikM7oofpJtXmi3S53nCJedl8twt61qoH7BmfO6YKh-G_iUPxNkFSmoXrEJttKM5YcTc2MaR3qf7mWGO8LcjbOZvxGeto9W6Li6ZQoqZn&xkcb=SoDd67M3qmSuPDTCGp0JbzkdCdPP&fccid=85205e3b730b299a&cmp=AdmitEase&ti=Data+Scientist&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Maintenance et performance"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/viewjob?jk=0f1e2d3c4b5a6978",
+    "job_category": "Data Science, Intelligence Artificielle",
+    "seniority": "Stagiaire",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Gestion de projets data"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=843ecb495d6c416a&bb=cWY54n2hRH0w2o4KKTT-5HtDjsfePAvRwAtZHJUknQ9chS89ChHDS3rw8IigEnjueJ1r3xOeoHWWlX7BULQEVv4FNUWlB5gnGDHhlkgCgwFGq-DfPkloSTESNIrBcslgTyyebRqZHEOSwiZyaDfY_ii-L78WH715&xkcb=SoBp67M3qmSuPDTCGp0IbzkdCdPP&fccid=dd616958bd9ddc12&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Gestion de projet data"
+    ],
+    "nice_to_have_skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Excel"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=9ee11eddef435923&bb=cWY54n2hRH0w2o4KKTT-5PWQSZaUg7YjYoVPyfguirtcxTjwVfC6myJlKJ2ASU98OiTK9uqoxN57119TwsrT232F4hXwLn6JtOHLOaUD9Qq_mEHuTKellP70LLxOZCF0IEIQ9HjRbytrkGdjTRJokH1IKu61VqBR&xkcb=SoDn67M3qmSuPDTCGp0PbzkdCdPP&fccid=e29cad4ea4d93ed1&cmp=AI-Hub&ti=Stage+D%C3%A9veloppeur&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=70e4b9d83132dada&bb=cWY54n2hRH0w2o4KKTT-5HSgmibm6cR37uXbUTCXPaYPO2DQv953RwFdmDML0v9ZpD-sSCiXgBs-mjc59HPNzwukWNDNBpLFVL5f3AQCI-O1Al8C3jGwTTpWVcRGtBytx0VhowVYg_AAPpFaX_1jxdBUT24q0QW-&xkcb=SoBT67M3qmSuPDTCGp0ObzkdCdPP&fccid=e7fba0f396b07df8&cmp=Smilycall&ti=D%C3%A9veloppeur+Full+Stack&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Développement de solutions AI",
+      "Gestion de la data BOM"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=5eae3dc9219a7a1b&bb=cWY54n2hRH0w2o4KKTT-5Na2MtjzwMqwF9Z9IJ-JURLopD5mvcGZ0EctGymeu13pIOi7sEqgkb3POrUSM1N_KKGyam8_aFXiTQB-_mP1keKBMX27eG1AVMr1n46bwwKysidYkYAjgoO45KYxV0ChM2lTki47bDhv&xkcb=SoDO67M3qmSuPDTCGp0NbzkdCdPP&fccid=941c1eb24f109b88&cmp=Metaverse&ti=Data+Scientist&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Gestion de projet"
+    ],
+    "nice_to_have_skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Machine learning"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=fa473351d6af93eb&bb=cWY54n2hRH0w2o4KKTT-5PBGzBTJXQOnbFSjCJXnp7MiXBZRwTt-f9rWsoV6799ObgfRDyVC-2fWhf2heKt_B_cLcyp9zFjONc6XvNpqhsyaLqwNiOjG3FcMmVnhT4o777JP8U32eREqHeDcCuOd27HvL24FWsGP&xkcb=SoB667M3qmSuPDTCGp0MbzkdCdPP&fccid=d7fe37abf462aefd&cmp=MAJJANE-AGENCY&ti=Stagiaire+D%C3%A9veloppeur+Web&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Maintenance et performance"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=7e5a35f5fd...",
+    "job_category": "Data Science",
+    "seniority": "Stagiaire",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Gestion de projet"
+    ],
+    "nice_to_have_skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Langage de programmation"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=4cffc02e663f7c43&bb=cWY54n2hRH0w2o4KKTT-5K9cJEgI19CQqPbxTIAQ6M81z40f6fnFYMsP1nK3bWlmAk4baE91ESYELaTENfoxhxcQn3NPx1EdwfVFp-EvCViFTeman7_k7vnCKKK1IfJr41tyoHaLlcXAn2lj8CHtXvsxPAW1yPrt&xkcb=SoAn67M3qmSuPDTCGp0CbzkdCdPP&fccid=ebb2b7acb20f2f19&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Développement de solutions AI",
+      "Gestion de la data BOM"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=93d147db4744809a&bb=cWY54n2hRH0w2o4KKTT-5KKyr6NVDyqY0M63oyZMsQT9XYaTplfkq4JOI-OBu0LehntPJslnoUn4PlYxIj0ohvirVev-kBfWxfby0j84efDyPMKAI0YljFblgMCKGJn7A6yyhQDOXm84dR4vysjGlhc_723yNUS_&xkcb=SoC667M3qmSuPDTCGp0BbzkdCdPP&fccid=75f93e975afa917b&vjs=3",
+    "job_category": "Data Science, Intelligence Artificielle",
+    "seniority": "Étudiant(e) en Master",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Maintenance et performance"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=22c74ee34feb5d65&bb=cWY54n2hRH0w2o4KKTT-5IUCS3SepJjaMGTLzmHlrt84uFXKTGIyh8x5kJNvTn-70E031KmMg8yaDV0sDndmWQ6hoMsbWqRov524nEWPhGCXo2XhYRH3y6VsRULUtMPzukprl_pxVNvmu-uaYFt_VJqiAw9yzXG9&xkcb=SoAO67M3qmSuPDTCGp0AbzkdCdPP&fccid=8f5cb52d4dd4f2ad&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=abafc0ec741d2ab0&bb=cWY54n2hRH0w2o4KKTT-5DnPtiuHbv9s2fc2p2DsksoAwZVtmIumV2EV5Etk5fF2dQGA1A0OYE2kSQuOFwBaNAmaqEYh1OcgCDFZBhy0dupCzBSSSoqrYY1OC88pFPiF4fF9KGJLGrubJlj0KMRmiPnvMjK0hhbP&xkcb=SoCA67M3qmSuPDTCGp0HbzkdCdPP&fccid=d87a03e3623e180d&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=4f36dd228eae80af&bb=cWY54n2hRH0w2o4KKTT-5Le1xG_vzp1L-Or--JSzk_Crs3Cdau4d8P9uv4BgU69Ykq_YrOEfkPWneC7PS9BFKfaGqc5b0hbNbxhGg4PPbtvu54NXQ2U9wYkn_YrQGrlAlH7dQd0ZYNOAAA7K44jOqfHRio2wIqGS&xkcb=SoA067M3qmSuPDTCGp0GbzkdCdPP&fccid=c1f750eaef1d79c4&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Data & AI-Internship Program",
+    "company": "Capgemini Engineering",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=050a0f284c1b4a5e&bb=cWY54n2hRH0w2o4KKTT-5DVdsu0hwlzD8yzmQxce0kWAG-IB4RTw5gqXTzkfPpTJqRUKHmB4Sr0NHzOSn3MyBqDI8UTOCKG5-J8eiB0PvMAos-F3h9ChU88I4Sl-21UpOFZ0WYIL8uq9Uj1nlp91wmPYMHCT-iY2&xkcb=SoCp67M3qmSuPDTCGp0FbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Junior",
+    "required_skills": [
+      "Analyse de données",
+      "Intelligence artificielle",
+      "Développement de modèles prédictifs",
+      "Maintenance et performance"
+    ],
+    "nice_to_have_skills": [
+      "Systèmes embarqués",
+      "Technologies des véhicules"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0AV8vU3o9nlw7wqa180ZkP3oAg17VLIhkP1SPyaIh_MQXrCaawu6WccWhKobpJ6ku0TQhCDr8yN7220t2jLNLD_a2tTqUaozXKnpKrUF8gANblq1JeaPixO40E9ZcYYkx06aqrW6ieY408DwtP4vheAUOVwJJuNip3YaVSRsnyenP5HqvjHb3cP7-FzzXqtpjYPKfoyAYYEOTwd4j8G3fjP6KBQK8b7_zlwH-BVYyjSJVlzRKK9j4A_ajFJVDq4hK5a0kS9HI2qNf_GnCBXlHwGUOqvGXiNEM4OkzbzVgB2KjfUIvRtPlXDi82UPIF65pc5w18XcDmLdTohpmJ4RVFcLT_GJdtfVE3bnwjHgzLmloEpBHlqP6wq91y6eXHqvSiwDnFre1_bkNOCRK54CQX_LQFVlL6G5vGeniANnfl1MlReuXm9EdjnPtaEhbiZBQLyNoPX4m_qGOfFejUWP4CQsSPhva1Z7UFZX85_9xN6topKGVUEBVzCnabfeENxqEAeuzv7J6mY7Er16jl8GIJHUYwzi-mz-vfgC3MsTmy13Y-BkLTw-Gg952A3pkAgjajQnqrj7tyzP6K8wIctFLGbyxr7A0yowoOHebqfxLGLlxlWnt0Oa4ZqYhcVGgudFKNVXrquAnCORykRIKsY8hko3rP5sj7_0Qw=&xkcb=SoAO6_M3qmShx-Aepe9LbzkdCdPP&camk=ethIe0s0heewtpkRlAdyAg==&p=0&fvj=0&vjs=3",
+    "job_category": "Data Science",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "generative AI",
+      "conversational AI",
+      "prompt engineering"
+    ],
+    "nice_to_have_skills": [
+      "contact center metrics",
+      "operations management principles",
+      "advanced prompt engineering",
+      "API integrations",
+      "technical solution design",
+      "SaaS or cloud-based platforms",
+      "product evangelism",
+      "data analysis",
+      "visualization tools",
+      "agile methodologies"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=ab1678f833daab36&bb=7BnLe_gnABZan-l5RYHWQnYSvRAC5GPOk3GzYjrXJdqDzxliYppCPhZecEiBxyxgXJNoIFFLmGYElaYsdTWx65SqFELC7rIMVoAp19PgnLhm4x0WDNTvJSd3-fbtEPXH8ql-KJEIGsYxRHMnLhpr9w%3D%3D&xkcb=SoBO67M3qmShx-Aepr0KbzkdCdPP&fccid=37fafd7207d181be&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "prompt engineering",
+      "optimization in generative AI or conversational AI solutions",
+      "project management",
+      "stakeholder engagement"
+    ],
+    "nice_to_have_skills": [
+      "Experience working in or with contact centers",
+      "Understanding of key contact center metrics and operations management principles",
+      "Advanced skills in prompt engineering",
+      "API integrations and technical solution design for SaaS or cloud-based platforms",
+      "Previous experience as a product evangelist",
+      "Proficiency in data analysis and visualization tools"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/viewjob?jk=123456789abcdef0",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "prompt engineering",
+      "optimization in generative AI or conversational AI solutions",
+      "project management",
+      "stakeholder engagement",
+      "data analysis and visualization tools",
+      "agile methodologies"
+    ],
+    "nice_to_have_skills": [
+      "experience working in or with contact centers",
+      "understanding of key contact center metrics and operations management principles",
+      "advanced skills in prompt engineering",
+      "familiarity with API integrations and technical solution design for SaaS or cloud-based platforms",
+      "previous experience as a product evangelist or in a similar role promoting technology solutions"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=5a6675c56b0f6a54&bb=7BnLe_gnABZan-l5RYHWQu_dB7edWhEeDulT1Mo3dno2ncbt_QFKeEoCPFGsb289zYPcez8WNUyVw897XQfbp_YJub6wS09YMJAwdDjTYpLPjjH_PhNUsKDnRPgkq9qGXu3g4iOumfYMWXTpUD-YVw%3D%3D&xkcb=SoDT67M3qmShx-Aepr0JbzkdCdPP&fccid=9e215d88a6b33622&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "prompt engineering",
+      "optimization",
+      "generative AI",
+      "conversational AI",
+      "data analysis",
+      "data visualization",
+      "project management",
+      "stakeholder engagement",
+      "agile methodologies"
+    ],
+    "nice_to_have_skills": [
+      "contact center metrics",
+      "operations management principles",
+      "prompt engineering",
+      "zero-shot",
+      "few-shot",
+      "chain-of-thoughts",
+      "API integrations",
+      "technical solution design",
+      "SaaS",
+      "cloud-based platforms",
+      "product evangelist",
+      "data analysis",
+      "visualization tools",
+      "Excel",
+      "Power BI",
+      "Tableau"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=21b0387c75284b64&bb=7BnLe_gnABZan-l5RYHWQsxxLTTpcS97ROVvzCe8JvqAjVPFN0wqjhDRjgXRdss3o9EuZtSRcaGJrLV5h5s1WX2S_VFjQQ0gMSsYRmzYHDXbBTItDmk1fEg3FnQw8HSRuKmh32MrkQHE38i11XZRvg%3D%3D&xkcb=SoBn67M3qmShx-Aepr0IbzkdCdPP&fccid=f6172562f9aeed68&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "prompt engineering",
+      "optimization",
+      "generative AI",
+      "conversational AI",
+      "data analysis",
+      "data visualization",
+      "project management",
+      "stakeholder engagement",
+      "agile methodologies"
+    ],
+    "nice_to_have_skills": [
+      "contact centers",
+      "key contact center metrics",
+      "operations management principles",
+      "prompt engineering",
+      "zero-shot",
+      "few-shot",
+      "chain-of-thoughts",
+      "API integrations",
+      "technical solution design",
+      "SaaS",
+      "cloud-based platforms",
+      "product evangelist",
+      "data analysis",
+      "visualization tools",
+      "Excel",
+      "Power BI",
+      "Tableau"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=57b06245fa4cacca&bb=7BnLe_gnABZan-l5RYHWQr-DPBoKURxGS139ZNCgoSLo3IDdNXXNKGF6I0_CdvqZekQ9C4UsR87r5o_jFMHtVMwJDSC1AfNkqkVKkmDsWJioIc2omxQ-7wkQt6AHH1BK12sbrTLFHzM-ZzNf01TS7A%3D%3D&xkcb=SoDp67M3qmShx-Aepr0PbzkdCdPP&fccid=0354b461c4536ec9&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "prompt engineering",
+      "optimization in generative AI or conversational AI solutions",
+      "project management",
+      "stakeholder engagement",
+      "data analysis",
+      "data visualization"
+    ],
+    "nice_to_have_skills": [
+      "Experience working in or with contact centers",
+      "Understanding of key contact center metrics and operations management principles",
+      "Advanced skills in prompt engineering",
+      "API integrations and technical solution design for SaaS or cloud-based platforms",
+      "Previous experience as a product evangelist",
+      "Agile methodologies"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=dc75a6bc88706b03&bb=7BnLe_gnABZan-l5RYHWQjtTImkFRq1RyBiWruwars4uqTuKZGgmMhJH0oKTovcvWQBvqKlznbu1vSaPp7r2yjpMWwXbwSzc6WA92D09uIZdOsWfV3aDjSHRQtfPuCH4ZZwFXjT5WKprzuVGAqJWRA%3D%3D&xkcb=SoBd67M3qmShx-Aepr0ObzkdCdPP&fccid=7809ab4e045d14b7&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "prompt engineering",
+      "optimization in generative AI or conversational AI solutions",
+      "project management",
+      "stakeholder engagement",
+      "data analysis",
+      "data visualization"
+    ],
+    "nice_to_have_skills": [
+      "Experience working in or with contact centers",
+      "Understanding of key contact center metrics and operations management principles",
+      "Advanced skills in prompt engineering",
+      "API integrations and technical solution design for SaaS or cloud-based platforms",
+      "Previous experience as a product evangelist or in a similar role promoting technology solutions",
+      "Agile methodologies"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=4bec141006d0e236&bb=7BnLe_gnABZan-l5RYHWQuxB7Aj1KfViQdDMhAYh1qzjrhgAg6KFDoTa3hKdWn27cgfVCif95Bn-unhhlWl1FZOv55JNqTYSenNs334pJ2lqYLq64KBKVM46ERerzZN5kM94qr1SHvceUOz8pjEnHw%3D%3D&xkcb=SoDA67M3qmShx-Aepr0NbzkdCdPP&fccid=fc51f670525dd49a&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "generative AI",
+      "conversational AI",
+      "prompt engineering",
+      "data analysis",
+      "visualization tools",
+      "Excel",
+      "Power BI",
+      "Tableau",
+      "agile methodologies",
+      "project management",
+      "stakeholder engagement"
+    ],
+    "nice_to_have_skills": [
+      "contact center metrics",
+      "operations management principles",
+      "prompt engineering",
+      "zero-shot",
+      "few-shot",
+      "chain-of-thoughts",
+      "API integrations",
+      "technical solution design",
+      "SaaS",
+      "cloud-based platforms",
+      "product evangelist",
+      "technology solutions"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=5890d41efe5c82d8&bb=7BnLe_gnABZan-l5RYHWQpgg8Oh_hOK3xftqmNXwx0BvMDMd_9A6xYckic5yCC-2K-pYIZHfE8_y2Jjr9SRpLuM13-V4xp0qDG8jbNzaOS7-Gf-Iy8THuMRi2w2YvwwSOGrScEYsb690N3Bsw_WzFg%3D%3D&xkcb=SoB067M3qmShx-Aepepr0MbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Artificial Intelligence (AI)",
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "prompt engineering",
+      "optimization",
+      "generative AI",
+      "conversational AI",
+      "data analysis",
+      "data visualization",
+      "Excel",
+      "Power BI",
+      "Tableau",
+      "agile methodologies"
+    ],
+    "nice_to_have_skills": [
+      "Experience working in or with contact centers",
+      "Understanding of key contact center metrics and operations management principles",
+      "Advanced skills in prompt engineering",
+      "Familiarity with API integrations and technical solution design for SaaS or cloud-based platforms",
+      "Previous experience as a product evangelist or in a similar role promoting technology solutions"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=467377990d94eb25&bb=7BnLe_gnABZan-l5RYHWQgRQmV5VgRBLKORrML2JHJvWv2nwJEp694_YFvxO6Eo9Dg_GSU8KWFB8YVA_NILIS_NaMOqEGfvimhGsTHAGZyRfY6etWYhOC-5HKpfoIYniO0Uv5r7t5Hmje77OQnvfHw%3D%3D&xkcb=SoCd67M3qmShx-Aepr0DbzkdCdPP&fccid=fa6e48e8ef93ca0e&cmp=headly&ti=Content+Creator&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "prompt engineering",
+      "optimization",
+      "generative AI",
+      "conversational AI",
+      "data analysis",
+      "visualization",
+      "project management",
+      "stakeholder engagement",
+      "agile methodologies"
+    ],
+    "nice_to_have_skills": [
+      "contact center metrics",
+      "operations management principles",
+      "prompt engineering",
+      "zero-shot",
+      "few-shot",
+      "chain-of-thoughts",
+      "API integrations",
+      "technical solution design",
+      "SaaS",
+      "cloud-based platforms",
+      "product evangelism",
+      "data analysis",
+      "visualization tools"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=dad07bac2a782e1c&bb=7BnLe_gnABZan-l5RYHWQvJpeyrJ_goUZX7gJuYtWkNotFEgQvq65u5eNHytZiYvHVoaIuRGcVxjT5jD9tcclHm35J3eyuU_Mhd-viO89t2WyE3_lTz5y2XAzPsxVr1jdt62ta7d5UsFaA5zfgwepQ%3D%3D&xkcb=SoAp67M3qmShx-Aepr0CbzkdCdPP&fccid=0354b461c4536ec9&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "prompt engineering",
+      "optimization in generative AI or conversational AI solutions",
+      "project management",
+      "stakeholder engagement",
+      "data analysis",
+      "visualization tools"
+    ],
+    "nice_to_have_skills": [
+      "experience working in or with contact centers",
+      "understanding of key contact center metrics and operations management principles",
+      "advanced skills in prompt engineering",
+      "API integrations and technical solution design for SaaS or cloud-based platforms",
+      "previous experience as a product evangelist",
+      "agile methodologies"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=20ce9371fdf507d8&bb=7BnLe_gnABZan-l5RYHWQkUN5ALFT3Dt6I_jUmpTgFXXm_RmDuZZZKTW23sfi_enU6cX4EY5hjtwJ62oCPYvfquo27aAEt5iswlxdZejLWe7vglULaPz_5bxkz5RYbdauXBEp784BB3oMspaw9J2rw%3D%3D&xkcb=SoC067M3qmShx-Aepr0BbzkdCdPP&fccid=39125bcd72dbf577&cmp=Paynow&ti=Summer+Intern&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "generative AI",
+      "conversational AI",
+      "prompt engineering",
+      "data analysis",
+      "data visualization",
+      "project management",
+      "stakeholder engagement",
+      "agile methodologies"
+    ],
+    "nice_to_have_skills": [
+      "contact center metrics",
+      "operations management principles",
+      "prompt engineering concepts",
+      "API integrations for SaaS or cloud-based platforms",
+      "product evangelism",
+      "data analysis and visualization tools"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=69548b1f302d8fc3&bb=7BnLe_gnABZan-l5RYHWQgFuqYfNlcJs2Ir-LKG7VnH0mSzpqiJPS86bzwJHNHzo6GX3aux6i0p1M6fpNKC644rdFNpzXWEVCkS0zVtqjBlgZpFvAQqCV9QmkaEa2ldgstHMKQAXc1CVZjWNB9j6eQ%3D%3D&xkcb=SoAA67M3qmShx-Aepr0AbzkdCdPP&fccid=6576e7250aa78c3c&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Artificial Intelligence (AI)",
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "prompt engineering",
+      "optimization in generative AI or conversational AI solutions",
+      "data analysis",
+      "data visualization",
+      "Excel",
+      "Power BI",
+      "Tableau",
+      "agile methodologies",
+      "project management",
+      "stakeholder engagement",
+      "presentations"
+    ],
+    "nice_to_have_skills": [
+      "Experience working in or with contact centers",
+      "Understanding of key contact center metrics and operations management principles",
+      "Advanced skills in prompt engineering",
+      "Familiarity with API integrations and technical solution design for SaaS or cloud-based platforms",
+      "Previous experience as a product evangelist or in a similar role promoting technology solutions"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=ef09bb08e3d9f4c9&bb=7BnLe_gnABZan-l5RYHWQgRQmV5VgRBLAIU0a4cQSgM8mF9n52Hnsdhg69uhyWD-Bs33cV2xmbIRslTul40Xt8hoTUznphy0lnZ1SoIhMoppYinLtamS_OiMIAzgquy0EZjAJJMlhYbG6aCZTKog7g%3D%3D&xkcb=SoCO67M3qmShx-Aepr0HbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "generative AI",
+      "conversational AI",
+      "prompt engineering",
+      "data analysis",
+      "data visualization",
+      "project management",
+      "stakeholder engagement",
+      "agile methodologies"
+    ],
+    "nice_to_have_skills": [
+      "contact centers",
+      "key contact center metrics",
+      "operations management principles",
+      "prompt engineering",
+      "zero-shot",
+      "few-shot",
+      "chain-of-thoughts",
+      "API integrations",
+      "technical solution design",
+      "SaaS",
+      "cloud-based platforms",
+      "product evangelist",
+      "data analysis",
+      "visualization tools"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=5c14af5018763ee3&bb=7BnLe_gnABZan-l5RYHWQjrU1MQdQ65KYge16I57wfDlW_mk87vvv-65EsBN1U00flUzhSCvvvaoIhOghHDtE60lKzUIQPN55mQtb20dTMl_KKIqdeNgWjbvrx6nXDf0xAESpzeDrTaUvx2-G-1FuQ%3D%3D&xkcb=SoA667M3qmShx-Aepr0GbzkdCdPP&fccid=e47adc9edf88049d&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django",
+      "API integrations",
+      "CRM",
+      "telephony",
+      "case management systems",
+      "prompt engineering",
+      "optimization in generative AI or conversational AI solutions",
+      "project management",
+      "stakeholder engagement",
+      "data analysis",
+      "visualization tools",
+      "agile methodologies"
+    ],
+    "nice_to_have_skills": [
+      "experience working in or with contact centers",
+      "understanding of key contact center metrics and operations management principles",
+      "advanced skills in prompt engineering",
+      "API integrations and technical solution design for SaaS or cloud-based platforms",
+      "previous experience as a product evangelist",
+      "proficiency in data analysis and visualization tools"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "AI Engineer",
+    "company": "High5",
+    "location": "Casablanca",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=e66870b9d66616f7&bb=7BnLe_gnABZan-l5RYHWQvulDsQxlpk7JC56Hxi2yGgE2QtcvaDwwJ9KWSybXfl31eY4YFldO5a0WgBHiy0yVdTE2TTXEPS0PmJcC15U9plL9IA93k5KgC2nnaD-PBV6I8NEqN3JiHLJKnn1qiomiA%3D%3D&xkcb=SoCn67M3qmShx-Aepr0FbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "IT Services and IT Consulting",
+    "seniority": "Mid-Senior level",
+    "required_skills": [
+      "Artificial Intelligence (AI)",
+      "Interpersonal Skills",
+      "Technical Requirements",
+      "Operations",
+      "Stakeholder Engagement",
+      "Presentations",
+      "Data Science",
+      "Project Management",
+      "Technology Solutions",
+      "HTML"
+    ],
+    "nice_to_have_skills": [
+      "Experience working in or with contact centers",
+      "Understanding of key contact center metrics and operations management principles",
+      "Advanced skills in prompt engineering, including concepts such as zero-shot, few-shot, chain-of-thoughts, and others.",
+      "Familiarity with API integrations and technical solution design for SaaS or cloud-based platforms.",
+      "Previous experience as a product evangelist or in a similar role promoting technology solutions.",
+      "Proficiency in data analysis and visualization tools (e.g., Excel, Power BI, Tableau)",
+      "Experience with agile methodologies"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "Contract"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=63bdceefe49ab7a1&bb=B6ajJeMvZwSzrTP7tBYMp5C5lSFKAJ4ovb-IOA3NMom3fNx82x6rVGdpr91k4PI8SKMsrExA-accajHy0wFJQet0o9XGFMj6dqGTjxvj0o5rwpB8vU96OvZOlWA3xSA29Anoybu6DyeD1VfftHFtbQ%3D%3D&xkcb=SoDS67M3qmS180TDd50LbzkdCdPP&fccid=e377f7f0c9ed32b5&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des frameworks ML",
+      "Expérience sur des produits SaaS"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=b1e6d24c6a9fcb52&bb=B6ajJeMvZwSzrTP7tBYMp0jzmhuhdQEdKNmp7ehtUhebr0se3KwfVV5QtoQnA7RWypfVg3LIUO6THaAYDSeVHug4Fp5XDRaaQC6bW9zqnRFnm9bZcgiigswR-AnhKWI4y_xWv29C-OLpHiBOTEjvXw%3D%3D&xkcb=SoBm67M3qmS180TDd50KbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms",
+      "Problem-solving",
+      "Debugging"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des produits SaaS",
+      "Conception et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=050a0f284c1b4a5e&bb=B6ajJeMvZwSzrTP7tBYMpy1N5wU-IGjkpQODND9BV8w5BX0FUtJwwlrptao48zBiA3zOaK3vq_o74INZM7n8mpy48E6nls2hOnBhG97841qyX_WplXSrh4HThVEVeg64ZrvU4B4mniCyhRhsyGqLSw%3D%3D&xkcb=SoD767M3qmS180TDd50JbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms",
+      "Problem-solving",
+      "Debugging"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des produits SaaS",
+      "Conception et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/viewjob?jk=0f1e2d3c4b5a6978",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "cloud platforms"
+    ],
+    "nice_to_have_skills": [
+      "intégration d'API AI",
+      "expérience avec des frameworks ML",
+      "expérience sur des produits SaaS",
+      "conception et livraison d'applications web AI"
+    ],
+    "remote_type": "hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=953f63cbde3407d9&bb=B6ajJeMvZwSzrTP7tBYMp6Dl0l03fudOdl9xL47wjD4GtxogPC1oUuazD1AtxXl4hXvAL4HUKqdwfZ4DwO5xmTI0XImIsA3cnHNDWaj4znpqI-rAhs4VlcIULA--iDq3h2LLZiaax2rWhvxBuwQRdA%3D%3D&xkcb=SoBP67M3qmS180TDd50IbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Full Stack Development",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms",
+      "Problem-solving and debugging skills"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des produits SaaS",
+      "Conception et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=13438db6dce366f3&bb=B6ajJeMvZwSzrTP7tBYMp0XnTPVLWMnDg85je0tO1KwLu2rWIBVuwv6NKQpuuoGUXcNq6aUdoaTCwx_7uxpA1scONS2Fpled9QhXDFev9kA1vmfEgRveM9SBDS992WCZ-Tpo67RX_zVlZFcMkYukcg%3D%3D&xkcb=SoDB67M3qmS180TDd50PbzkdCdPP&fccid=c0737bbe83895925&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms",
+      "Problem-solving",
+      "Debugging"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des frameworks ML",
+      "Expérience sur des produits SaaS",
+      "Conception et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=12214006305e13f3&bb=B6ajJeMvZwSzrTP7tBYMp74nc9o6GdzVvzHsc6daMF4ilxuyTHWF_HakeNJnJKlEemSZDguQRWJ-7KL3Q_qjtlOt1BXMQFXqq229lSMCnWJVSHTvtwb0yc9QQHNRUJ_9xliL71WWcl89jivfyRgh8g%3D%3D&xkcb=SoB167M3qmS180TDd50ObzkdCdPP&fccid=42762dc104fdf9ef&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms",
+      "Problem-solving",
+      "Debugging"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des frameworks ML",
+      "SaaS products",
+      "Design et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0AV8vU3o9nlw7wqa180ZkP3oAg17VLIhkP1SPyaIh_MQXrCaawu6WccWhKobpJ6ku0TQhCDr8yN7yULU2t_8XrgqiFr9MPrOiT_KPs_NPtzIgbvFUdO4VyGC-Rt2wK_hzgr9xvRtoVlikmZOaRxnpX8ajMt57JVRz3uVYX3YnihIAnPjfvj8nANMMr7q8VHPK95LTsYlOggM8E5OA6wZ6JCAsJRtNmDPyd9KLVfDBa4S4NUJO23CGyRHfi71uWhpUXwxU5WHuR-LO8tgUEjbEDhLit_jaKxsdR0HJmc4cr9T7Awx2KW6LhnNzHH2_ocDNSl40r1lBajhFOqx38sPUs6DQ3Fr3Y9_YgYKKYgyf1MHkaU7s_przrovsytEl-qIIT4Nny37NtqBYGcnk8fhZFCSBULwJcLXAiXdxYa_GRVd_1S5nVmhCT1Bih1v_7kEgYorYaPX-v9pktSJyw_Cy3ku1pOHhAjtGoR7wH_gWHx8DCi7vZUTChq2ItAunnBPboxUV9OEJQLZpEcXEMlcpk9Y2SU9ZOIJdV4LAFcMMmJsXg9RIURFujtFGUz8RX3WAZeV835wuKohCOCZo_JY88IMtO1QtRVkFKtrbGCPGR3W1x_pmSJYnQpa25lLP4iPsKWYdFdZEpIsQkPEEhCOwK9cLYo1phZeXY=&xkcb=SoAc6_M3qmS180TDd50NbzkdCdPP&camk=ethIe0s0heewtpkRlAdyAg==&p=6&fvj=0&vjs=3",
+    "job_category": "Développement web",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des frameworks ML",
+      "Développement de SaaS products"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=d2ea7c00963159b3&bb=B6ajJeMvZwSzrTP7tBYMpzpZ-x8YN13uENaAaNsHAs5DBBidGlAdTE9UflUoTWgHtLkZ8cmyLceXVuYZbTMA8AbVYQKOW1U-cANfFXUh4do7Jre6-SJFaq5cicp-8OfUpkWejGzFdF74MKG7sKwWXQ%3D%3D&xkcb=SoBc67M3qmS180TDd50MbzkdCdPP&fccid=c45b4b9e5aa458f0&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "cloud platforms"
+    ],
+    "nice_to_have_skills": [
+      "intégration d'API AI",
+      "expérience avec des produits SaaS",
+      "conception et livraison d'applications web AI"
+    ],
+    "remote_type": "hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8a0fb51061289963&bb=B6ajJeMvZwSzrTP7tBYMp0Uv3_J8gJ1qpOanJ3l8brXqwSK-JE_v7gDQQh4swva21ATRhld7h8V7EQgDusej07d2sRiVsBTcniJ4gf5oOHsUoEJDcl0Sup4sWOSyj5BnYJY9Xtrbp2toey6uKMkC1Q%3D%3D&xkcb=SoC167M3qmS180TDd50DbzkdCdPP&fccid=c5d28b9c196e7b6d&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms",
+      "Problem-solving",
+      "Debugging"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des produits SaaS",
+      "Conception et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=95e15fc1afe1ac9b&bb=B6ajJeMvZwSzrTP7tBYMp573w6B14RfkAWCMc-ysq4zD1PQ4_swYjvvUoPlTCBsMTBD3OD4ku9RnWyw1oXJHxYdqrS1oBBdnL74VJUvnQuni1tXcy7Ayoa83qimbEBd61Litv_PKGm-cI7jDy0Yjnw%3D%3D&xkcb=SoAB67M3qmS180TDd50CbzkdCdPP&fccid=c3194bdcfd96bbbb&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des produits SaaS",
+      "Conception et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=f700fe967226bac0&bb=B6ajJeMvZwSzrTP7tBYMp_851UbczDmaSOsRRztjgT506dz-e8c4ZlI3YtjTg42dcxGdupBTm57MwgGDcZImxnXO0yoZjVyez9A9iIRCTj695dKaXmMsM0pWvCE4PJRHXHf7pBx0WUycId50jiRGNQ%3D%3D&xkcb=SoCc67M3qmS180TDd50BbzkdCdPP&fccid=c5d28b9c196e7b6d&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms",
+      "Problem-solving and debugging skills"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des produits SaaS",
+      "Conception et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=39ba7cbc5a041cca&bb=B6ajJeMvZwSzrTP7tBYMp86i4O0Cja-nQJPAsopm-Q2EuGmzYX7NSM-zZJ5PjM6gFAwKoCnNds6MmgO_k1mhXSq-OyCwktyV_FQCbXE44FqHmLUb7E30BA3X9ud-zD0oJzRAf4usvpBNXcN4DD29uA%3D%3D&xkcb=SoAo67M3qmS180TDd50AbzkdCdPP&fccid=c5d28b9c196e7b6d&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms",
+      "Problem-solving",
+      "Debugging"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des produits SaaS",
+      "Conception et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=87d58b5ebf143305&bb=B6ajJeMvZwSzrTP7tBYMp1GIn35OQvJjet9blCugI-zdhBY5ENzh62qWMkoNZTyI-8u6ilG8kpxonsNwxl9P2lfEpiEtFFnKoGBXftrFyjCmNplqc5QHB2cV1ZMvAiNSrqi3aMN0jDk8vdwxRbpdDw%3D%3D&xkcb=SoCm67M3qmS180TDd50HbzkdCdPP&fccid=dc2bdb66be71906c&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des produits SaaS",
+      "Conception et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=c8f176d659194b17&bb=B6ajJeMvZwSzrTP7tBYMpwSrbv1EBr113JtCihA0HbgcSX9VLxBP4veRSb1U_siuvajpegdmDIEehFaVy6UEDecmL0R407B15lDwzj70GqNZCcoC--MdkfUZkS6zfCIqKWBCVDBS9WgsWjwl8z3f0g%3D%3D&xkcb=SoAS67M3qmS180TDd50GbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms",
+      "Problem-solving",
+      "Debugging"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des frameworks ML",
+      "Expérience sur des produits SaaS",
+      "Conception et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "EXIMIUM TALENT",
+    "location": "Rabat",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=6b9c5e914a22f316&bb=B6ajJeMvZwSzrTP7tBYMp_YdAb5FPkdBzELALjwgbJcLpzUy72FZeIH9aXay997grFei_i419wi-yFi5ok_QeQutJO0vZ44Ku1dYi1M778wOOuCOqVUaBYzHQLnnQqEmAwksh9Bem963Ds-75tsfjA%3D%3D&xkcb=SoCP67M3qmS180TDd50FbzkdCdPP&fccid=a8128b0f1af14ed3&vjs=3",
+    "job_category": "Full Stack",
+    "seniority": "Stage",
+    "required_skills": [
+      "Full-stack web development",
+      "Node.js",
+      "Django",
+      "SQL/NoSQL databases",
+      "Docker",
+      "CI/CD",
+      "Cloud platforms"
+    ],
+    "nice_to_have_skills": [
+      "Intégration d'API AI",
+      "Expérience avec des produits SaaS",
+      "Conception et livraison d'applications web AI"
+    ],
+    "remote_type": "Hybride",
+    "contract_type": "Stage"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=01951a087f825ddc&bb=WXnvD5n3qINc5Dy9OCr_mj4DMF4SCvUlwrXvK7Jmg5mRA1gbwqHKZ67VfytDGec0ug2G8TNpUGL05ai5zQem_5y1zdLD3xqh8E9XiPSUemc0_Sm8oa5dWc9Rb1fCByDmlxX3flv77IDv7ujxcjoMPw%3D%3D&xkcb=SoC267M3qmTKFHT4kZ0LbzkdCdPP&fccid=f6172562f9aeed68&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=31c13b88edcfafcd&bb=WXnvD5n3qINc5Dy9OCr_moQn1jwfk_QTbCtmRzYAaVsi3OUWWxoxUJ_xGJaDUUraR8osNT56idXrPSPNp1ZoodElLwuu50CM1iYGZJ81D6SMGS4UAC9rUJDj3a4P98vSPaN2VE1J1nHYMDxxzmdUAw%3D%3D&xkcb=SoAC67M3qmTKFHT4kZ0KbzkdCdPP&fccid=49747dba3b6749f7&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=a27d151034f53610&bb=WXnvD5n3qINc5Dy9OCr_mtR-Vkf9BYU4OM9fEPRHjYY6EvF0mrZfnAypCkbo9PvOVi91RhElz7CsFzaUxTjJE6xPuDu9ZinDQ_nwR6d9MzbYW5R4ftAOlIDU1S10KraK7bXn2Ut2uW8j_c507gDwzQ%3D%3D&xkcb=SoCf67M3qmTKFHT4kZ0JbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=fa68d77c4f432ec3&bb=WXnvD5n3qINc5Dy9OCr_mtR-Vkf9BYU4sp9u5QAbT63F1kwOcrFtX9BvWQOML-J3YSwgxHNkOokT1mtaavGS4IthXCIRJLEmVQr5qxrbMCJ6Cz-JMD0rYGU2Bdgm-mvh7D_5cXFymfoLPM6_Cukqkg%3D%3D&xkcb=SoAr67M3qmTKFHT4kZ0IbzkdCdPP&fccid=c0737bbe83895925&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=7a3bf0ceb06388b3&bb=WXnvD5n3qINc5Dy9OCr_mqLfaBZCMuOa_Kv1ob1_uhRoe_TyAkxK3CkiUo6D8h6_difZGDWJitXaMDZEik8AjFKhFNU1JAcVTctGTahu52qU6PMAqiM5nANa5llCe3b7bvc_I8VrwN5zEyRfvOk-9Q%3D%3D&xkcb=SoCl67M3qmTKFHT4kZ0PbzkdCdPP&fccid=ceb97b9280a61a1e&cmp=NeuralAI&ti=C%2B%2B+Developer&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, Settat, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=ee10146005816fb2&bb=WXnvD5n3qINc5Dy9OCr_mkRPd35xCb7L7DxjZNtDKfu8ZDmhycoDMnGzWNXFITPmb9kiWcy5pa6qStnLB2YClZgTVtc1GIYzRbINrMgmdxle93cJlQXjR3mKJfMrw23fyFJCYXuxrZd6DpSPAZlyYw%3D%3D&xkcb=SoAR67M3qmTKFHT4kZ0ObzkdCdPP&fccid=3dfb78ad3b8b6882&cmp=Qalqul-engine&ti=Senior+Devops+Engineer&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=14608dcc5b151098&bb=WXnvD5n3qINc5Dy9OCr_mhgTlyQQzHgCseMibn8GvBFvE9rmV59FYKTOoIKHj2MQa0uZUdP_wSeJwpDgVHprPAIlfZcVDoWQXAOBmEqhc5KxZFUISoZaAxynjWuocB4GMCMuP6QMFE-YoHeb1DXUYQ%3D%3D&xkcb=SoCM67M3qmTKFHT4kZ0NbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=45d722c7e87ce99e&bb=WXnvD5n3qINc5Dy9OCr_mkIWmLwatFqgRFXJdH3C5FL6Qd89xMBPvtDQl1a9ejaxIl1gmt1XpipnE_TvqsLtV5xNrmkwgQEnu-imu4fFw1hFaPqvk2_IVXEymab0mmwUVim3ZYr25Tbkox3KMabt9A%3D%3D&xkcb=SoA467M3qmTKFHT4kZ0MbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8cbce444412a2bb0&bb=WXnvD5n3qINc5Dy9OCr_mqJ34QCWFt5sRX8KMZv3P-orkd8-Ke82RX-kgFwWgQhIW95rdSB0-3r4Nc-khU2kan-D2CS1bE6CeT3OC0QS_SGUmwRAMNBWGwkyRbaMIRZS9EDgOpoRvzITJAcctuc4xw%3D%3D&xkcb=SoDR67M3qmTKFHT4kZ0DbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=63751b779f9b59be&bb=WXnvD5n3qINc5Dy9OCr_moH1vv5wNfZsSxLmMoMM_1Ij093lOoqoNgPq8oo_xC12aELX3KO5JhF1oluAVZV8p6NH0AOe0Q2cZUQfuD3thcOGeImI_HpTzr-3Z3HMmpN62HmVq2DULOvkKlwCcSwRJQ%3D%3D&xkcb=SoBl67M3qmTKFHT4kZ0CbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=f1a1734e2cc11a50&bb=WXnvD5n3qINc5Dy9OCr_mg_RP4pt82rQsw6DeEgp9Cw4mIa5ilPsWKem3YDoxraynx5Dr6Hx4qlRyL0DOH8wT9OPYJEjNOYfObMV9MyJ4TySPlHZZYv6Yb8X5-PX1bBWFHdLv91i-L6_ZfVQrs6HMA%3D%3D&xkcb=SoD467M3qmTKFHT4kZ0BbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, Settat, MA",
+    "job_url": "https://ma.indeed.com/viewjob?jk=789abcdef0123456",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=892abb7e876142f8&bb=WXnvD5n3qINc5Dy9OCr_mrkXpAkNYoCHt-rmbFDyMz7ta-pJoQ7jHqpQY8lfjkiAzJQx5F1yXG3SZ8f7MpQMEmebot63x5zj4rCTdvoVAcmorv7T1pQtNz42d8fz5lf_RGkj55291ylqjpe4fj4nNQ%3D%3D&xkcb=SoBM67M3qmTKFHT4kZ0AbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8eaa66d18d467924&bb=WXnvD5n3qINc5Dy9OCr_mhgTlyQQzHgCROwQ8mxqubzDI-8eH5-D9Q4ae6GGFpruwIAyTowX93F9x-RYpGscAbFb8y7f6TyYNFm879Vvo5gzsn4h99z45BeZj1lBYldsJFOeG3YTeJAQIy0H5Qp4gA%3D%3D&xkcb=SoDC67M3qmTKFHT4kZ0HbzkdCdPP&fccid=c18daf68fbd3c338&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=297486a998692d32&bb=WXnvD5n3qINc5Dy9OCr_mvEwLRwcod2ydvwmoxPLTPrnwcaHEtwA71_8exAN7317ki5VW104mZflibGsp812eG2NzAsb_J0Hmd8M-VoMM2GhwPZEwMrlRIiK9jYnww68dUSiWW5lw04%3D&xkcb=SoB267M3qmTKFHT4kZ0GbzkdCdPP&fccid=4027cfd917e1ee29&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=400d36254cf18e37&bb=WXnvD5n3qINc5Dy9OCr_mlDZN1XgE7HYWU5sNGMQfn0y_KfZw0WtoyoPVNgu_-CTkrJasytQUossYSvjhfLUvJApdB21Ig5vYmADSmrON6uBzzzqBiEHOMhy3RNV6wOMHvAffd6FeUo%3D&xkcb=SoDr67M3qmTKFHT4kZ0FbzkdCdPP&fccid=4027cfd917e1ee29&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=01951a087f825ddc&bb=DibDtkX1t0eJTSyLFWsxB-K5jvN214JEq-KdvYnU_my6TGMo_AXfnDDeCoTRMgvuV1tkFsLi8KV226BpzAFz8_SrhYGXZ-bMIS_XfA1dDO0b7SZ20zn-U2VSpz_0y5Z_GqZacyfOEq1ORgY_lDYgiw%3D%3D&xkcb=SoD267M3qmTeS5zCzZ0LbzkdCdPP&fccid=f6172562f9aeed68&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, Settat, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=31c13b88edcfafcd&bb=DibDtkX1t0eJTSyLFWsxByUmkrQte-Q1U3uzweiI43fRgAfrLugGrxJkf5lYKVYPwvvI-_YJpKLkKHAX4-E69DCdEoVnZiaWabA4Egn_34Gn75Gy7fP8CekA2Ef_BKxrhkF5xN5icDEgn9WMK6XEQw%3D%3D&xkcb=SoBC67M3qmTeS5zCzZ0KbzkdCdPP&fccid=49747dba3b6749f7&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=a27d151034f53610&bb=DibDtkX1t0eJTSyLFWsxB-zLHNSlGVCJTzLH_kcnV7TCmxNdhWTljRBo75FPo_9LT9TVNEUWZGCW1VTZxHCe4tMdUbKe4_hF_klvJXofpJH2xnkVq9w20N9HCuH3Kl7kJfU5oPc1OCLF02pPcOHNzg%3D%3D&xkcb=SoDf67M3qmTeS5zCzZ0JbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=fa68d77c4f432ec3&bb=DibDtkX1t0eJTSyLFWsxB-zLHNSlGVCJPFEvTb0n61K4HgS8cn1eRQGQs7nhD8yaBlSOdg33VyWEVwIY_0lwIrWK2upWgOPjhTd3E4SL4mfuEiITDi1U_S880XBmr8n4Njh24twBgs0KyyHSwo8JVQ%3D%3D&xkcb=SoBr67M3qmTeS5zCzZ0IbzkdCdPP&fccid=c0737bbe83895925&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=7a3bf0ceb06388b3&bb=DibDtkX1t0eJTSyLFWsxB8buKbUb8uO3ea7WbAlg2uTsFDAC2S-DkvvzrGySqII9rHror2HHqMTI2jKcSqs8-XNHO7SJXAWFbG--nFmREyQ-ylLD70OYcVu8GC88YWWq44inJZU6Q43zvlb99Mb0GQ%3D%3D&xkcb=SoDl67M3qmTeS5zCzZ0PbzkdCdPP&fccid=ceb97b9280a61a1e&cmp=NeuralAI&ti=C%2B%2B+Developer&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=ee10146005816fb2&bb=DibDtkX1t0eJTSyLFWsxBwyiQ_gNRDd4UvFFi2zOoi3P6_fmUrIRu3JYjxT9pYhSPQuA3iyaYf-bRWpqqXBdws-yhSh6rqx9WfLN8Hss9b-_UJW4KlZfXzzCA8kweaMSYjgmfA_Yy-xsQSftHMX0Xg%3D%3D&xkcb=SoBR67M3qmTeS5zCzZ0ObzkdCdPP&fccid=3dfb78ad3b8b6882&cmp=Qalqul-engine&ti=Senior+Devops+Engineer&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=14608dcc5b151098&bb=DibDtkX1t0eJTSyLFWsxB9A38VtvGV4v_85kZ5oVIXOIxiLdD3ClQ3A15CDgNwlusaNiGd7ffQ772_Khcg2_fCr9gepZIrr3JmQnPwiGdfTa1mZn-ViBKqfYaXg7plH06YELsxYfcq1iPhnyyfffKA%3D%3D&xkcb=SoDM67M3qmTeS5zCzZ0NbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=45d722c7e87ce99e&bb=DibDtkX1t0eJTSyLFWsxB-9DqoYqopVBETu2fx0IiNzImO2GHzkCx7eVBeAFXMHDoi5HmUSnA2uIirKJMCdrEVFWANVtv8A0dllRQGOwDfgJK_QJ38R6sXfsKuSdHT_Vp3MPAhsU8QR4ec3ZTTWZcg%3D%3D&xkcb=SoB467M3qmTeS5zCzZ0MbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8cbce444412a2bb0&bb=DibDtkX1t0eJTSyLFWsxB196c4-2xbEvmNR1aSyAtSW1OcH6YtZfV5SF0HQ9EnMG1H9EpqpEIZm7gW5NvepQWHGjS0m73DYicD5oA2NN-FWFsZFoUpF1AwE65mStNmqkOHvxjx43Ia7F7gge1n8VKA%3D%3D&xkcb=SoCR67M3qmTeS5zCzZ0DbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=63751b779f9b59be&bb=DibDtkX1t0eJTSyLFWsxBwz24DsbuPeJIGya_EYWSQYQ_DHZsXQ3OfsryZVzsUNIsxVT_g17zhXSMMqqkKtBFaPq...",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=f1a1734e2cc11a50&bb=DibDtkX1t0eJTSyLFWsxBxaD0MQKHiLN496kF75-t2h4uf3wE1TmJz5GWft6xFZAtLp8S6W-ICxfTnRvUDK3b3p__Tqxp2EfA_iKvVcnIE_euSkjiWXhQCGQxUKfw8Vtv1eifoZ-zrAhO5uo4T0tHg%3D%3D&xkcb=SoC467M3qmTeS5zCzZ0BbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/viewjob?jk=789abcdef0123456",
+    "job_category": "Software",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "DevOps",
+      "MLOps",
+      "Python",
+      "State-of-the-art algorithms"
+    ],
+    "nice_to_have_skills": [
+      "3D Computer Vision",
+      "Classification",
+      "Semantic segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=892abb7e876142f8&bb=DibDtkX1t0eJTSyLFWsxByDQm0bq5cRfxUNT7daPGpGwM_M1qgnUcH38qQpxwYf-cjciudn1KBLiL2tJ7wb3UyNuqazC4EWF4tzcxCtQkt_4LGbUt0xd1BkeUvpiaj_CPYU9lDlzEELjbuhxJ4NfSw%3D%3D&xkcb=SoAM67M3qmTeS5zCzZ0AbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, Settat, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8eaa66d18d467924&bb=DibDtkX1t0eJTSyLFWsxB9A38VtvGV4v_H3ytrMICLvFrKT7oyWE9tgFWh5IeOjTmuTLiZjuU27StcqbRBvPtn-oWdQWicLUYrtPizSpLuskNcYse9YemLTiV07Zn9PyC8QjTcFBCz9UOhIIAxYeEw%3D%3D&xkcb=SoCC67M3qmTeS5zCzZ0HbzkdCdPP&fccid=c18daf68fbd3c338&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=297486a998692d32&bb=DibDtkX1t0eJTSyLFWsxB46zvACeEu1Oq9D4xTcH2f8eOXhvOMOZoeA7Ljatnevm-4TDc99WyDVoVcEhrrthtcaPkF8CyTHPqRkTgthaQWxVRyRqhDhxRlZtmuSzAkRWNbZAScwutQc%3D&xkcb=SoA267M3qmTeS5zCzZ0GbzkdCdPP&fccid=4027cfd917e1ee29&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=400d36254cf18e37&bb=DibDtkX1t0eJTSyLFWsxBwFXnqQUoJCuIwucwdiPylN550LTXZq9MZ042T97UprJD7JctghPLZScDh0muntx2t8S8A8ZigMtSggyLrvDNtKtlY2kyJAmsfQ8pk0PVs8VLPbCo4zMINY%3D&xkcb=SoCr67M3qmTeS5zCzZ0FbzkdCdPP&fccid=4027cfd917e1ee29&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=01951a087f825ddc&bb=Q3sMFK_GwP-gmfchRIALM_vnZGSyAVz1pra0pNJMq3UZun_69lb2AFQiaaZpB2N0Y1ujJMJEmmrTTgLdx329Y0fa1Qq1tnsak_SkdRvQLJk9cTNX4cdXn_pTO7eqp9WcIq_uZ0nFiL-UMv0TNlONcA%3D%3D&xkcb=SoBm67M3qmTS7RzF6R0LbzkdCdPP&fccid=f6172562f9aeed68&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=31c13b88edcfafcd&bb=Q3sMFK_GwP-gmfchRIALM_RC3jKuwaboW4BrXvnXj8vgCz4CWLuReSqranx9bvLKhLNTgZKnq77qBNGaAeJquFFkELDHTuqVZKAq_NUCVjKXEMl47T7dEF1kfDJBD1WPbPULtjLZ3XhgeSnU0xK1ng%3D%3D&xkcb=SoDS67M3qmTS7RzF6R0KbzkdCdPP&fccid=49747dba3b6749f7&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=a27d151034f53610&bb=Q3sMFK_GwP-gmfchRIALM_P0Yuc6tqH3CYBTaoZOmZKuGCue516stTr6yDQM5r3lJJh-XwlyNtJscZyh8JAKbXslMNflNWmDWpiD5rSxhY5RePHgafICiNYPO_JBr_QW3GP522gFdkrDCuOm7Is3Ww%3D%3D&xkcb=SoBP67M3qmTS7RzF6R0JbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=fa68d77c4f432ec3&bb=Q3sMFK_GwP-gmfchRIALM_P0Yuc6tqH3EyN_qor_gG7oKbSaukGsIZ2B-ROEUt19I0lPU0AcDGr5zVdEODGMRzBfGhapXboGlJkDhXJdmN_lE5ZTrhDmFA3ls_TW4K05jcWnkX9gh5ftSeZASysY_A%3D%3D&xkcb=SoD767M3qmTS7RzF6R0IbzkdCdPP&fccid=c0737bbe83895925&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=7a3bf0ceb06388b3&bb=Q3sMFK_GwP-gmfchRIALM06LBRx7M1LwMCWtJd2h5wERzRCdg_W37JybtjV-LmbI-2gRSPGybn9W2PmdvMQBgwTYAAD0NtIexbEEB4u04xwharwChRO4lFpkJ2MZZQqqa-nKeied7gTL9dMHIU7nCg%3D%3D&xkcb=SoB167M3qmTS7RzF6R0PbzkdCdPP&fccid=ceb97b9280a61a1e&cmp=NeuralAI&ti=C%2B%2B+Developer&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=ee10146005816fb2&bb=Q3sMFK_GwP-gmfchRIALM0R2dv3GT4nkVutzCbL9aAEGJsGur6Rk_OIPUdhg2gGy6RRxyahLIW-AnDhvcFgMFaG3Yc-0oywuF7GGdAOjgNfa2mdo1NXGwqP149NR6Ki8cYCmtDItPg3d2Ipq-ZBBjQ%3D%3D&xkcb=SoDB67M3qmTS7RzF6R0ObzkdCdPP&fccid=3dfb78ad3b8b6882&cmp=Qalqul-engine&ti=Senior+Devops+Engineer&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=14608dcc5b151098&bb=Q3sMFK_GwP-gmfchRIALM9cxHBXe4MrRludk5Ym3WJK4HUP-bDV-L6N_kTdI7oLV2fTtN84MpeaMrquyl7SYtjdNNB3uJI8-TbVVJZuTN5e7pks6yFwii5mYLlcIA4mhOOVnItZsSarQdtNt1LRlpw%3D%3D&xkcb=SoBc67M3qmTS7RzF6R0NbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=45d722c7e87ce99e&bb=Q3sMFK_GwP-gmfchRIALM5BLToqWel83cK7hY4xOrpR4KgowP_zT7ewIF6MYT3J4Kewk62ovLKegsffVE98ycJrrnAeDNOABnuqR9sbJcCwQYM_rhpvWMg1pVD1SYI9nXyAKRIpHS9LhkRl-KONwVA%3D%3D&xkcb=SoDo67M3qmTS7RzF6R0MbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, Settat, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8cbce444412a2bb0&bb=Q3sMFK_GwP-gmfchRIALMztvufV2eKed4C6dQ_dCpO8UlKSTUTg-7hHMeKzPd0zZk-KGqt3Cr0P6HFzHK3pr_qJsUYDWiChJZd62pNES9tX2rsWV0qZt_rn0BJfxL1tDmHUEbBkR6muYHJU7Ac_Tuw%3D%3D&xkcb=SoAB67M3qmTS7RzF6R0DbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=63751b779f9b59be&bb=Q3sMFK_GwP-gmfchRIALM2SJlhPUI4G0IsDai_6zwMEhWcmDGZcNpZak6FIxiM8pqdO6n-qfpykf1DJfFGpl1rwDU15xw1Id4DxyzlnAdoEjL2rYLHbJHDV_yA5LgkYGf1jiovFgEqpohq0TEudOOQ%3D%3D&xkcb=SoC167M3qmTS7RzF6R0CbzkdCdPP&fccid=80402dcb603cbc8d&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, Settat, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=f1a1734e2cc11a50&bb=Q3sMFK_GwP-gmfchRIALM4-hKwpWxmnmTnbdfXqGZHzAjo-vhbdXU6QQsbWazJCjG5dPmb_eomCxZtEDd3LRNT9-0ohTRsa4UtzPPE6WMAPw1qa1iHUQ1E5PYmCpsFF4mf9JoWrOyDny-boDNhedaw%3D%3D&xkcb=SoAo67M3qmTS7RzF6R0BbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/viewjob?jk=789abcdef0123456",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "DevOps",
+      "MLOps",
+      "Python",
+      "Java",
+      "C++",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and Late Fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "State-of-the-art algorithms",
+      "Radar sensor engineering",
+      "Product performance analysis"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=892abb7e876142f8&bb=Q3sMFK_GwP-gmfchRIALM-C0zsxH9CY2q2ZNNSBH00eMF4RjsdipImLtSk-Gvliks0qwVeHv8Qv6HiDijCmJvFD1GzQ6CGMJ_Qh3TkdttDnwKI6K58ie4Zn8y9rjpFIfHGMApyZ3lVxobpa-a6P8yg%3D%3D&xkcb=SoCc67M3qmTS7RzF6R0AbzkdCdPP&fccid=359a8b600b310a76&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "classification",
+      "semantic segmentation",
+      "early and late fusion",
+      "prediction",
+      "tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=8eaa66d18d467924&bb=Q3sMFK_GwP-gmfchRIALM9cxHBXe4MrRDZ6bf10N-cYcoyPS6rpeodaa1QY7d3t_Fk1XfNEb5W59TLl3GIx3cU3nSV6UYB9S4jOkyq7QWOwO-eLTYyT0Jpmdmf0wRvwqldNAxrj5fV4vObvKY5ABzA%3D%3D&xkcb=SoAS67M3qmTS7RzF6R0HbzkdCdPP&fccid=c18daf68fbd3c338&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine learning",
+      "DevOps",
+      "MLOps",
+      "Python",
+      "Software development"
+    ],
+    "nice_to_have_skills": [
+      "Lidar",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=297486a998692d32&bb=Q3sMFK_GwP-gmfchRIALM4g67cN1bnmc8FOBvyQaqIn3H2Zh4qnOS_Fbyfo-CF7vY_jeGAF3CrnWqpV4sZZeEyUOksgQyJMJVR53So6LDmc4j_z6UQBcNxY2Fynv5I8g88ArzkxTuRI%3D&xkcb=SoCm67M3qmTS7RzF6R0GbzkdCdPP&fccid=4027cfd917e1ee29&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  },
+  {
+    "title": "Senior Software Engineer – Perception – Radar / Machine Learning H/F",
+    "company": "Stellantis",
+    "location": "Casablanca, MA",
+    "job_url": "https://ma.indeed.com/rc/clk?jk=400d36254cf18e37&bb=Q3sMFK_GwP-gmfchRIALM_y-Kz9C8dDHZxCSxgJOFSh5k_YjPmaeNcGkFGpEEcBUk4fbKYxb5AxIo9YaSYB_EPCuR1Le-344k9hpDgfo4sdjktndBupGZ2F-YFl8qIi9Mp4_H5tntBc%3D&xkcb=SoA767M3qmTS7RzF6R0FbzkdCdPP&fccid=4027cfd917e1ee29&vjs=3",
+    "job_category": "Salaried",
+    "seniority": "Senior",
+    "required_skills": [
+      "Radar perception",
+      "Machine Learning",
+      "3D Computer Vision",
+      "Classification",
+      "Semantic Segmentation",
+      "Early and late fusion",
+      "Prediction",
+      "Tracking"
+    ],
+    "nice_to_have_skills": [
+      "DevOps",
+      "MLOps"
+    ],
+    "remote_type": "onsite",
+    "contract_type": "CDI"
+  }
+]
