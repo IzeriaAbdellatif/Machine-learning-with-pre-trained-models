@@ -9,3 +9,8 @@ python-multipart==0.0.6
 selenium==4.38.0
 undetected-chromedriver==3.5.4
 setuptools
+httpx
+pydantic>=2.0
+pydantic-settings
+
+
