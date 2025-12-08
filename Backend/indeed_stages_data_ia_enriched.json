@@ -14,9 +14,7 @@
       "Python",
       "SQL",
       "Machine Learning",
-      "Power BI",
-      "Docker",
-      "Linux"
+      "Data Science"
     ],
     "competences_soft": [
       "travail en équipe",
@@ -25,12 +23,13 @@
       "rigueur",
       "sens de l'organisation"
     ],
+    "nice_to_have_skills": [],
+    "remuneration": "stage rémunéré",
     "missions_principales": [
       "Analyse des données mécaniques pour identifier des tendances et anomalies.",
       "Développement de modèles prédictifs pour la maintenance et la performance.",
       "Intégrer de nouvelle solutions AI",
-      "Participer aux projets d'innovation dans le domaine de la gestion de la data BOM",
-      "Gestion des projets data"
+      "Participer aux projets d'innovation dans le domaine de la gestion de la data BOM"
     ]
   },
   {
@@ -57,21 +56,25 @@
       "WPML",
       "PyMuPDF",
       "pdfplumber",
-      "PDFMiner",
-      "Deepseek",
-      "Mistral",
-      "Phi",
-      "Falcon"
+      "PDFMiner"
     ],
     "competences_soft": [
       "travail en équipe",
       "communication",
       "autonomie",
-      "proposition d'idées",
-      "documentation"
+      "curiosité",
+      "motivation"
     ],
+    "nice_to_have_skills": [
+      "connaissance de WordPress",
+      "intégration web (Elementor, LearnDash)",
+      "Git / GitHub (CI/CD simple apprécié)",
+      "utilisation de plateformes d'entraînement (Colab, AWS, HF Spaces)",
+      "notions de sécurité & optimisation"
+    ],
+    "remuneration": "selon profil",
     "missions_principales": [
-      "Création d'un assistant intelligent entraîné sur les contenus internes",
+      "Création d'un assistant intelligent entraîné sur les contenus internes de Koding Schools",
       "Extraction de données à partir de PDFs",
       "Fine-tuning de modèles LLM",
       "Intégration de l'assistant intelligent dans WordPress",
@@ -97,17 +100,18 @@
       "organisation",
       "autonomie",
       "aptitudes analytiques",
-      "méthodologie",
-      "excellentes compétences en communication",
-      "écoute"
+      "méthodologie dans la résolution de problèmes",
+      "excellentes compétences en communication et en écoute"
     ],
+    "nice_to_have_skills": [],
+    "remuneration": "rémunération attractive tout au long du stage",
     "missions_principales": [
       "Développer des compétences clés tout en travaillant sur des thématiques passionnantes liées aux enjeux actuels",
-      "Contribuer à des projets de grande envergure",
-      "Travailler sur des domaines stratégiques tels que l'actuariat, la data science, la hydrogéologie, les ressources humaines, le marketing, la finance et le contrôle de gestion",
-      "Réaliser un projet de fin d'études dans l'un des domaines cités ci-dessus",
+      "Contribuer à des projets de grande envergure dans différents domaines stratégiques",
       "Acquérir une expérience précieuse dans un environnement professionnel de haut niveau",
-      "Contribuer activement au succès de projets stratégiques"
+      "Contribuer activement au succès de projets stratégiques",
+      "Réaliser son projet de fin d’études dans l’un des domaines cités ci-dessus",
+      "Développer des compétences en communication et en écoute"
     ]
   },
   {
@@ -135,19 +139,22 @@
       "Cloud"
     ],
     "competences_soft": [
-      "Autonomie",
-      "Esprit analytique",
-      "Rigueur",
-      "Travail collaboratif",
-      "Vulgarisation des résultats"
+      "autonomie",
+      "esprit analytique",
+      "rigueur",
+      "travail collaboratif à distance",
+      "vulgarisation des résultats"
     ],
+    "nice_to_have_skills": [],
+    "remuneration": "à partir de 5.000,00DH par mois",
     "missions_principales": [
       "Concevoir et implémenter des modèles de Machine Learning et Deep Learning",
       "Construire et maintenir des pipelines de données robustes et scalables",
       "Automatiser les processus d’analyse et de reporting",
       "Collaborer avec les équipes produit et tech pour définir les besoins",
       "Assurer la qualité, la traçabilité et la sécurité des données",
-      "Encadrer ou accompagner des profils juniors"
+      "Encadrer ou accompagner des profils juniors lorsque nécessaire",
+      "Effectuer une veille active sur les avancées en IA, LLMs, MLOps et Data Engineering"
     ]
   },
   {
@@ -168,14 +175,18 @@
     ],
     "competences_soft": [
       "travail en équipe",
-      "apprentissage rapide",
-      "esprit analytique"
+      "communication",
+      "autonomie",
+      "esprit analytique",
+      "rigueur"
     ],
+    "nice_to_have_skills": [],
+    "remuneration": "stage rémunéré",
     "missions_principales": [
-      "Participer à la conception et au développement de prototypes d'outils basés sur l'IA",
-      "Travailler sur des projets en lien avec le traitement de données, l'automatisation et le machine learning",
+      "Participer à la conception et au développement de prototypes d’outils basés sur l’IA",
+      "Travailler sur des projets en lien avec le traitement de données, l’automatisation et le machine learning",
       "Réaliser des tests et documenter les résultats",
-      "Assister l'équipe technique dans la mise en place de solutions IA internes",
+      "Assister l’équipe technique dans la mise en place de solutions IA internes",
       "Veille technologique sur les tendances et outils IA"
     ]
   },
@@ -220,13 +231,16 @@
       "créativité",
       "orienté résolution de problèmes"
     ],
+    "nice_to_have_skills": [],
+    "remuneration": "Attractive + primes sur objectifs",
     "missions_principales": [
       "Concevoir et développer des applications web pour digitaliser les processus de télésecrétariat",
       "Créer des interfaces utilisateurs intuitives et performantes",
       "Développer des API robustes pour connecter les différents systèmes",
       "Intégrer des solutions d'IA pour automatiser des tâches répétitives",
       "Développer des systèmes de reconnaissance vocale et de transcription automatique",
-      "Implémenter des outils d'analyse de données et de prédiction"
+      "Implémenter des outils d'analyse de données et de prédiction",
+      "Créer des workflows intelligents pour améliorer l'efficacité opérationnelle"
     ]
   },
   {
@@ -252,14 +266,21 @@
       "Communication",
       "Esprit d'équipe"
     ],
+    "nice_to_have_skills": [
+      "Science des données",
+      "Processus ETL",
+      "NLP",
+      "Machine Learning"
+    ],
+    "remuneration": "",
     "missions_principales": [
-      "Concevoir, construire et maintenir des pipelines de données et des processus ETL",
-      "Intégrer et transformer des données provenant de diverses sources",
-      "Optimiser et améliorer les performances des pipelines existants",
-      "Développer et maintenir des entrepôts de données et bases de données",
-      "Garantir la disponibilité et la fiabilité des données",
-      "Documenter et communiquer les processus et bonnes pratiques en ingénierie des données",
-      "Gérer l'infrastructure via des outils d'infrastructure as code"
+      "Collaborer avec les ingénieurs seniors pour concevoir, construire et maintenir des pipelines de données et des processus ETL.",
+      "Participer à l'intégration et à la transformation de données provenant de diverses sources.",
+      "Contribuer à l'optimisation et à l'amélioration des performances des pipelines existants.",
+      "Aider au développement et à la maintenance des entrepôts de données et bases de données.",
+      "Travailler avec les analystes et scientifiques des données pour garantir la disponibilité et la fiabilité des données.",
+      "Documenter et communiquer les processus et bonnes pratiques en ingénierie des données.",
+      "Participer à la gestion de l’infrastructure via des outils d’infrastructure as code, notamment Terraform."
     ]
   },
   {
@@ -295,11 +316,13 @@
       "Autonomie",
       "Esprit d'équipe"
     ],
+    "nice_to_have_skills": [],
+    "remuneration": "stage rémunéré",
     "missions_principales": [
       "Développer et intégrer des modules IA dans des plateformes web et mobiles",
       "Exploiter et connecter des API d’intelligence artificielle",
-      "Créer des chatbots, assistants virtuels et fonctionnalités prédictives",
-      "Collaborer avec les équipes de design et de développement pour améliorer l’expérience utilisateur",
+      "Participer à la création de chatbots, assistants virtuels et fonctionnalités prédictives",
+      "Collaborer avec les équipes de design et de développement pour améliorer l’expérience utilisateur grâce à l’IA",
       "Effectuer une veille technologique sur les dernières innovations en IA appliquées au web et mobile"
     ]
   },
@@ -330,16 +353,19 @@
     "competences_soft": [
       "travail en équipe",
       "autonomie",
-      "communication",
-      "travail en équipe",
-      "explicabilité"
+      "communication"
     ],
+    "nice_to_have_skills": [
+      "expérience en traitement de signaux",
+      "connaissance des outils collaboratifs"
+    ],
+    "remuneration": "",
     "missions_principales": [
-      "Analyser des données EEG/NIRS",
-      "Expérimenter des modèles hybrides IA",
-      "Rédiger des articles scientifiques",
-      "Mettre en place d'outils collaboratifs",
-      "Prototyper une interface web de visualisation"
+      "Analyse avancée de données EEG/NIRS",
+      "Expérimentation de modèles hybrides IA",
+      "Rédaction d'articles scientifiques",
+      "Mise en place d'outils collaboratifs",
+      "Prototypage d'une interface web de visualisation"
     ]
   },
   {
@@ -363,6 +389,10 @@
       "curiosité",
       "autonomie"
     ],
+    "nice_to_have_skills": [
+      "projets personnels en IA ou optimisation"
+    ],
+    "remuneration": "stage rémunéré",
     "missions_principales": [
       "Développer des fonctionnalités IA appliquées au produit",
       "Travailler sur l’analyse, le résumé automatique et le traitement des données",
