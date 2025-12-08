@@ -22,6 +22,16 @@ class JobLLMOutput(BaseModel):
     """
     type_poste: Optional[Literal["stage", "emploi", "non_precise"]] = "non_precise"
     mode_travail: Optional[Literal["presentiel", "hybride", "remote", "non_precise"]] = "non_precise"
+
+    # Compétences principales
     competences_techniques: List[str] = []
     competences_soft: List[str] = []
+
+    # Nouvelles infos :
+    # - compétences "nice to have"
+    # - rémunération / salaire (tel que mentionné dans l'offre, texte libre)
+    nice_to_have_skills: List[str] = []
+    remuneration: Optional[str] = None
+
+    # Missions résumées
     missions_principales: List[str] = []

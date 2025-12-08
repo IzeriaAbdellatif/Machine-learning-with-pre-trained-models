@@ -55,6 +55,14 @@ TÂCHES :
 5. Résumer les missions principales du poste sous forme d'une liste de 3 à 7
    phrases courtes (chaque phrase = une mission).
 
+6. Extraire une liste de compétences "nice to have" (appréciées mais non obligatoires),
+   si elles sont mentionnées explicitement comme un plus ou souhaitables.
+   Exemple : "serait un plus", "souhaité", "optionnel".
+
+7. Extraire la rémunération ou le salaire si elle est mentionnée :
+   - par exemple "10 000 MAD brut", "entre 35k et 45k EUR/an", "stage rémunéré 3 000 MAD/mois".
+   - S'il n'y a aucune information claire sur le salaire, mets une chaîne vide "".
+
 FORMAT DE RÉPONSE :
 Tu DOIS répondre STRICTEMENT en JSON valide, sans aucun texte avant ou après.
 Utilise exactement cette structure :
@@ -64,6 +72,8 @@ Utilise exactement cette structure :
   "mode_travail": "presentiel" | "hybride" | "remote" | "non_precise",
   "competences_techniques": ["...", "..."],
   "competences_soft": ["...", "..."],
+  "nice_to_have_skills": ["...", "..."],
+  "remuneration": "texte du salaire ou \"\" s'il n'y a rien",
   "missions_principales": ["...", "...", "..."]
 }}
 
@@ -154,7 +164,7 @@ def enrich_jobs_from_file(
         }
         enriched.append(merged)
 
-        # petite pause pour être gentil avec l'API (facultatif, tu peux réduire)
+        # petite pause pour être gentil avec l'API (facultatif)
         time.sleep(0.5)
 
     # IMPORTANT : default=str pour les dates, etc.
