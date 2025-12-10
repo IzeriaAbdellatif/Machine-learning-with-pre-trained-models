@@ -1,0 +1,28 @@
+{
+  "target_job": "Stage PFE Data Scientist / Machine Learning Engineer",
+  "skills": [
+    "Python",
+    "SQL",
+    "Machine Learning",
+    "Deep Learning",
+    "NLP",
+    "Power BI"
+  ],
+  "soft_skills": [
+    "Travail en équipe",
+    "Autonomie",
+    "Capacité d'apprentissage",
+    "Communication"
+  ],
+  "preferred_locations": [
+    "Casablanca",
+    "Rabat",
+    "Remote"
+  ],
+  "preferred_mode_travail": [
+    "remote",
+    "hybride"
+  ],
+  "min_remuneration": 6000,
+  "currency": "MAD"
+}
