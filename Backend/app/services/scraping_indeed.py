@@ -374,7 +374,14 @@ if __name__ == "__main__":
     keywords = [
         "stage data science",
         "stage machine learning",
-        "AI engineer",
+        "stage data engineer",
+        "software engineering internship",
+        "AI internship",
+        "Data scientist",
+        "Ai engineer",
+        "software developer",
+        "machine learning engineer",
+        "data engineer",
     ]
 
     scrape_indeed_offers(

@@ -118,8 +118,8 @@ def rerank_with_cross_encoder(
 
 if __name__ == "__main__":
     rerank_with_cross_encoder(
-        input_path="indeed_stages_data_ia_scored_final.json",
-        output_path="indeed_stages_data_ia_reranked.json",
+        input_path="app/services/indeed_stages_data_ia_scored_final.json",
+        output_path="app/services/indeed_stages_data_ia_reranked.json",
         user_profile_path="user_profile.json",
-        top_k=30,  # tu peux ajuster
+        top_k=15,  # tu peux ajuster
     )
