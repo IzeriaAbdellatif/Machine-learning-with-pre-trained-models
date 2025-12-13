@@ -212,7 +212,7 @@ def score_jobs_with_embeddings(
 if __name__ == "__main__":
     # Script simple : score toutes les offres d'indeed_stages_data_ia_enriched.json
     score_jobs_with_embeddings(
-        input_path="indeed_stages_data_ia_enriched.json",
-        output_path="indeed_stages_data_ia_scored.json",
+        input_path="app/services/indeed_stages_data_ia_enriched.json",
+        output_path="app/services/indeed_stages_data_ia_scored.json",
         user_profile_path="user_profile.json",
     )

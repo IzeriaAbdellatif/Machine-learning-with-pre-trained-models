@@ -251,7 +251,7 @@ def apply_rule_scoring_and_fusion(
 
 if __name__ == "__main__":
     apply_rule_scoring_and_fusion(
-        input_path="indeed_stages_data_ia_scored.json",
-        output_path="indeed_stages_data_ia_scored_final.json",
+        input_path="app/services/indeed_stages_data_ia_scored.json",
+        output_path="app/services/indeed_stages_data_ia_scored_final.json",
         user_profile_path="user_profile.json",
     )

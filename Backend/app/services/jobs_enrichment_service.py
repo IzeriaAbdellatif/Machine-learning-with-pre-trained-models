@@ -130,7 +130,7 @@ def enrich_one_job(job: JobInput) -> JobLLMOutput:
 def enrich_jobs_from_file(
     input_path: str = "indeed_stages_data_ia.json",
     output_path: str = "indeed_stages_data_ia_enriched.json",
-    max_jobs: int | None = 10,
+    max_jobs: int | None = None,
 ) -> None:
     """
     Lit un fichier JSON d'offres, enrichit chaque offre avec le LLM,
@@ -178,7 +178,7 @@ def enrich_jobs_from_file(
 if __name__ == "__main__":
     # Script simple : traite 10 offres (change max_jobs si tu veux tout traiter)
     enrich_jobs_from_file(
-        input_path="indeed_stages_data_ia.json",
-        output_path="indeed_stages_data_ia_enriched.json",
-        max_jobs=10,  # mets None pour tout traiter
+        input_path="app/services/indeed_stages_data_ia.json",
+        output_path="app/services/indeed_stages_data_ia_enriched.json",
+        max_jobs=None,  # mets None pour tout traiter
     )
