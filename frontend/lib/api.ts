@@ -1,5 +1,5 @@
 import axios, { AxiosInstance, InternalAxiosRequestConfig } from 'axios';
-import { getToken, removeToken } from './auth';
+import { getToken, removeToken, setToken } from './auth';
 
 // Base URL for the API - update this to match your backend
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
@@ -12,14 +12,19 @@ const api: AxiosInstance = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+  withCredentials: true, // Include cookies in cross-origin requests
 });
 
 // Request interceptor to inject authorization token
 api.interceptors.request.use(
   (config: InternalAxiosRequestConfig) => {
     const token = getToken();
+    console.log('[Axios] Token found:', !!token, 'URL:', config.url);
     if (token && config.headers) {
       config.headers.Authorization = `Bearer ${token}`;
+      console.log('[Axios] Authorization header set');
+    } else {
+      console.log('[Axios] No token or no headers available');
     }
     return config;
   },
@@ -32,11 +37,15 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    // If unauthorized, remove token and redirect to login
+    // If unauthorized, remove token and redirect to login (but delay to allow logs)
     if (error.response?.status === 401) {
+      console.error('[Axios] 401 Unauthorized - removing token and will redirect');
       removeToken();
       if (typeof window !== 'undefined') {
-        window.location.href = '/login';
+        // Delay redirect to allow debugging
+        setTimeout(() => {
+          window.location.href = '/login';
+        }, 2000);
       }
     }
     return Promise.reject(error);
@@ -62,7 +71,11 @@ import {
  */
 export const register = async (credentials: RegisterCredentials): Promise<AuthResponse> => {
   const response = await api.post<AuthResponse>('/auth/register', credentials);
-  return response.data;
+  const data = response.data;
+  if (data?.access_token) {
+    setToken(data.access_token);
+  }
+  return data;
 };
 
 /**
@@ -70,7 +83,11 @@ export const register = async (credentials: RegisterCredentials): Promise<AuthRe
  */
 export const login = async (credentials: LoginCredentials): Promise<AuthResponse> => {
   const response = await api.post<AuthResponse>('/auth/login', credentials);
-  return response.data;
+  const data = response.data;
+  if (data?.access_token) {
+    setToken(data.access_token);
+  }
+  return data;
 };
 
 /**
@@ -78,6 +95,7 @@ export const login = async (credentials: LoginCredentials): Promise<AuthResponse
  */
 export const logout = async (): Promise<void> => {
   await api.post('/auth/logout');
+  removeToken();
 };
 
 /**

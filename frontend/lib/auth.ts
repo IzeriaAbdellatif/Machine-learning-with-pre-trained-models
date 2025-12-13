@@ -1,31 +1,46 @@
-import Cookies from 'js-cookie';
-
 const TOKEN_KEY = 'auth_token';
 
 /**
- * Set the authentication token in cookies
- * Using cookies with secure settings for better security
+ * Set the authentication token in localStorage
  */
 export const setToken = (token: string): void => {
-  Cookies.set(TOKEN_KEY, token, {
-    expires: 7, // 7 days
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'strict',
-  });
+  try {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(TOKEN_KEY, token);
+      console.log('[Auth] Token saved to localStorage');
+    }
+  } catch (e) {
+    console.error('[Auth] Failed to save token:', e);
+  }
 };
 
 /**
- * Get the authentication token from cookies
+ * Get the authentication token from localStorage
  */
 export const getToken = (): string | undefined => {
-  return Cookies.get(TOKEN_KEY);
+  try {
+    if (typeof window === 'undefined') return undefined;
+    const token = localStorage.getItem(TOKEN_KEY);
+    console.log('[Auth] Token from localStorage:', !!token);
+    return token || undefined;
+  } catch (e) {
+    console.error('[Auth] Failed to get token:', e);
+    return undefined;
+  }
 };
 
 /**
- * Remove the authentication token from cookies
+ * Remove the authentication token from localStorage
  */
 export const removeToken = (): void => {
-  Cookies.remove(TOKEN_KEY);
+  try {
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem(TOKEN_KEY);
+      console.log('[Auth] Token removed from localStorage');
+    }
+  } catch (e) {
+    console.error('[Auth] Failed to remove token:', e);
+  }
 };
 
 /**

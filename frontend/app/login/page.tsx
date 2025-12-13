@@ -4,7 +4,6 @@ import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { login } from '@/lib/api';
-import { setToken } from '@/lib/auth';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -19,8 +18,8 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      const response = await login({ email, password });
-      setToken(response.token);
+       await login({ email, password });
+      // Token is already set in the api.ts login function, no need to set again
       router.push('/dashboard');
     } catch (err: unknown) {
       const errorMessage =
