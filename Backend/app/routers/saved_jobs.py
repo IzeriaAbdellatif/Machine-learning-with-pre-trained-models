@@ -1,5 +1,6 @@
 from fastapi import APIRouter, status, Depends, Query
 from typing import Optional
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.schemas.schemas import (
     SavedJobRequest,
@@ -8,6 +9,8 @@ from app.schemas.schemas import (
     MessageResponse,
 )
 from app.core.security import get_current_user
+from app.db.session import get_session
+from app.services import saved_job_service
 
 
 router = APIRouter(prefix="/saved-jobs", tags=["Saved Jobs"])
@@ -28,6 +31,7 @@ router = APIRouter(prefix="/saved-jobs", tags=["Saved Jobs"])
 async def save_job(
     job_id: str,
     current_user: dict = Depends(get_current_user),
+    db: AsyncSession = Depends(get_session),
 ) -> SavedJobResponse:
     """
     Save a job for the authenticated user.
@@ -36,7 +40,9 @@ async def save_job(
     
     Requires valid JWT token. Returns the saved job with metadata.
     """
-    pass
+    user_id = current_user.get("sub")
+    saved = await saved_job_service.save_job_for_user(db, user_id, job_id)
+    return saved
 
 
 @router.get(
@@ -53,6 +59,7 @@ async def list_saved_jobs(
     skip: int = Query(0, ge=0, description="Pagination offset"),
     limit: int = Query(10, ge=1, le=100, description="Pagination limit"),
     current_user: dict = Depends(get_current_user),
+    db: AsyncSession = Depends(get_session),
 ) -> SavedJobsListResponse:
     """
     Get all saved jobs for the authenticated user.
@@ -63,7 +70,9 @@ async def list_saved_jobs(
     
     Requires valid JWT token. Returns paginated list of user's saved jobs.
     """
-    pass
+    user_id = current_user.get("sub")
+    items, total = await saved_job_service.list_saved_jobs_for_user(db, user_id, skip=skip, limit=limit)
+    return SavedJobsListResponse(items=items, total=total, skip=skip, limit=limit)
 
 
 @router.delete(
@@ -80,6 +89,7 @@ async def list_saved_jobs(
 async def remove_saved_job(
     job_id: str,
     current_user: dict = Depends(get_current_user),
+    db: AsyncSession = Depends(get_session),
 ) -> MessageResponse:
     """
     Remove a job from the authenticated user's saved jobs.
@@ -88,4 +98,6 @@ async def remove_saved_job(
     
     Requires valid JWT token. Returns confirmation message.
     """
-    pass
+    user_id = current_user.get("sub")
+    await saved_job_service.remove_saved_job(db, user_id, job_id)
+    return MessageResponse(message="Saved job removed")

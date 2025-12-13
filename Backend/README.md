@@ -38,6 +38,7 @@ Backend/
 ### User Profile (`/users`)
 - `GET /users/{id}` - Get user profile
 - `PUT /users/{id}` - Update user profile
+The API will be available at `http://localhost:8000`
 - `DELETE /users/{id}` - Delete user account
 
 ### Jobs (`/jobs`)
