@@ -137,14 +137,14 @@ class JobResponse(BaseModel):
     title: str = Field(..., description="Job title")
     company: str = Field(..., description="Company name")
     location: str = Field(..., description="Job location")
-    job_type: str = Field(..., description="Employment type (Full-time, Part-time, etc.)")
-    experience_level: str = Field(..., description="Required experience level")
+    job_type: Optional[str] = Field(None, description="Employment type (Full-time, Part-time, etc.)")
+    experience_level: Optional[str] = Field(None, description="Required experience level")
     description: str = Field(..., description="Job description")
     required_skills: list[str] = Field(default=[], description="List of required skills")
     salary_min: Optional[float] = Field(None, description="Minimum salary")
     salary_max: Optional[float] = Field(None, description="Maximum salary")
     currency: Optional[str] = Field(None, description="Salary currency")
-    posted_at: str = Field(..., description="Job posting timestamp")
+    posted_at: Optional[str] = Field(None, description="Job posting timestamp")
     deadline: Optional[str] = Field(None, description="Application deadline")
     
     model_config = {

@@ -34,8 +34,8 @@ export default function RegisterPage() {
     setLoading(true);
 
     try {
-      const response = await register({ email, password, name });
-      setToken(response.token);
+      await register({ email, password, name });
+      
       router.push('/dashboard');
     } catch (err: unknown) {
       const errorMessage =
