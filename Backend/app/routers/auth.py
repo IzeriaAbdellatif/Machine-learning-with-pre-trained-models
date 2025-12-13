@@ -1,5 +1,6 @@
-from fastapi import APIRouter, status, Depends
+from fastapi import APIRouter, status, Depends, HTTPException
 from datetime import timedelta
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.schemas.schemas import (
     UserRegisterRequest,
@@ -10,6 +11,8 @@ from app.schemas.schemas import (
     MessageResponse,
 )
 from app.core.security import get_current_user
+from app.db.session import get_session
+from app.services import auth_service, user_service
 
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
@@ -25,7 +28,7 @@ router = APIRouter(prefix="/auth", tags=["Authentication"])
         400: {"description": "Invalid input or email already exists"},
     },
 )
-async def register(user_data: UserRegisterRequest) -> TokenResponse:
+async def register(user_data: UserRegisterRequest, db: AsyncSession = Depends(get_session)) -> TokenResponse:
     """
     Register a new user account.
     
@@ -35,7 +38,11 @@ async def register(user_data: UserRegisterRequest) -> TokenResponse:
     
     Returns JWT access token and user information.
     """
-    pass
+    # create user
+    user = await user_service.create_user(db, email=user_data.email, password=user_data.password, name=user_data.name)
+    # create token
+    access_token = auth_service.create_token_for_user(user)
+    return TokenResponse(access_token=access_token, token_type="bearer", user=user)
 
 
 @router.post(
@@ -48,7 +55,7 @@ async def register(user_data: UserRegisterRequest) -> TokenResponse:
         401: {"description": "Invalid email or password"},
     },
 )
-async def login(credentials: UserLoginRequest) -> TokenResponse:
+async def login(credentials: UserLoginRequest, db: AsyncSession = Depends(get_session)) -> TokenResponse:
     """
     Authenticate user and return JWT access token.
     
@@ -57,7 +64,11 @@ async def login(credentials: UserLoginRequest) -> TokenResponse:
     
     Returns JWT access token and user information.
     """
-    pass
+    user = await auth_service.authenticate_user(db, credentials.email, credentials.password)
+    if not user:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid email or password")
+    access_token = auth_service.create_token_for_user(user)
+    return TokenResponse(access_token=access_token, token_type="bearer", user=user)
 
 
 @router.post(
@@ -76,7 +87,8 @@ async def logout(current_user: dict = Depends(get_current_user)) -> LogoutRespon
     
     Requires valid JWT token. Token is invalidated on the client side.
     """
-    pass
+    # Token invalidation would require token store/blacklist. For now, client should discard token.
+    return LogoutResponse(message="Successfully logged out")
 
 
 @router.get(
@@ -89,10 +101,16 @@ async def logout(current_user: dict = Depends(get_current_user)) -> LogoutRespon
         401: {"description": "Unauthorized or invalid token"},
     },
 )
-async def get_current_user_info(current_user: dict = Depends(get_current_user)) -> UserResponse:
+async def get_current_user_info(current_user: dict = Depends(get_current_user), db: AsyncSession = Depends(get_session)) -> UserResponse:
     """
     Get the currently authenticated user's profile information.
     
     Requires valid JWT token.
     """
-    pass
+    user_id = current_user.get("sub")
+    if not user_id:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token payload")
+    user = await user_service.get_user_by_id(db, user_id)
+    if not user:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not found")
+    return user

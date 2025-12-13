@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pydantic import BaseModel, EmailStr, Field
 from typing import Optional
+from datetime import datetime
 
 
 # ============================================================================
@@ -11,7 +12,7 @@ from typing import Optional
 class UserRegisterRequest(BaseModel):
     """Schema for user registration request."""
     email: EmailStr = Field(..., description="User email address")
-    password: str = Field(..., min_length=8, description="User password (min 8 chars)")
+    password: str = Field(..., min_length=8, max_length=72, description="User password (min 8, max 72 chars)")
     name: str = Field(..., min_length=1, description="User full name")
     
     class Config:
@@ -27,7 +28,7 @@ class UserRegisterRequest(BaseModel):
 class UserLoginRequest(BaseModel):
     """Schema for user login request."""
     email: EmailStr = Field(..., description="User email address")
-    password: str = Field(..., description="User password")
+    password: str = Field(..., max_length=72, description="User password (max 72 chars)")
     
     class Config:
         json_schema_extra = {
@@ -44,8 +45,9 @@ class TokenResponse(BaseModel):
     token_type: str = Field(default="bearer", description="Token type")
     user: "UserResponse" = Field(..., description="User information")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+        "json_schema_extra" : {
             "example": {
                 "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
                 "token_type": "bearer",
@@ -56,18 +58,21 @@ class TokenResponse(BaseModel):
                 }
             }
         }
+}
 
 
 class LogoutResponse(BaseModel):
     """Schema for logout response."""
     message: str = Field(default="Successfully logged out", description="Logout confirmation message")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+                "json_schema_extra" : {
             "example": {
                 "message": "Successfully logged out"
             }
         }
+}
 
 
 # ============================================================================
@@ -82,11 +87,12 @@ class UserResponse(BaseModel):
     phone: Optional[str] = Field(None, description="User phone number")
     location: Optional[str] = Field(None, description="User location")
     bio: Optional[str] = Field(None, description="User bio/summary")
-    created_at: str = Field(..., description="Account creation timestamp")
-    updated_at: str = Field(..., description="Last update timestamp")
+    created_at: datetime = Field(..., description="Account creation timestamp")
+    updated_at: datetime = Field(..., description="Last update timestamp")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+                "json_schema_extra" : {
             "example": {
                 "id": "123e4567-e89b-12d3-a456-426614174000",
                 "email": "user@example.com",
@@ -98,6 +104,7 @@ class UserResponse(BaseModel):
                 "updated_at": "2024-01-20T15:45:00Z"
             }
         }
+}
 
 
 class UserUpdateRequest(BaseModel):
@@ -107,8 +114,9 @@ class UserUpdateRequest(BaseModel):
     location: Optional[str] = Field(None, description="User location")
     bio: Optional[str] = Field(None, description="User bio/summary")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+                "json_schema_extra" : {
             "example": {
                 "name": "John Doe",
                 "phone": "+1234567890",
@@ -116,6 +124,7 @@ class UserUpdateRequest(BaseModel):
                 "bio": "Software engineer with 5 years experience"
             }
         }
+}
 
 
 # ============================================================================
@@ -138,8 +147,9 @@ class JobResponse(BaseModel):
     posted_at: str = Field(..., description="Job posting timestamp")
     deadline: Optional[str] = Field(None, description="Application deadline")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+                "json_schema_extra" : {
             "example": {
                 "id": "job123",
                 "title": "Senior Python Developer",
@@ -156,6 +166,7 @@ class JobResponse(BaseModel):
                 "deadline": "2024-02-15T23:59:59Z"
             }
         }
+}
 
 
 class JobSearchQuery(BaseModel):
@@ -170,8 +181,9 @@ class JobSearchQuery(BaseModel):
     skip: Optional[int] = Field(default=0, ge=0, description="Pagination offset")
     limit: Optional[int] = Field(default=10, ge=1, le=100, description="Pagination limit")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+                "json_schema_extra" : {
             "example": {
                 "title": "Python Developer",
                 "location": "San Francisco",
@@ -184,6 +196,7 @@ class JobSearchQuery(BaseModel):
                 "limit": 20
             }
         }
+}
 
 
 class JobsListResponse(BaseModel):
@@ -193,8 +206,9 @@ class JobsListResponse(BaseModel):
     skip: int = Field(..., description="Pagination offset")
     limit: int = Field(..., description="Pagination limit")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+                "json_schema_extra" : {
             "example": {
                 "items": [
                     {
@@ -218,6 +232,7 @@ class JobsListResponse(BaseModel):
                 "limit": 10
             }
         }
+}
 
 
 # ============================================================================
@@ -228,12 +243,14 @@ class SavedJobRequest(BaseModel):
     """Schema for saving a job request."""
     job_id: str = Field(..., description="ID of the job to save")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+                "json_schema_extra" : {
             "example": {
                 "job_id": "job123"
             }
         }
+}
 
 
 class SavedJobResponse(BaseModel):
@@ -243,8 +260,9 @@ class SavedJobResponse(BaseModel):
     job: JobResponse = Field(..., description="Full job details")
     saved_at: str = Field(..., description="When the job was saved")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+                "json_schema_extra" : {
             "example": {
                 "id": "saved123",
                 "user_id": "user123",
@@ -266,6 +284,7 @@ class SavedJobResponse(BaseModel):
                 "saved_at": "2024-01-20T14:30:00Z"
             }
         }
+}
 
 
 class SavedJobsListResponse(BaseModel):
@@ -275,8 +294,9 @@ class SavedJobsListResponse(BaseModel):
     skip: int = Field(..., description="Pagination offset")
     limit: int = Field(..., description="Pagination limit")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+                "json_schema_extra" : {
             "example": {
                 "items": [
                     {
@@ -305,6 +325,7 @@ class SavedJobsListResponse(BaseModel):
                 "limit": 10
             }
         }
+}
 
 
 # ============================================================================
@@ -315,24 +336,28 @@ class MessageResponse(BaseModel):
     """Generic message response schema."""
     message: str = Field(..., description="Response message")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+                "json_schema_extra" : {
             "example": {
                 "message": "Operation successful"
             }
         }
+}
 
 
 class ErrorResponse(BaseModel):
     """Generic error response schema."""
     detail: str = Field(..., description="Error detail message")
     
-    class Config:
-        json_schema_extra = {
+    model_config = {
+        "from_attributes": True,
+                "json_schema_extra" : {
             "example": {
                 "detail": "Resource not found"
             }
         }
+}
 
 TokenResponse.model_rebuild()
 UserResponse.model_rebuild()

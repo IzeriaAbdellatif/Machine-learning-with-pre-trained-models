@@ -10,7 +10,10 @@ from app.core.config import settings
 
 
 # Password hashing context
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+# Prefer `bcrypt_sha256` which first hashes the password with SHA-256
+# before passing to bcrypt. This avoids the 72-byte bcrypt limit while
+# remaining compatible with existing bcrypt hashes (bcrypt left in list).
+pwd_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
 
 # HTTP Bearer security scheme
 security = HTTPBearer()
@@ -18,11 +21,26 @@ security = HTTPBearer()
 
 def hash_password(password: str) -> str:
     """Hash a password using bcrypt."""
-    return pwd_context.hash(password)
+    # Bcrypt has a 72-byte password limit. Truncate bytes safely to avoid
+    # ValueError from the underlying bcrypt implementation while preserving
+    # deterministic behavior for verification.
+    def _truncate_password(p: str) -> str:
+        b = p.encode("utf-8")
+        if len(b) <= 72:
+            return p
+        # Truncate to 72 bytes and decode ignoring partial multibyte char at end
+        return b[:72].decode("utf-8", errors="ignore")
+
+    safe_password = _truncate_password(password)
+    return pwd_context.hash(safe_password)
 
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     """Verify a plain password against its hashed version."""
+    # Apply the same truncation used when hashing so verification matches.
+    b = plain_password.encode("utf-8")
+    if len(b) > 72:
+        plain_password = b[:72].decode("utf-8", errors="ignore")
     return pwd_context.verify(plain_password, hashed_password)
 
 

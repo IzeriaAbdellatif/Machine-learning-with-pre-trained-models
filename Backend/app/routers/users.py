@@ -1,4 +1,5 @@
-from fastapi import APIRouter, status, Depends
+from fastapi import APIRouter, status, Depends, HTTPException
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.schemas.schemas import (
     UserResponse,
@@ -6,6 +7,8 @@ from app.schemas.schemas import (
     MessageResponse,
 )
 from app.core.security import get_current_user
+from app.db.session import get_session
+from app.services import user_service
 
 
 router = APIRouter(prefix="/users", tags=["User Profile"])
@@ -21,7 +24,7 @@ router = APIRouter(prefix="/users", tags=["User Profile"])
         404: {"description": "User not found"},
     },
 )
-async def get_user(user_id: str) -> UserResponse:
+async def get_user(user_id: str, db: AsyncSession = Depends(get_session)) -> UserResponse:
     """
     Get a user profile by ID.
     
@@ -29,7 +32,10 @@ async def get_user(user_id: str) -> UserResponse:
     
     Returns user profile information including contact details and bio.
     """
-    pass
+    user = await user_service.get_user_by_id(db, user_id)
+    if not user:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+    return user
 
 
 @router.put(
@@ -47,6 +53,7 @@ async def update_user(
     user_id: str,
     update_data: UserUpdateRequest,
     current_user: dict = Depends(get_current_user),
+    db: AsyncSession = Depends(get_session),
 ) -> UserResponse:
     """
     Update the authenticated user's profile information.
@@ -61,7 +68,15 @@ async def update_user(
     
     Returns updated user profile.
     """
-    pass
+    # ensure authenticated user matches user_id
+    sub = current_user.get("sub")
+    if sub != user_id:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Unauthorized to update this profile")
+    user = await user_service.get_user_by_id(db, user_id)
+    if not user:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+    updated = await user_service.update_user(db, user, update_data.model_dump(exclude_none=True))
+    return updated
 
 
 @router.delete(
@@ -78,6 +93,7 @@ async def update_user(
 async def delete_user(
     user_id: str,
     current_user: dict = Depends(get_current_user),
+    db: AsyncSession = Depends(get_session),
 ) -> MessageResponse:
     """
     Delete a user account.
@@ -89,4 +105,11 @@ async def delete_user(
     
     Returns confirmation message.
     """
-    pass
+    sub = current_user.get("sub")
+    if sub != user_id:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Unauthorized to delete this account")
+    user = await user_service.get_user_by_id(db, user_id)
+    if not user:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+    await user_service.delete_user(db, user)
+    return MessageResponse(message="User account deleted")

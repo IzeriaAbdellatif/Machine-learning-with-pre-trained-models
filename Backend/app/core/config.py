@@ -14,8 +14,8 @@ class Settings(BaseSettings):
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     
-    # Database (placeholder for future use)
-    DATABASE_URL: str = "sqlite:///./test.db"
+    # Database - default to PostgreSQL async driver. Override via .env in production.
+    DATABASE_URL: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/jobsdb"
 
     DEBUG: bool = False
 
