@@ -18,6 +18,11 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite:///./test.db"
 
     DEBUG: bool = False
+
+    # GROQ LLM Service Configuration
+    GROQ_API_KEY: str
+    GROQ_MODEL: str = "llama-3.1-8b-instant"
+
     
     class Config:
         env_file = ".env"

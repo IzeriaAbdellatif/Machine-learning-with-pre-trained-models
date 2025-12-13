@@ -12,14 +12,14 @@ class UserRegisterRequest(BaseModel):
     """Schema for user registration request."""
     email: EmailStr = Field(..., description="User email address")
     password: str = Field(..., min_length=8, description="User password (min 8 chars)")
-    full_name: str = Field(..., min_length=1, description="User full name")
+    name: str = Field(..., min_length=1, description="User full name")
     
     class Config:
         json_schema_extra = {
             "example": {
                 "email": "user@example.com",
                 "password": "SecurePassword123",
-                "full_name": "John Doe"
+                "name": "John Doe"
             }
         }
 
@@ -52,7 +52,7 @@ class TokenResponse(BaseModel):
                 "user": {
                     "id": "123e4567-e89b-12d3-a456-426614174000",
                     "email": "user@example.com",
-                    "full_name": "John Doe"
+                    "name": "John Doe"
                 }
             }
         }
@@ -78,7 +78,7 @@ class UserResponse(BaseModel):
     """Schema for user profile response."""
     id: str = Field(..., description="User unique identifier")
     email: EmailStr = Field(..., description="User email address")
-    full_name: str = Field(..., description="User full name")
+    name: str = Field(..., description="User full name")
     phone: Optional[str] = Field(None, description="User phone number")
     location: Optional[str] = Field(None, description="User location")
     bio: Optional[str] = Field(None, description="User bio/summary")
@@ -90,7 +90,7 @@ class UserResponse(BaseModel):
             "example": {
                 "id": "123e4567-e89b-12d3-a456-426614174000",
                 "email": "user@example.com",
-                "full_name": "John Doe",
+                "name": "John Doe",
                 "phone": "+1234567890",
                 "location": "San Francisco, CA",
                 "bio": "Software engineer with 5 years experience",
@@ -102,7 +102,7 @@ class UserResponse(BaseModel):
 
 class UserUpdateRequest(BaseModel):
     """Schema for user profile update request."""
-    full_name: Optional[str] = Field(None, description="User full name")
+    name: Optional[str] = Field(None, description="User full name")
     phone: Optional[str] = Field(None, description="User phone number")
     location: Optional[str] = Field(None, description="User location")
     bio: Optional[str] = Field(None, description="User bio/summary")
@@ -110,7 +110,7 @@ class UserUpdateRequest(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
-                "full_name": "John Doe",
+                "name": "John Doe",
                 "phone": "+1234567890",
                 "location": "San Francisco, CA",
                 "bio": "Software engineer with 5 years experience"

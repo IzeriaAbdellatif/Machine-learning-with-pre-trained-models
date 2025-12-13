@@ -172,7 +172,7 @@ TokenResponse
 UserResponse
 ├── id (str)
 ├── email (str)
-├── full_name (str)
+├── name (str)
 ├── phone (Optional[str])
 ├── location (Optional[str])
 ├── bio (Optional[str])
