@@ -38,7 +38,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.6474437375863393,
-    "score_cross_encoder": 2.203723669052124
+    "score_cross_encoder": 2.203723669052124,
+    "score_match": 0.9005833995740189
   },
   {
     "search_keyword": "stage data science",
@@ -88,7 +89,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.6513833643992742,
-    "score_cross_encoder": 1.175018548965454
+    "score_cross_encoder": 1.175018548965454,
+    "score_match": 0.7640509437675276
   },
   {
     "search_keyword": "stage machine learning",
@@ -138,7 +140,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.6843596150477728,
-    "score_cross_encoder": 1.066908359527588
+    "score_cross_encoder": 1.066908359527588,
+    "score_match": 0.7440085268228221
   },
   {
     "search_keyword": "Data scientist",
@@ -186,7 +189,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.7179728986819586,
-    "score_cross_encoder": 0.28172215819358826
+    "score_cross_encoder": 0.28172215819358826,
+    "score_match": 0.5699683832980508
   },
   {
     "search_keyword": "stage machine learning",
@@ -233,7 +237,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.6480321121215821,
-    "score_cross_encoder": 0.19235718250274658
+    "score_cross_encoder": 0.19235718250274658,
+    "score_match": 0.5479415617555431
   },
   {
     "search_keyword": "Data scientist",
@@ -287,7 +292,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.6510160048802693,
-    "score_cross_encoder": -1.962000846862793
+    "score_cross_encoder": -1.962000846862793,
+    "score_match": 0.12325067312917694
   },
   {
     "search_keyword": "stage data science",
@@ -345,7 +351,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.6826472242673238,
-    "score_cross_encoder": -2.1264595985412598
+    "score_cross_encoder": -2.1264595985412598,
+    "score_match": 0.1065515627883781
   },
   {
     "search_keyword": "stage data science",
@@ -389,7 +396,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.6470950804154079,
-    "score_cross_encoder": -2.9107770919799805
+    "score_cross_encoder": -2.9107770919799805,
+    "score_match": 0.051623377024224974
   },
   {
     "search_keyword": "Data scientist",
@@ -434,7 +442,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.7412326773007711,
-    "score_cross_encoder": -2.9114267826080322
+    "score_cross_encoder": -2.9114267826080322,
+    "score_match": 0.0515915784722324
   },
   {
     "search_keyword": "stage data science",
@@ -487,7 +496,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.6875118553638458,
-    "score_cross_encoder": -3.5318427085876465
+    "score_cross_encoder": -3.5318427085876465,
+    "score_match": 0.028419662608775733
   },
   {
     "search_keyword": "stage machine learning",
@@ -538,7 +548,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.6875118553638458,
-    "score_cross_encoder": -3.5318427085876465
+    "score_cross_encoder": -3.5318427085876465,
+    "score_match": 0.028419662608775733
   },
   {
     "search_keyword": "Data scientist",
@@ -596,7 +607,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.7968895365794499,
-    "score_cross_encoder": -4.159553527832031
+    "score_cross_encoder": -4.159553527832031,
+    "score_match": 0.01537446283837441
   },
   {
     "search_keyword": "Ai engineer",
@@ -654,7 +666,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.7968895365794499,
-    "score_cross_encoder": -4.159553527832031
+    "score_cross_encoder": -4.159553527832031,
+    "score_match": 0.01537446283837441
   },
   {
     "search_keyword": "Data scientist",
@@ -710,7 +723,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.7017622460921606,
-    "score_cross_encoder": -5.939976692199707
+    "score_cross_encoder": -5.939976692199707,
+    "score_match": 0.0026251812825263073
   },
   {
     "search_keyword": "Ai engineer",
@@ -759,7 +773,8 @@
       "score_remuneration": 0.0
     },
     "score_final": 0.6544976641734441,
-    "score_cross_encoder": -8.99734115600586
+    "score_cross_encoder": -8.99734115600586,
+    "score_match": 0.0001237230588203733
   },
   {
     "search_keyword": "machine learning engineer",
