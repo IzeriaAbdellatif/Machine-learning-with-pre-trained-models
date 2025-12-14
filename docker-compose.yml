@@ -4,9 +4,9 @@ services:
     container_name: postgres
     restart: unless-stopped
     environment:
-      POSTGRES_DB: appdb
-      POSTGRES_USER: appuser
-      POSTGRES_PASSWORD: apppass
+      POSTGRES_DB: mydb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
     volumes:
@@ -16,7 +16,7 @@ services:
 
   backend:
     build:
-      context: ./backend
+      context: ./Backend
     container_name: backend
     ports:
       - "8000:8000"
@@ -25,14 +25,13 @@ services:
       - HOST=0.0.0.0
       - PORT=8000
       # Connexion Postgres depuis Docker : host = "postgres" (nom du service)
-      - DATABASE_URL=postgresql://appuser:apppass@postgres:5432/appdb
+      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@postgres:5432/mydb
     volumes:
-      - ./backend:/app
+      - ./Backend:/app
     depends_on:
       - postgres
-    command: >
-      sh -c "pip install -r requirements.txt &&
-             uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+    # In development we want reload; in production rely on the image CMD
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     networks:
       - appnet
 
