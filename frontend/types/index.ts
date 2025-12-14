@@ -52,6 +52,8 @@ export interface JobSearchParams {
   title?: string;
   location?: string;
   skills?: string;
+  skip?: number;
+  limit?: number;
 }
 
 // Saved job type

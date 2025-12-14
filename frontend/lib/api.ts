@@ -137,8 +137,21 @@ export const deleteUser = async (id: string): Promise<void> => {
  * Search jobs with optional filters
  * Note: Score is returned by backend, never computed on frontend
  */
-export const searchJobs = async (params?: JobSearchParams): Promise<Job[]> => {
-  const response = await api.get<Job[]>('/jobs', { params });
+export const searchJobs = async (
+  params?: JobSearchParams
+): Promise<{ items: Job[]; total: number; skip: number; limit: number }> => {
+  const response = await api.get<{ items: Job[]; total: number; skip: number; limit: number }>(
+    '/jobs',
+    { params }
+  );
+  console.log(
+    '[API] searchJobs params:',
+    params,
+    'returned:',
+    response.data.items.length,
+    'total:',
+    response.data.total
+  );
   return response.data;
 };
 
@@ -165,8 +178,9 @@ export const saveJob = async (jobId: string): Promise<SavedJob> => {
  * Get all saved jobs
  */
 export const getSavedJobs = async (): Promise<SavedJob[]> => {
-  const response = await api.get<SavedJob[]>('/saved-jobs');
-  return response.data;
+  const response = await api.get<{ items: SavedJob[], total: number, skip: number, limit: number }>('/saved-jobs');
+  console.log('[API] getSavedJobs returned:', response.data.items.length, 'total:', response.data.total);
+  return response.data.items;
 };
 
 /**
