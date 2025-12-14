@@ -171,6 +171,7 @@ export const getJob = async (id: string): Promise<Job> => {
  */
 export const saveJob = async (jobId: string): Promise<SavedJob> => {
   const response = await api.post<SavedJob>(`/saved-jobs/${jobId}`);
+  console.log('[API] saveJob returned:', response.data);
   return response.data;
 };
 
@@ -179,7 +180,7 @@ export const saveJob = async (jobId: string): Promise<SavedJob> => {
  */
 export const getSavedJobs = async (): Promise<SavedJob[]> => {
   const response = await api.get<{ items: SavedJob[], total: number, skip: number, limit: number }>('/saved-jobs');
-  console.log('[API] getSavedJobs returned:', response.data.items.length, 'total:', response.data.total);
+  console.log('[API] getSavedJobs returned:', response.data.items, 'total:', response.data.total);
   return response.data.items;
 };
 
