@@ -8,8 +8,11 @@ import { Job, JobSearchParams } from '@/types';
 
 function JobsContent() {
   const [jobs, setJobs] = useState<Job[]>([]);
+  const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [page, setPage] = useState(0);
+  const PAGE_SIZE = 10;
   
   // Search filters
   const [title, setTitle] = useState('');
@@ -24,10 +27,17 @@ function JobsContent() {
     setError('');
     
     try {
-      const data = await searchJobs(params);
+      const response = await searchJobs({
+        skip: page * PAGE_SIZE,
+        limit: PAGE_SIZE,
+        ...params,
+      });
+      const { items, total } = response;
+      console.log('[JobsPage] Fetched jobs:', items.length, 'total:', total);
       // Jobs come with scores from backend - sort by score
-      const sortedJobs = [...data].sort((a, b) => b.score - a.score);
+      const sortedJobs = [...items].sort((a, b) => b.score - a.score);
       setJobs(sortedJobs);
+      setTotal(total);
     } catch (err) {
       console.error('Failed to fetch jobs:', err);
       setError('Failed to load jobs. Please try again.');
@@ -37,8 +47,8 @@ function JobsContent() {
   };
 
   useEffect(() => {
-    fetchJobs();
-  }, []);
+    fetchJobs(appliedFilters);
+  }, [page]);
 
   const handleSearch = (e: FormEvent) => {
     e.preventDefault();
@@ -49,7 +59,8 @@ function JobsContent() {
     if (skills.trim()) params.skills = skills.trim();
     
     setAppliedFilters(params);
-    fetchJobs(params);
+    setPage(0);
+    fetchJobs({ ...params, skip: 0, limit: PAGE_SIZE });
   };
 
   const handleClearFilters = () => {
@@ -57,10 +68,12 @@ function JobsContent() {
     setLocation('');
     setSkills('');
     setAppliedFilters({});
-    fetchJobs();
+    setPage(0);
+    fetchJobs({ skip: 0, limit: PAGE_SIZE });
   };
 
   const hasFilters = Object.keys(appliedFilters).length > 0;
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -208,12 +221,41 @@ function JobsContent() {
             {/* Results count */}
             <div className="mb-6 flex items-center justify-between">
               <p className="text-gray-600">
-                Found <span className="font-semibold">{jobs.length}</span> jobs
+                Found <span className="font-semibold">{total}</span> jobs
                 {hasFilters && ' matching your criteria'}
               </p>
-              <div className="text-sm text-gray-500">
-                Sorted by match score (highest first)
+              <div className="flex items-center gap-4 text-sm text-gray-500">
+                <span>Sorted by match score (highest first)</span>
+                <span>
+                  Page {page + 1} of {totalPages} (total {total})
+                </span>
               </div>
+            </div>
+
+            {/* Pagination controls */}
+            <div className="mb-6 flex items-center gap-3">
+              <button
+                onClick={() => setPage((p) => Math.max(0, p - 1))}
+                disabled={page === 0}
+                className={`px-3 py-2 rounded-lg border text-sm font-medium transition-colors ${
+                  page === 0
+                    ? 'border-gray-200 text-gray-400 cursor-not-allowed'
+                    : 'border-gray-300 text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                Previous
+              </button>
+              <button
+                onClick={() => setPage((p) => p + 1)}
+                disabled={page + 1 >= totalPages}
+                className={`px-3 py-2 rounded-lg border text-sm font-medium transition-colors ${
+                  page + 1 >= totalPages
+                    ? 'border-gray-200 text-gray-400 cursor-not-allowed'
+                    : 'border-gray-300 text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                Next
+              </button>
             </div>
 
             {/* Jobs Grid */}
@@ -256,6 +298,32 @@ function JobsContent() {
                 )}
               </div>
             )}
+
+            {/* Pagination controls (bottom) */}
+            <div className="mt-8 flex items-center gap-3 justify-end">
+              <button
+                onClick={() => setPage((p) => Math.max(0, p - 1))}
+                disabled={page === 0}
+                className={`px-3 py-2 rounded-lg border text-sm font-medium transition-colors ${
+                  page === 0
+                    ? 'border-gray-200 text-gray-400 cursor-not-allowed'
+                    : 'border-gray-300 text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                Previous
+              </button>
+              <button
+                onClick={() => setPage((p) => p + 1)}
+                disabled={page + 1 >= totalPages}
+                className={`px-3 py-2 rounded-lg border text-sm font-medium transition-colors ${
+                  page + 1 >= totalPages
+                    ? 'border-gray-200 text-gray-400 cursor-not-allowed'
+                    : 'border-gray-300 text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                Next
+              </button>
+            </div>
           </>
         )}
       </div>

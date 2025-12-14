@@ -10,20 +10,24 @@ import Link from 'next/link';
 function DashboardContent() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [user, setUser] = useState<User | null>(null);
+  const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+
+  const DASHBOARD_LIMIT = 100; // fetch more items than default for better stats
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const [jobsData, userData] = await Promise.all([
-          searchJobs(),
+          searchJobs({ skip: 0, limit: DASHBOARD_LIMIT }),
           getCurrentUser(),
         ]);
         
         // Jobs come with scores from backend - sort by score (highest first)
-        const sortedJobs = [...jobsData].sort((a, b) => b.score - a.score);
+        const sortedJobs = [...jobsData.items].sort((a, b) => b.score - a.score);
         setJobs(sortedJobs);
+        setTotal(jobsData.total ?? sortedJobs.length);
         setUser(userData);
       } catch (err) {
         console.error('Failed to fetch dashboard data:', err);
@@ -42,6 +46,44 @@ function DashboardContent() {
         <div className="flex flex-col items-center gap-4">
           <div className="w-12 h-12 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin"></div>
           <p className="text-gray-500">Loading your recommendations...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-red-200 w-full max-w-md">
+          <h2 className="text-lg font-semibold text-red-700 mb-2">Failed to load recommendations</h2>
+          <p className="text-sm text-red-600 mb-4">{error}</p>
+          <button
+            onClick={() => {
+              setError('');
+              setLoading(true);
+              // retry
+              (async () => {
+                try {
+                  const [jobsData, userData] = await Promise.all([
+                    searchJobs({ skip: 0, limit: DASHBOARD_LIMIT }),
+                    getCurrentUser(),
+                  ]);
+                  const sortedJobs = [...jobsData.items].sort((a, b) => b.score - a.score);
+                  setJobs(sortedJobs);
+                  setTotal(jobsData.total ?? sortedJobs.length);
+                  setUser(userData);
+                } catch (err) {
+                  console.error('Failed to fetch dashboard data (retry):', err);
+                  setError('Failed to load recommendations. Please try again.');
+                } finally {
+                  setLoading(false);
+                }
+              })();
+            }}
+            className="w-full inline-flex justify-center items-center px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium"
+          >
+            Retry
+          </button>
         </div>
       </div>
     );
@@ -83,7 +125,7 @@ function DashboardContent() {
                 </svg>
               </div>
               <div>
-                <p className="text-2xl font-bold text-gray-900">{jobs.length}</p>
+                <p className="text-2xl font-bold text-gray-900">{total}</p>
                 <p className="text-sm text-gray-500">Jobs Available</p>
               </div>
             </div>
