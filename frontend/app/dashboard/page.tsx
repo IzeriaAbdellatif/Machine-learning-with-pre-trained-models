@@ -3,13 +3,14 @@
 import { useState, useEffect } from 'react';
 import ProtectedRoute from '@/components/ProtectedRoute';
 import JobCard from '@/components/JobCard';
-import { searchJobs, getCurrentUser } from '@/lib/api';
+import { searchJobs, getCurrentUser, getSavedJobs } from '@/lib/api';
 import { Job, User } from '@/types';
 import Link from 'next/link';
 
 function DashboardContent() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [user, setUser] = useState<User | null>(null);
+  const [savedMap, setSavedMap] = useState<Record<string, { isSaved: boolean; saved_at?: string }>>({});
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -19,16 +20,22 @@ function DashboardContent() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [jobsData, userData] = await Promise.all([
+        const [jobsData, userData, savedItems] = await Promise.all([
           searchJobs({ skip: 0, limit: DASHBOARD_LIMIT }),
           getCurrentUser(),
+          getSavedJobs(),
         ]);
         
         // Jobs come with scores from backend - sort by score (highest first)
-        const sortedJobs = [...jobsData.items].sort((a, b) => b.score - a.score);
+        const sortedJobs = [...jobsData.items].sort((a, b) => b.score_final - a.score_final);
         setJobs(sortedJobs);
         setTotal(jobsData.total ?? sortedJobs.length);
         setUser(userData);
+        const map: Record<string, { isSaved: boolean; saved_at?: string }> = {};
+        savedItems.forEach((sj) => {
+          map[sj.job.id] = { isSaved: true, saved_at: sj.saved_at };
+        });
+        setSavedMap(map);
       } catch (err) {
         console.error('Failed to fetch dashboard data:', err);
         setError('Failed to load recommendations. Please try again.');
@@ -68,7 +75,7 @@ function DashboardContent() {
                     searchJobs({ skip: 0, limit: DASHBOARD_LIMIT }),
                     getCurrentUser(),
                   ]);
-                  const sortedJobs = [...jobsData.items].sort((a, b) => b.score - a.score);
+                  const sortedJobs = [...jobsData.items].sort((a, b) => b.score_final - a.score_final);
                   setJobs(sortedJobs);
                   setTotal(jobsData.total ?? sortedJobs.length);
                   setUser(userData);
@@ -89,7 +96,7 @@ function DashboardContent() {
     );
   }
 
-  // Get top recommendations (highest scores from backend)
+  // Get top recommendations (highest score_finals from backend)
   const topRecommendations = jobs.slice(0, 6);
 
   return (
@@ -150,7 +157,7 @@ function DashboardContent() {
               </div>
               <div>
                 <p className="text-2xl font-bold text-gray-900">
-                  {jobs.filter((j) => j.score >= 80).length}
+                  {jobs.filter((j) => j.score_final >= 80).length}
                 </p>
                 <p className="text-sm text-gray-500">High Match (80%+)</p>
               </div>
@@ -176,7 +183,7 @@ function DashboardContent() {
               </div>
               <div>
                 <p className="text-2xl font-bold text-gray-900">
-                  {jobs.length > 0 ? Math.round(jobs[0].score) : 0}%
+                  {jobs.length > 0 ? Math.round(jobs[0].score_final) : 0}%
                 </p>
                 <p className="text-sm text-gray-500">Best Match Score</p>
               </div>
@@ -226,7 +233,12 @@ function DashboardContent() {
           {topRecommendations.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {topRecommendations.map((job) => (
-                <JobCard key={job.id} job={job} />
+                <JobCard
+                  key={job.id}
+                  job={job}
+                  isSaved={!!savedMap[job.id]?.isSaved}
+                  saved_at={savedMap[job.id]?.saved_at}
+                />
               ))}
             </div>
           ) : (

@@ -98,6 +98,7 @@ function SavedJobsContent() {
                   isSaved={true}
                   onSaveToggle={handleSaveToggle}
                   showSaveButton={true}
+                  saved_at={savedJob.saved_at}
                 />
                 
               </div>
