@@ -139,13 +139,26 @@ class JobResponse(BaseModel):
     location: str = Field(..., description="Job location")
     job_type: Optional[str] = Field(None, description="Employment type (Full-time, Part-time, etc.)")
     experience_level: Optional[str] = Field(None, description="Required experience level")
-    description: str = Field(..., description="Job description")
+    description: Optional[str] = Field(None, description="Job description")
     required_skills: list[str] = Field(default=[], description="List of required skills")
     salary_min: Optional[float] = Field(None, description="Minimum salary")
     salary_max: Optional[float] = Field(None, description="Maximum salary")
     currency: Optional[str] = Field(None, description="Salary currency")
-    posted_at: Optional[str] = Field(None, description="Job posting timestamp")
-    deadline: Optional[str] = Field(None, description="Application deadline")
+    posted_at: Optional[datetime] = Field(None, description="Job posting timestamp")
+    deadline: Optional[datetime] = Field(None, description="Application deadline")
+    
+    # Indeed-specific fields
+    job_url: Optional[str] = Field(None, description="Job posting URL")
+    apply_url: Optional[str] = Field(None, description="Direct application URL")
+    mode_travail: Optional[str] = Field(None, description="Work mode (remote/hybrid/presentiel)")
+    remuneration: Optional[str] = Field(None, description="Salary information (text)")
+    missions_principales: Optional[list[str]] = Field(None, description="Main missions/tasks")
+    search_keyword: Optional[str] = Field(None, description="Search keyword")
+    
+    # ML scoring fields
+    score_embedding: Optional[float] = Field(None, description="Embedding similarity score")
+    score_final: Optional[float] = Field(None, description="Final ranking score")
+    score_cross_encoder: Optional[float] = Field(None, description="Cross-encoder reranking score")
     
     model_config = {
         "from_attributes": True,
@@ -163,7 +176,16 @@ class JobResponse(BaseModel):
                 "salary_max": 200000,
                 "currency": "USD",
                 "posted_at": "2024-01-15T10:30:00Z",
-                "deadline": "2024-02-15T23:59:59Z"
+                "deadline": "2024-02-15T23:59:59Z",
+                "job_url": "https://example.com/job/123",
+                "apply_url": "https://example.com/apply/123",
+                "mode_travail": "remote",
+                "remuneration": "stage rémunéré",
+                "missions_principales": ["Develop features", "Code review"],
+                "search_keyword": "Python Developer",
+                "score_embedding": 0.85,
+                "score_final": 0.78,
+                "score_cross_encoder": 1.2
             }
         }
 }
@@ -255,16 +277,16 @@ class SavedJobRequest(BaseModel):
 
 class SavedJobResponse(BaseModel):
     """Schema for saved job response."""
-    id: str = Field(..., description="Saved job unique identifier")
+    id: int = Field(..., description="Saved job unique identifier")
     user_id: str = Field(..., description="User ID who saved the job")
     job: JobResponse = Field(..., description="Full job details")
-    saved_at: str = Field(..., description="When the job was saved")
+    saved_at: Optional[datetime] = Field(None, description="When the job was saved")
     
     model_config = {
         "from_attributes": True,
                 "json_schema_extra" : {
             "example": {
-                "id": "saved123",
+                "id": 1,
                 "user_id": "user123",
                 "job": {
                     "id": "job123",
@@ -300,7 +322,7 @@ class SavedJobsListResponse(BaseModel):
             "example": {
                 "items": [
                     {
-                        "id": "saved123",
+                        "id": 1,
                         "user_id": "user123",
                         "job": {
                             "id": "job123",

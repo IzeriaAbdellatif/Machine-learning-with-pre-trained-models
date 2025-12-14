@@ -21,7 +21,8 @@ export interface Job {
   type?: string;
   postedAt?: string;
   url?: string;
-  score: number; // Backend-calculated recommendation score
+  score_final: number;
+  
 }
 
 // Auth types
@@ -61,5 +62,5 @@ export interface SavedJob {
   id: string;
   jobId: string;
   job: Job;
-  savedAt: string;
+  saved_at: string;
 }

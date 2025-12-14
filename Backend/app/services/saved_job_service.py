@@ -1,5 +1,6 @@
 from sqlalchemy import select, delete
 from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.orm import selectinload
 from fastapi import HTTPException, status
 
 from app.models import SavedJob, Job
@@ -24,12 +25,18 @@ async def save_job_for_user(db: AsyncSession, user_id: str, job_id: str):
     saved = SavedJob(user_id=user_id, job_id=job_id)
     db.add(saved)
     await db.commit()
-    await db.refresh(saved)
+    await db.refresh(saved, ["job"])
     return saved
 
 
 async def list_saved_jobs_for_user(db: AsyncSession, user_id: str, skip: int = 0, limit: int = 10):
-    result = await db.execute(select(SavedJob).where(SavedJob.user_id == user_id).offset(skip).limit(limit))
+    result = await db.execute(
+        select(SavedJob)
+        .options(selectinload(SavedJob.job))
+        .where(SavedJob.user_id == user_id)
+        .offset(skip)
+        .limit(limit)
+    )
     items = result.scalars().all()
     total_res = await db.execute(select(SavedJob).where(SavedJob.user_id == user_id))
     total = len(total_res.scalars().all())

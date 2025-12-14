@@ -20,7 +20,7 @@ function SavedJobsContent() {
       const data = await getSavedJobs();
       // Sort by saved date (most recent first)
       const sorted = [...data].sort(
-        (a, b) => new Date(b.savedAt).getTime() - new Date(a.savedAt).getTime()
+        (a, b) => new Date(b.saved_at).getTime() - new Date(a.saved_at).getTime()
       );
       setSavedJobs(sorted);
     } catch (err) {
@@ -99,11 +99,7 @@ function SavedJobsContent() {
                   onSaveToggle={handleSaveToggle}
                   showSaveButton={true}
                 />
-                <div className="absolute top-4 right-4">
-                  <span className="text-xs text-gray-400">
-                    Saved {new Date(savedJob.savedAt).toLocaleDateString()}
-                  </span>
-                </div>
+                
               </div>
             ))}
           </div>

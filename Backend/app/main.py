@@ -44,7 +44,7 @@ async def on_startup():
         await conn.run_sync(Base.metadata.create_all)
 
     # seed jobs from JSON file if any
-    data_file = Path(__file__).resolve().parents[1] / "indeed_stages_data_ia.json"
+    data_file = Path(__file__).resolve().parents[1] / "indeed_stages_data_ia_reranked.json"
     async with AsyncSessionLocal() as session:
         created = await seed_jobs_from_file(session, data_file)
         if created:
