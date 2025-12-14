@@ -3,7 +3,7 @@
 import { useState, useEffect, FormEvent } from 'react';
 import ProtectedRoute from '@/components/ProtectedRoute';
 import JobCard from '@/components/JobCard';
-import { searchJobs } from '@/lib/api';
+import { searchJobs, getSavedJobs } from '@/lib/api';
 import { Job, JobSearchParams } from '@/types';
 
 function JobsContent() {
@@ -13,6 +13,7 @@ function JobsContent() {
   const [error, setError] = useState('');
   const [page, setPage] = useState(0);
   const PAGE_SIZE = 10;
+  const [savedMap, setSavedMap] = useState<Record<string, { isSaved: boolean; saved_at?: string }>>({});
   
   // Search filters
   const [title, setTitle] = useState('');
@@ -27,17 +28,25 @@ function JobsContent() {
     setError('');
     
     try {
-      const response = await searchJobs({
-        skip: page * PAGE_SIZE,
-        limit: PAGE_SIZE,
-        ...params,
-      });
+      const [response, savedItems] = await Promise.all([
+        searchJobs({
+          skip: page * PAGE_SIZE,
+          limit: PAGE_SIZE,
+          ...params,
+        }),
+        getSavedJobs(),
+      ]);
       const { items, total } = response;
       console.log('[JobsPage] Fetched jobs:', items.length, 'total:', total);
       // Jobs come with scores from backend - sort by score
       const sortedJobs = [...items].sort((a, b) => b.score_final - a.score_final);
       setJobs(sortedJobs);
       setTotal(total);
+      const map: Record<string, { isSaved: boolean; saved_at?: string }> = {};
+      savedItems.forEach((sj) => {
+        map[sj.job.id] = { isSaved: true, saved_at: sj.saved_at };
+      });
+      setSavedMap(map);
     } catch (err) {
       console.error('Failed to fetch jobs:', err);
       setError('Failed to load jobs. Please try again.');
@@ -262,7 +271,12 @@ function JobsContent() {
             {jobs.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {jobs.map((job) => (
-                  <JobCard key={job.id} job={job} />
+                  <JobCard
+                    key={job.id}
+                    job={job}
+                    isSaved={!!savedMap[job.id]?.isSaved}
+                    saved_at={savedMap[job.id]?.saved_at}
+                  />
                 ))}
               </div>
             ) : (

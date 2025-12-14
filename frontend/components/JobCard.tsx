@@ -10,6 +10,7 @@ interface JobCardProps {
   isSaved?: boolean;
   onSaveToggle?: () => void;
   showSaveButton?: boolean;
+  saved_at?: string;
 }
 
 export default function JobCard({
@@ -17,6 +18,7 @@ export default function JobCard({
   isSaved = false,
   onSaveToggle,
   showSaveButton = true,
+  saved_at,
 }: JobCardProps) {
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(isSaved);
@@ -148,10 +150,15 @@ export default function JobCard({
             )}
           </div>
         )}
-
+        {/* Saved date moved near the button */}
         {/* Save button */}
         {showSaveButton && (
-          <div className="mt-4 pt-4 border-t border-gray-100 flex justify-end">
+          <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-end gap-3">
+            {saved_at && (
+              <span className="text-xs text-gray-400 mr-auto">
+                Saved {new Date(saved_at).toLocaleDateString()}
+              </span>
+            )}
             <button
               onClick={handleSaveToggle}
               disabled={saving}
