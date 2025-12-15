@@ -106,6 +106,14 @@ export const getCurrentUser = async (): Promise<User> => {
   return response.data;
 };
 
+/**
+ * Update current user profile
+ */
+export const updateCurrentUser = async (data: Partial<User>): Promise<User> => {
+  const response = await api.put<User>('/auth/me', data);
+  return response.data;
+};
+
 // ==================== USERS API ====================
 
 /**

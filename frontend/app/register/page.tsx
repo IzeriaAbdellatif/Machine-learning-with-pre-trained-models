@@ -31,21 +31,9 @@ export default function RegisterPage() {
       return;
     }
 
-    setLoading(true);
-
-    try {
-      await register({ email, password, name });
-      
-      router.push('/dashboard');
-    } catch (err: unknown) {
-      const errorMessage =
-        err instanceof Error
-          ? err.message
-          : 'Registration failed. Please try again.';
-      setError(errorMessage);
-    } finally {
-      setLoading(false);
-    }
+    // Store basic info in sessionStorage and redirect to profile page
+    sessionStorage.setItem('registerData', JSON.stringify({ email, password, name }));
+    router.push('/register/profile');
   };
 
   return (

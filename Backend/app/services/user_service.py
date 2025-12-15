@@ -17,9 +17,34 @@ async def get_user_by_email(db: AsyncSession, email: str):
     return result.scalars().first()
 
 
-async def create_user(db: AsyncSession, email: str, password: str, name: str):
+async def create_user(
+    db: AsyncSession,
+    email: str,
+    password: str,
+    name: str,
+    phone: str = None,
+    location: str = None,
+    bio: str = None,
+    skills: str = None,
+    soft_skills: str = None,
+    preferred_locations: str = None,
+    preferred_mode_travail: str = None,
+    min_remuneration: float = None,
+):
     hashed = hash_password(password)
-    user = User(email=email, hashed_password=hashed, name=name)
+    user = User(
+        email=email,
+        hashed_password=hashed,
+        name=name,
+        phone=phone,
+        location=location,
+        bio=bio,
+        skills=skills,
+        soft_skills=soft_skills,
+        preferred_locations=preferred_locations,
+        preferred_mode_travail=preferred_mode_travail,
+        min_remuneration=min_remuneration,
+    )
     db.add(user)
     try:
         await db.commit()

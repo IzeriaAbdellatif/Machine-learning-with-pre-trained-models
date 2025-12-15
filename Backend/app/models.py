@@ -36,6 +36,11 @@ class User(Base):
     phone = Column(String, nullable=True)
     location = Column(String, nullable=True)
     bio = Column(Text, nullable=True)
+    skills = Column(Text, nullable=True)  # Technical skills (comma-separated)
+    soft_skills = Column(Text, nullable=True)  # Soft skills (comma-separated)
+    preferred_locations = Column(Text, nullable=True)  # Preferred work locations (comma-separated)
+    preferred_mode_travail = Column(Text, nullable=True)  # Preferred work modes (comma-separated)
+    min_remuneration = Column(Float, nullable=True)  # Minimum expected salary
     created_at = Column(DateTime(timezone=True), default=get_utc_now)
     updated_at = Column(DateTime(timezone=True), default=get_utc_now, onupdate=get_utc_now)
 
