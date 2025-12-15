@@ -14,6 +14,7 @@ Design (inspired by rule_scoring_service):
 """
 
 import re
+import math
 from typing import Optional, List, Set
 from app.models import User, Job
 
@@ -170,6 +171,15 @@ def scoring_function(user: User, job: Job) -> float:
     - 0.05 * location_score
     - 0.05 * remuneration_score
     """
+    # If a cross-encoder score is available, follow the method in
+    # cross_encoder_rerank_service: score = sigmoid(score_cross_encoder)
+    if getattr(job, "score_cross_encoder", None) is not None:
+        try:
+            ce = float(job.score_cross_encoder)
+            return 1.0 / (1.0 + math.exp(-ce))
+        except (TypeError, ValueError):
+            # Fall back to rule/embedding blend if value is not numeric
+            pass
 
     embedding_score = float(job.score_embedding or 0.0)
     skill_score = _compute_skill_score(user, job)
