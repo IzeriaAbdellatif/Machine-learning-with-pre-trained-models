@@ -27,7 +27,7 @@ function DashboardContent() {
         ]);
         
         // Jobs come with scores from backend - sort by score (highest first)
-        const sortedJobs = [...jobsData.items].sort((a, b) => b.score_final - a.score_final);
+        const sortedJobs = [...jobsData.items].sort((a, b) => b.score - a.score);
         setJobs(sortedJobs);
         setTotal(jobsData.total ?? sortedJobs.length);
         setUser(userData);
@@ -75,7 +75,7 @@ function DashboardContent() {
                     searchJobs({ skip: 0, limit: DASHBOARD_LIMIT }),
                     getCurrentUser(),
                   ]);
-                  const sortedJobs = [...jobsData.items].sort((a, b) => b.score_final - a.score_final);
+                  const sortedJobs = [...jobsData.items].sort((a, b) => b.score - a.score);
                   setJobs(sortedJobs);
                   setTotal(jobsData.total ?? sortedJobs.length);
                   setUser(userData);
@@ -96,7 +96,7 @@ function DashboardContent() {
     );
   }
 
-  // Get top recommendations (highest score_finals from backend)
+  // Get top recommendations (highest scores from backend)
   const topRecommendations = jobs.slice(0, 6);
 
   return (
@@ -157,7 +157,7 @@ function DashboardContent() {
               </div>
               <div>
                 <p className="text-2xl font-bold text-gray-900">
-                  {jobs.filter((j) => j.score_final >= 80).length}
+                  {jobs.filter((j) => j.score >= 80).length}
                 </p>
                 <p className="text-sm text-gray-500">High Match (80%+)</p>
               </div>
@@ -183,7 +183,7 @@ function DashboardContent() {
               </div>
               <div>
                 <p className="text-2xl font-bold text-gray-900">
-                  {jobs.length > 0 ? Math.round(jobs[0].score_final) : 0}%
+                  {jobs.length > 0 ? Math.round(jobs[0].score) : 0}%
                 </p>
                 <p className="text-sm text-gray-500">Best Match Score</p>
               </div>

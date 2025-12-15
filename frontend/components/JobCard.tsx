@@ -64,8 +64,8 @@ export default function JobCard({
           </div>
           
           {/* Score badge - displayed as provided by backend */}
-          <div className={`px-3 py-1 rounded-full text-sm font-medium ${getScoreColor(100*parseFloat((job.score_final).toFixed(2)))}`}>
-            {(job.score_final*100).toFixed(2)}% Match
+          <div className={`px-3 py-1 rounded-full text-sm font-medium ${getScoreColor(100*parseFloat((job.score).toFixed(2)))}`}>
+            {(job.score*100).toFixed(2)}% Match
           </div>
         </div>
 

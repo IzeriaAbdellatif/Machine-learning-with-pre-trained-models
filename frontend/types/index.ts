@@ -27,7 +27,7 @@ export interface Job {
   type?: string;
   postedAt?: string;
   url?: string;
-  score_final: number;
+  score: number;
   
 }
 

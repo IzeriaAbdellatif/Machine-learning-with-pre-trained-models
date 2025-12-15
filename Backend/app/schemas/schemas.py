@@ -244,6 +244,9 @@ class JobResponse(BaseModel):
     score_final: Optional[float] = Field(None, description="Final ranking score")
     score_cross_encoder: Optional[float] = Field(None, description="Cross-encoder reranking score")
     
+    # Dynamic relevance score (computed at request time for authenticated users)
+    score: Optional[float] = Field(None, ge=0.0, le=1.0, description="User relevance score (0-1, higher is better match)")
+    
     model_config = {
         "from_attributes": True,
                 "json_schema_extra" : {
@@ -464,6 +467,134 @@ class ErrorResponse(BaseModel):
             }
         }
 }
+
+
+# ============================================================================
+# Enriched Job Response Schemas (with scoring)
+# ============================================================================
+
+class JobScoreBreakdown(BaseModel):
+    """Detailed breakdown of job relevance scores."""
+    skills: float = Field(..., ge=0.0, le=1.0, description="Skills match score (0-1)")
+    mode_travail: float = Field(..., ge=0.0, le=1.0, description="Work mode compatibility score (0-1)")
+    location: float = Field(..., ge=0.0, le=1.0, description="Location preference match score (0-1)")
+    remuneration: float = Field(..., ge=0.0, le=1.0, description="Salary compatibility score (0-1)")
+    embedding: float = Field(..., ge=0.0, le=1.0, description="Embedding similarity score (0-1)")
+    final: float = Field(..., ge=0.0, le=1.0, description="Final weighted score (0-1)")
+    
+    model_config = {
+        "json_schema_extra": {
+            "example": {
+                "skills": 0.85,
+                "mode_travail": 1.0,
+                "location": 0.5,
+                "remuneration": 0.9,
+                "embedding": 0.75,
+                "final": 0.78,
+            }
+        }
+    }
+
+
+class EnrichedJobResponse(BaseModel):
+    """Job response enriched with relevance scoring for authenticated user."""
+    id: str = Field(..., description="Job unique identifier")
+    title: str = Field(..., description="Job title")
+    company: str = Field(..., description="Company name")
+    location: str = Field(..., description="Job location")
+    job_type: Optional[str] = Field(None, description="Employment type (Full-time, Part-time, etc.)")
+    experience_level: Optional[str] = Field(None, description="Required experience level")
+    description: Optional[str] = Field(None, description="Job description")
+    required_skills: list[str] = Field(default=[], description="List of required skills")
+    salary_min: Optional[float] = Field(None, description="Minimum salary")
+    salary_max: Optional[float] = Field(None, description="Maximum salary")
+    currency: Optional[str] = Field(None, description="Salary currency")
+    posted_at: Optional[datetime] = Field(None, description="Job posting timestamp")
+    deadline: Optional[datetime] = Field(None, description="Application deadline")
+    
+    # Indeed-specific fields
+    job_url: Optional[str] = Field(None, description="Job posting URL")
+    apply_url: Optional[str] = Field(None, description="Direct application URL")
+    mode_travail: Optional[str] = Field(None, description="Work mode (remote/hybrid/presentiel)")
+    remuneration: Optional[str] = Field(None, description="Salary information (text)")
+    missions_principales: Optional[list[str]] = Field(None, description="Main missions/tasks")
+    search_keyword: Optional[str] = Field(None, description="Search keyword")
+    
+    # Scoring information
+    score: JobScoreBreakdown = Field(..., description="Detailed score breakdown")
+    
+    model_config = {
+        "from_attributes": True,
+        "json_schema_extra": {
+            "example": {
+                "id": "job123",
+                "title": "Senior Data Scientist",
+                "company": "Tech Corp",
+                "location": "Remote",
+                "job_type": "Full-time",
+                "experience_level": "Senior",
+                "description": "We are looking for a senior data scientist...",
+                "required_skills": ["Python", "Machine Learning", "Data Analysis"],
+                "salary_min": 150000,
+                "salary_max": 200000,
+                "currency": "USD",
+                "posted_at": "2024-01-15T10:30:00Z",
+                "deadline": "2024-02-15T23:59:59Z",
+                "job_url": "https://example.com/job/123",
+                "apply_url": "https://example.com/apply/123",
+                "mode_travail": "remote",
+                "remuneration": "150k - 200k USD",
+                "missions_principales": ["Build ML models", "Data analysis"],
+                "search_keyword": "Data Science",
+                "score": {
+                    "skills": 0.95,
+                    "mode_travail": 1.0,
+                    "location": 1.0,
+                    "remuneration": 0.9,
+                    "embedding": 0.88,
+                    "final": 0.92,
+                },
+            }
+        }
+    }
+
+
+class EnrichedJobsListResponse(BaseModel):
+    """Paginated list of jobs enriched with relevance scores."""
+    items: list[EnrichedJobResponse] = Field(..., description="List of enriched jobs sorted by relevance score")
+    total: int = Field(..., description="Total number of jobs available")
+    skip: int = Field(..., description="Pagination offset")
+    limit: int = Field(..., description="Pagination limit")
+    
+    model_config = {
+        "from_attributes": True,
+        "json_schema_extra": {
+            "example": {
+                "items": [
+                    {
+                        "id": "job123",
+                        "title": "Senior Data Scientist",
+                        "company": "Tech Corp",
+                        "location": "Remote",
+                        "job_type": "Full-time",
+                        "required_skills": ["Python", "ML"],
+                        "score": {
+                            "skills": 0.95,
+                            "mode_travail": 1.0,
+                            "location": 1.0,
+                            "remuneration": 0.9,
+                            "embedding": 0.88,
+                            "final": 0.92,
+                        },
+                    }
+                ],
+                "total": 156,
+                "skip": 0,
+                "limit": 10,
+            }
+        }
+    }
+
 
 TokenResponse.model_rebuild()
 UserResponse.model_rebuild()

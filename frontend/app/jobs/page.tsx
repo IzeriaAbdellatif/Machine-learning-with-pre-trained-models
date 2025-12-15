@@ -39,7 +39,7 @@ function JobsContent() {
       const { items, total } = response;
       console.log('[JobsPage] Fetched jobs:', items.length, 'total:', total);
       // Jobs come with scores from backend - sort by score
-      const sortedJobs = [...items].sort((a, b) => b.score_final - a.score_final);
+      const sortedJobs = [...items].sort((a, b) => b.score - a.score);
       setJobs(sortedJobs);
       setTotal(total);
       const map: Record<string, { isSaved: boolean; saved_at?: string }> = {};

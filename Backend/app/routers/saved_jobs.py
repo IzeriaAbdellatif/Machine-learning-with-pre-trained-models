@@ -1,6 +1,7 @@
 from fastapi import APIRouter, status, Depends, Query
 from typing import Optional
 from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import select
 
 from app.schemas.schemas import (
     SavedJobRequest,
@@ -11,6 +12,8 @@ from app.schemas.schemas import (
 from app.core.security import get_current_user
 from app.db.session import get_session
 from app.services import saved_job_service
+from app.services.scoring import scoring_function
+from app.models import User
 
 
 router = APIRouter(prefix="/saved-jobs", tags=["Saved Jobs"])
@@ -42,6 +45,11 @@ async def save_job(
     """
     user_id = current_user.get("sub")
     saved = await saved_job_service.save_job_for_user(db, user_id, job_id)
+    # Add dynamic score for the saved job when available
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalars().first()
+    if user and saved.job:
+        saved.job.score = scoring_function(user, saved.job)
     return saved
 
 
@@ -72,6 +80,13 @@ async def list_saved_jobs(
     """
     user_id = current_user.get("sub")
     items, total = await saved_job_service.list_saved_jobs_for_user(db, user_id, skip=skip, limit=limit)
+    # Apply scores to each saved job when user profile is available
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalars().first()
+    if user:
+        for saved_job in items:
+            if saved_job.job:
+                saved_job.job.score = scoring_function(user, saved_job.job)
     return SavedJobsListResponse(items=items, total=total, skip=skip, limit=limit)
 
 

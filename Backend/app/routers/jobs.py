@@ -1,13 +1,17 @@
 from fastapi import APIRouter, status, Query, Depends, HTTPException
 from typing import Optional, List
 from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import select
 
 from app.schemas.schemas import (
     JobResponse,
     JobsListResponse,
 )
+from app.core.security import get_current_user
 from app.db.session import get_session
 from app.services import job_service
+from app.services.scoring import scoring_function
+from app.models import User
 
 
 router = APIRouter(prefix="/jobs", tags=["Jobs"])
@@ -34,9 +38,13 @@ async def search_jobs(
     skip: int = Query(0, ge=0, description="Pagination offset"),
     limit: int = Query(10, ge=1, le=100, description="Pagination limit"),
     db: AsyncSession = Depends(get_session),
+    current_user: Optional[dict] = Depends(get_current_user),
 ) -> JobsListResponse:
     """
     Search for jobs with various filters.
+    
+    If authenticated, each job includes a relevance score (0-1) based on user profile.
+    If not authenticated, jobs are returned without scores.
     
     Query Parameters:
     - **title**: Filter by job title keyword
@@ -49,7 +57,7 @@ async def search_jobs(
     - **skip**: Pagination offset (default: 0)
     - **limit**: Number of results per page (default: 10, max: 100)
     
-    Returns paginated list of matching jobs.
+    Returns paginated list of matching jobs. For authenticated users, includes score field.
     """
     items, total = await job_service.search_jobs(
         db,
@@ -63,6 +71,20 @@ async def search_jobs(
         skip=skip,
         limit=limit,
     )
+    
+    # If user is authenticated, compute scores for each job
+    if current_user:
+        user_id: str = current_user.get("sub")
+        if user_id:
+            # Fetch user from database
+            result = await db.execute(select(User).where(User.id == user_id))
+            user = result.scalars().first()
+            
+            if user:
+                # Apply scoring function to each job
+                for item in items:
+                    item.score = scoring_function(user, item)
+    
     return JobsListResponse(items=items, total=total, skip=skip, limit=limit)
 
 
@@ -76,7 +98,11 @@ async def search_jobs(
         404: {"description": "Job not found"},
     },
 )
-async def get_job(job_id: str, db: AsyncSession = Depends(get_session)) -> JobResponse:
+async def get_job(
+    job_id: str,
+    db: AsyncSession = Depends(get_session),
+    current_user: Optional[dict] = Depends(get_current_user),
+) -> JobResponse:
     """
     Get detailed information about a specific job.
     
@@ -87,4 +113,12 @@ async def get_job(job_id: str, db: AsyncSession = Depends(get_session)) -> JobRe
     job = await job_service.get_job_by_id(db, job_id)
     if not job:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Job not found")
+    # Add score when the requester is authenticated
+    if current_user:
+        user_id = current_user.get("sub")
+        if user_id:
+            result = await db.execute(select(User).where(User.id == user_id))
+            user = result.scalars().first()
+            if user:
+                job.score = scoring_function(user, job)
     return job
