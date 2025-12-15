@@ -18,6 +18,9 @@ services:
     build:
       context: ./Backend
     container_name: backend
+    # Run container processes as the host user to avoid root-owned files when
+    # mounting the source directory (helps prevent permission issues on build)
+    user: "${UID:-1000}:${GID:-1000}"
     ports:
       - "8000:8000"
     environment:
@@ -38,17 +41,26 @@ services:
   frontend:
     build:
       context: ./frontend
+      args:
+        NODE_ENV: development
     container_name: frontend
+    # Run processes as the current host user to avoid creating root-owned
+    # build artifacts (like .next) when mounting the source directory
+    user: "${UID:-1000}:${GID:-1000}"
     ports:
       - "3000:3000"
     environment:
+      - NODE_ENV=development
+      - HOST=0.0.0.0
       - VITE_API_URL=http://backend:8000
     volumes:
       - ./frontend:/usr/src/app
       - /usr/src/app/node_modules
     depends_on:
       - backend
-    command: npm run dev -- --host 0.0.0.0 --port 3000
+    # `next dev` doesn't accept a `--host` flag; pass host via the HOST
+    # environment variable and only pass --port to the CLI
+    command: npm run dev -- --port 3000
     networks:
       - appnet
 

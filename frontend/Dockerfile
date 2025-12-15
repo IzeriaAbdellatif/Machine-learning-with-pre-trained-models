@@ -1,4 +1,6 @@
 FROM node:20-alpine AS builder
+ARG NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /usr/src/app
 
@@ -6,11 +8,17 @@ WORKDIR /usr/src/app
 COPY package.json package-lock.json* ./
 RUN npm install --silent
 
-# Copy source and build
+# Copy source. Only run a production build when NODE_ENV=production.
 COPY . .
-RUN npm run build
+RUN if [ "$NODE_ENV" = "production" ]; then \
+      echo "Production build: running npm run build" && npm run build; \
+    else \
+      echo "Development build: skipping npm run build (NODE_ENV=$NODE_ENV)"; \
+    fi
 
 FROM node:20-alpine AS runner
+ARG NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
 WORKDIR /usr/src/app
 
 # Copy only necessary files from builder
