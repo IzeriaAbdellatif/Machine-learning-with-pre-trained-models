@@ -77,7 +77,7 @@ export default function HomePage() {
               AI-Powered Matching
             </h3>
             <p className="text-gray-600">
-              Our machine learning algorithms analyze your profile to find jobs that 
+              Our scoring algorithms analyze your profile to find jobs that 
               match your unique skills and preferences.
             </p>
           </div>

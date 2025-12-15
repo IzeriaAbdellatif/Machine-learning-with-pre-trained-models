@@ -31,7 +31,11 @@ export default function Navbar() {
     }
   };
 
-  const navLinks = authenticated
+  // Route-based visibility: on these routes, show only Login/Sign Up
+  const showAuthOnlyRoutes = ['/', '/login', '/register', '/register/profil'];
+  const isAuthOnlyRoute = showAuthOnlyRoutes.includes(pathname || '/');
+
+  const navLinks = !isAuthOnlyRoute && authenticated
     ? [
         { href: '/dashboard', label: 'Dashboard' },
         { href: '/jobs', label: 'Jobs' },
@@ -86,15 +90,7 @@ export default function Navbar() {
 
           {/* Auth Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            {authenticated ? (
-              <button
-                onClick={handleLogout}
-                disabled={loggingOut}
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors disabled:opacity-50"
-              >
-                {loggingOut ? 'Logging out...' : 'Logout'}
-              </button>
-            ) : (
+            {isAuthOnlyRoute ? (
               <>
                 <Link
                   href="/login"
@@ -109,7 +105,15 @@ export default function Navbar() {
                   Sign Up
                 </Link>
               </>
-            )}
+            ) : authenticated ? (
+              <button
+                onClick={handleLogout}
+                disabled={loggingOut}
+                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors disabled:opacity-50"
+              >
+                {loggingOut ? 'Logging out...' : 'Logout'}
+              </button>
+            ) : null}
           </div>
 
           {/* Mobile menu button */}
@@ -165,18 +169,7 @@ export default function Navbar() {
               ))}
               
               <div className="border-t border-gray-100 pt-4 mt-2">
-                {authenticated ? (
-                  <button
-                    onClick={() => {
-                      setMobileMenuOpen(false);
-                      handleLogout();
-                    }}
-                    disabled={loggingOut}
-                    className="w-full text-left text-sm font-medium text-gray-600 hover:text-gray-900 px-2 py-2 rounded-md hover:bg-gray-50 transition-colors disabled:opacity-50"
-                  >
-                    {loggingOut ? 'Logging out...' : 'Logout'}
-                  </button>
-                ) : (
+                {isAuthOnlyRoute ? (
                   <>
                     <Link
                       href="/login"
@@ -193,7 +186,18 @@ export default function Navbar() {
                       Sign Up
                     </Link>
                   </>
-                )}
+                ) : authenticated ? (
+                  <button
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      handleLogout();
+                    }}
+                    disabled={loggingOut}
+                    className="w-full text-left text-sm font-medium text-gray-600 hover:text-gray-900 px-2 py-2 rounded-md hover:bg-gray-50 transition-colors disabled:opacity-50"
+                  >
+                    {loggingOut ? 'Logging out...' : 'Logout'}
+                  </button>
+                ) : null}
               </div>
             </div>
           </div>

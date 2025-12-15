@@ -157,7 +157,7 @@ function DashboardContent() {
               </div>
               <div>
                 <p className="text-2xl font-bold text-gray-900">
-                  {jobs.filter((j) => j.score >= 80).length}
+                  {jobs.filter((j) => j.score >= 0.80).length}
                 </p>
                 <p className="text-sm text-gray-500">High Match (80%+)</p>
               </div>
@@ -183,7 +183,7 @@ function DashboardContent() {
               </div>
               <div>
                 <p className="text-2xl font-bold text-gray-900">
-                  {jobs.length > 0 ? Math.round(jobs[0].score) : 0}%
+                  {jobs.length > 0 ? Math.round(jobs[0].score*100) : 0}%
                 </p>
                 <p className="text-sm text-gray-500">Best Match Score</p>
               </div>
