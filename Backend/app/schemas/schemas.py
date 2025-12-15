@@ -14,13 +14,29 @@ class UserRegisterRequest(BaseModel):
     email: EmailStr = Field(..., description="User email address")
     password: str = Field(..., min_length=8, max_length=72, description="User password (min 8, max 72 chars)")
     name: str = Field(..., min_length=1, description="User full name")
+    phone: Optional[str] = Field(None, description="User phone number")
+    location: Optional[str] = Field(None, description="User location")
+    bio: Optional[str] = Field(None, description="User bio/summary")
+    skills: Optional[str] = Field(None, description="Technical skills (text)")
+    soft_skills: Optional[str] = Field(None, description="Soft skills (text)")
+    preferred_locations: Optional[str] = Field(None, description="Preferred work locations (text)")
+    preferred_mode_travail: Optional[str] = Field(None, description="Preferred work modes (text)")
+    min_remuneration: Optional[float] = Field(None, description="Minimum expected salary")
     
     class Config:
         json_schema_extra = {
             "example": {
                 "email": "user@example.com",
                 "password": "SecurePassword123",
-                "name": "John Doe"
+                "name": "John Doe",
+                "phone": "+1234567890",
+                "location": "San Francisco, CA",
+                "bio": "Software engineer",
+                "skills": "Python, FastAPI, SQL",
+                "soft_skills": "Teamwork, Communication",
+                "preferred_locations": "Remote, San Francisco",
+                "preferred_mode_travail": "remote, hybride",
+                "min_remuneration": 150000
             }
         }
 
@@ -87,6 +103,11 @@ class UserResponse(BaseModel):
     phone: Optional[str] = Field(None, description="User phone number")
     location: Optional[str] = Field(None, description="User location")
     bio: Optional[str] = Field(None, description="User bio/summary")
+    skills: Optional[list[str]] = Field(None, description="List of technical skills")
+    soft_skills: Optional[list[str]] = Field(None, description="List of soft skills")
+    preferred_locations: Optional[list[str]] = Field(None, description="Preferred work locations")
+    preferred_mode_travail: Optional[list[str]] = Field(None, description="Preferred work modes (remote, hybride, presentiel)")
+    min_remuneration: Optional[float] = Field(None, description="Minimum expected salary")
     created_at: datetime = Field(..., description="Account creation timestamp")
     updated_at: datetime = Field(..., description="Last update timestamp")
     
@@ -113,6 +134,11 @@ class UserUpdateRequest(BaseModel):
     phone: Optional[str] = Field(None, description="User phone number")
     location: Optional[str] = Field(None, description="User location")
     bio: Optional[str] = Field(None, description="User bio/summary")
+    skills: Optional[list[str]] = Field(None, description="List of technical skills")
+    soft_skills: Optional[list[str]] = Field(None, description="List of soft skills")
+    preferred_locations: Optional[list[str]] = Field(None, description="Preferred work locations")
+    preferred_mode_travail: Optional[list[str]] = Field(None, description="Preferred work modes (remote, hybride, presentiel)")
+    min_remuneration: Optional[float] = Field(None, description="Minimum expected salary")
     
     model_config = {
         "from_attributes": True,

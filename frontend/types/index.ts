@@ -3,8 +3,14 @@ export interface User {
   id: string;
   email: string;
   name: string;
-  skills?: string[];
+  phone?: string;
   location?: string;
+  bio?: string;
+  skills?: string;
+  soft_skills?: string;
+  preferred_locations?: string;
+  preferred_mode_travail?: string;
+  min_remuneration?: number;
   createdAt?: string;
   updatedAt?: string;
 }
@@ -35,6 +41,14 @@ export interface RegisterCredentials {
   email: string;
   password: string;
   name: string;
+  phone?: string;
+  location?: string;
+  bio?: string;
+  skills?: string;
+  soft_skills?: string;
+  preferred_locations?: string;
+  preferred_mode_travail?: string;
+  min_remuneration?: number;
 }
 
 export interface AuthResponse {

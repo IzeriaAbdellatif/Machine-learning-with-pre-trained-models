@@ -9,6 +9,7 @@ from app.schemas.schemas import (
     UserResponse,
     LogoutResponse,
     MessageResponse,
+    UserUpdateRequest,
 )
 from app.core.security import get_current_user
 from app.db.session import get_session
@@ -35,11 +36,25 @@ async def register(user_data: UserRegisterRequest, db: AsyncSession = Depends(ge
     - **email**: User email address (must be unique)
     - **password**: User password (minimum 8 characters)
     - **name**: User full name
+    - **Optional fields**: phone, location, bio, skills, soft_skills, preferred_locations, preferred_mode_travail, min_remuneration
     
     Returns JWT access token and user information.
     """
     # create user
-    user = await user_service.create_user(db, email=user_data.email, password=user_data.password, name=user_data.name)
+    user = await user_service.create_user(
+        db,
+        email=user_data.email,
+        password=user_data.password,
+        name=user_data.name,
+        phone=user_data.phone,
+        location=user_data.location,
+        bio=user_data.bio,
+        skills=user_data.skills,
+        soft_skills=user_data.soft_skills,
+        preferred_locations=user_data.preferred_locations,
+        preferred_mode_travail=user_data.preferred_mode_travail,
+        min_remuneration=user_data.min_remuneration,
+    )
     # create token
     access_token = auth_service.create_token_for_user(user)
     return TokenResponse(access_token=access_token, token_type="bearer", user=user)
@@ -114,3 +129,44 @@ async def get_current_user_info(current_user: dict = Depends(get_current_user), 
     if not user:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not found")
     return user
+
+
+@router.put(
+    "/me",
+    response_model=UserResponse,
+    status_code=status.HTTP_200_OK,
+    summary="Update current user profile",
+    responses={
+        200: {"description": "User profile successfully updated"},
+        401: {"description": "Unauthorized or invalid token"},
+    },
+)
+async def update_current_user(
+    user_data: UserUpdateRequest,
+    current_user: dict = Depends(get_current_user),
+    db: AsyncSession = Depends(get_session)
+) -> UserResponse:
+    """
+    Update the currently authenticated user's profile information.
+    
+    Supports updating:
+    - name, phone, location, bio
+    - skills, soft_skills (text)
+    - preferred_locations, preferred_mode_travail (text)
+    - min_remuneration
+    
+    Requires valid JWT token.
+    """
+    user_id = current_user.get("sub")
+    if not user_id:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token payload")
+    
+    user = await user_service.get_user_by_id(db, user_id)
+    if not user:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not found")
+    
+    # Convert user_data to dict, excluding None values
+    update_data = {k: v for k, v in user_data.model_dump().items() if v is not None}
+    
+    updated_user = await user_service.update_user(db, user, update_data)
+    return updated_user
