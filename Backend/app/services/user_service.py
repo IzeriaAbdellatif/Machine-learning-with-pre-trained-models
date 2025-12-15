@@ -25,13 +25,21 @@ async def create_user(
     phone: str = None,
     location: str = None,
     bio: str = None,
-    skills: str = None,
-    soft_skills: str = None,
-    preferred_locations: str = None,
-    preferred_mode_travail: str = None,
+    skills: str | list[str] = None,
+    soft_skills: str | list[str] = None,
+    preferred_locations: str | list[str] = None,
+    preferred_mode_travail: str | list[str] = None,
     min_remuneration: float = None,
 ):
     hashed = hash_password(password)
+    # Normalize lists to comma-separated strings for storage
+    def _to_csv(val):
+        if val is None:
+            return None
+        if isinstance(val, list):
+            return ", ".join([str(s).strip() for s in val if str(s).strip()])
+        return str(val)
+
     user = User(
         email=email,
         hashed_password=hashed,
@@ -39,10 +47,10 @@ async def create_user(
         phone=phone,
         location=location,
         bio=bio,
-        skills=skills,
-        soft_skills=soft_skills,
-        preferred_locations=preferred_locations,
-        preferred_mode_travail=preferred_mode_travail,
+        skills=_to_csv(skills),
+        soft_skills=_to_csv(soft_skills),
+        preferred_locations=_to_csv(preferred_locations),
+        preferred_mode_travail=_to_csv(preferred_mode_travail),
         min_remuneration=min_remuneration,
     )
     db.add(user)
@@ -58,6 +66,9 @@ async def create_user(
 async def update_user(db: AsyncSession, user: User, data: dict):
     for key, value in data.items():
         if hasattr(user, key) and value is not None:
+            # Ensure lists are stored as comma-separated strings in the DB
+            if isinstance(value, list):
+                value = ", ".join([str(s).strip() for s in value if str(s).strip()])
             setattr(user, key, value)
     db.add(user)
     await db.commit()

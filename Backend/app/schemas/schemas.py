@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr, Field, field_validator
 from typing import Optional
 from datetime import datetime
 
@@ -110,6 +110,51 @@ class UserResponse(BaseModel):
     min_remuneration: Optional[float] = Field(None, description="Minimum expected salary")
     created_at: datetime = Field(..., description="Account creation timestamp")
     updated_at: datetime = Field(..., description="Last update timestamp")
+
+    # Accept comma-separated strings from DB attributes or lists and normalize to list[str]
+    @field_validator("skills", mode="before")
+    @classmethod
+    def _parse_skills(cls, v):
+        if v is None:
+            return None
+        if isinstance(v, str):
+            return [s.strip() for s in v.split(",") if s.strip()]
+        if isinstance(v, list):
+            return [str(s).strip() for s in v if str(s).strip()]
+        return v
+
+    @field_validator("soft_skills", mode="before")
+    @classmethod
+    def _parse_soft_skills(cls, v):
+        if v is None:
+            return None
+        if isinstance(v, str):
+            return [s.strip() for s in v.split(",") if s.strip()]
+        if isinstance(v, list):
+            return [str(s).strip() for s in v if str(s).strip()]
+        return v
+
+    @field_validator("preferred_locations", mode="before")
+    @classmethod
+    def _parse_preferred_locations(cls, v):
+        if v is None:
+            return None
+        if isinstance(v, str):
+            return [s.strip() for s in v.split(",") if s.strip()]
+        if isinstance(v, list):
+            return [str(s).strip() for s in v if str(s).strip()]
+        return v
+
+    @field_validator("preferred_mode_travail", mode="before")
+    @classmethod
+    def _parse_preferred_mode_travail(cls, v):
+        if v is None:
+            return None
+        if isinstance(v, str):
+            return [s.strip() for s in v.split(",") if s.strip()]
+        if isinstance(v, list):
+            return [str(s).strip() for s in v if str(s).strip()]
+        return v
     
     model_config = {
         "from_attributes": True,
@@ -134,10 +179,11 @@ class UserUpdateRequest(BaseModel):
     phone: Optional[str] = Field(None, description="User phone number")
     location: Optional[str] = Field(None, description="User location")
     bio: Optional[str] = Field(None, description="User bio/summary")
-    skills: Optional[list[str]] = Field(None, description="List of technical skills")
-    soft_skills: Optional[list[str]] = Field(None, description="List of soft skills")
-    preferred_locations: Optional[list[str]] = Field(None, description="Preferred work locations")
-    preferred_mode_travail: Optional[list[str]] = Field(None, description="Preferred work modes (remote, hybride, presentiel)")
+    # Allow either a comma-separated string or a list for update payloads
+    skills: Optional[str | list[str]] = Field(None, description="List of technical skills or comma-separated string")
+    soft_skills: Optional[str | list[str]] = Field(None, description="List of soft skills or comma-separated string")
+    preferred_locations: Optional[str | list[str]] = Field(None, description="Preferred work locations or comma-separated string")
+    preferred_mode_travail: Optional[str | list[str]] = Field(None, description="Preferred work modes (remote, hybride, presentiel) or comma-separated string")
     min_remuneration: Optional[float] = Field(None, description="Minimum expected salary")
     
     model_config = {
@@ -151,6 +197,18 @@ class UserUpdateRequest(BaseModel):
             }
         }
 }
+
+    # Normalize incoming update payloads to lists so the service layer can persist consistently
+    @field_validator("skills", "soft_skills", "preferred_locations", "preferred_mode_travail", mode="before")
+    @classmethod
+    def _normalize_update_fields(cls, v):
+        if v is None:
+            return None
+        if isinstance(v, str):
+            return [s.strip() for s in v.split(",") if s.strip()]
+        if isinstance(v, list):
+            return [str(s).strip() for s in v if str(s).strip()]
+        return v
 
 
 # ============================================================================
